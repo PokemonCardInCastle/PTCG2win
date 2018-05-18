@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ deck.name }} - Detail</title>
+</head>
+<body>
+<h1>{{ deck.name }}</h1>
+
+<ul>
+    {% for cardbundle in deck.cardbundle_set.all %}
+        <li>
+            {{ cardbundle.card.name }} : {{ cardbundle.amount }}
+        </li>
+    {% endfor %}
+
+</ul>
+</body>
+</html>

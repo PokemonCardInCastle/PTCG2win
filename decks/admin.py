@@ -1,8 +1,11 @@
 from django.contrib import admin
-from .models import Deck, User, ArchType, Expansion, Regulation, Region
+from .models import Deck, User, ArchType, Expansion, Regulation, Region, Card, CardBundle
 # Register your models here.
 
+
+admin.site.register(CardBundle)
 admin.site.register(Deck)
+admin.site.register(Card)
 admin.site.register(User)
 admin.site.register(ArchType)
 admin.site.register(Expansion)

@@ -86,12 +86,13 @@ class Deck(models.Model):
         return self.name
 
 
-class DeckList(models.Model):
-    parent_deck = models.ForeignKey(Deck, models.CASCADE)
-    cards = models.ManyToManyField(Card, blank=True)  # "blank=True" is for temporary saving
+class CardBundle(models.Model):
+    card = models.ForeignKey(Card, models.PROTECT)
+    amount = models.IntegerField(default=1)
+    deck_list = models.ForeignKey(Deck, models.CASCADE)
 
     def __str__(self):
-        return self.parent_deck
+        return self.card.name
 
 
 class Comments(models.Model):

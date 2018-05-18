@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if latest_deck_list %}
+        <ul>
+        {% for deck in latest_deck_list %}
+            <li><a href="{% url 'decks:detail' deck.id %}">{{ deck.name }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No decks are available.</p>
+    {% endif %}
+</body>
+</html>
