@@ -19,5 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path("decks/", include("decks.urls")),
     path('admin/', admin.site.urls),
-    path(r'^$', lambda r: HttpResponseRedirect('decks/')),
+    path("", include("decks.urls")),
 ]
