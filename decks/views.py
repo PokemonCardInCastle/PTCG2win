@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello World!")
+    return HttpResponse("ぴよーーーー")
 
 
 def detail(request, deck_id):
