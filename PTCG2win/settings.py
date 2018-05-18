@@ -25,7 +25,8 @@ SECRET_KEY = 'amyl#lr2s&a5fof=pph^u(x3^#77*6jqpg7wcw7fss)t=vxuh@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["52.192.15.67", "ec2-52-192-15-67.ap-northeast-1.compute.amazonaws.com",
+                 "ptch2win.com", "www.ptcg2win.com"]
 
 
 # Application definition
