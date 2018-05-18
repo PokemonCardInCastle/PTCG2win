@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ["52.192.15.67", "ec2-52-192-15-67.ap-northeast-1.compute.amazon
 
 INSTALLED_APPS = [
     'decks.apps.DecksConfig',
+    'gunicorn',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
