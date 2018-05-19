@@ -62,7 +62,7 @@ class Series(models.Model):
 class PokemonSpecies(models.Model):
     name = models.CharField(max_length=20)
     pokedex_number = models.IntegerField()
-    region = models.CharField(default="")
+    region = models.CharField(max_length=20, default="")
 
     def __str__(self):
         return self.name
@@ -71,7 +71,6 @@ class PokemonSpecies(models.Model):
 class Card(models.Model):
     artist = models.CharField(max_length=50)
     expansion = models.ForeignKey(Expansion, on_delete=models.PROTECT)  # setと対応
-    expansion_code = models.CharField(max_length=10)
     global_id = models.CharField(max_length=30)
     name = models.CharField(max_length=100)
     name_j = models.CharField(max_length=100)
@@ -101,7 +100,6 @@ class Weakness(models.Model):
 
 
 class Pokemon(Card):
-    name = models.CharField(max_length=20)
     hp = models.IntegerField()
     retreat_cost = models.IntegerField()
     weakness = models.ForeignKey(Weakness, on_delete=models.PROTECT)
