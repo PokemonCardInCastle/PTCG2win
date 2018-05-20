@@ -77,7 +77,7 @@ class Card(models.Model):
     global_id = models.CharField(max_length=30)
     name = models.CharField(max_length=100)
     name_j = models.CharField(max_length=100)
-    number = models.IntegerField()
+    id_in_expansion = models.IntegerField()
     rarity = models.ForeignKey(Rarity, on_delete=models.PROTECT)
     series = models.ForeignKey(Series, on_delete=models.PROTECT)
     is_prism_star = models.BooleanField(default=False)
