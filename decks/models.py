@@ -12,6 +12,7 @@ class User(models.Model):
 
 class Region(models.Model):
     name = models.CharField(max_length=30)
+    name_j = models.CharField(max_length=10)
 
     def __str__(self):
         return self.name
@@ -61,8 +62,10 @@ class Series(models.Model):
 
 class PokemonSpecies(models.Model):
     name = models.CharField(max_length=20)
+    name_j = models.CharField(max_length=10)
+#    form_name = models.CharField(max_length=20, default="")
     pokedex_number = models.IntegerField()
-    region = models.CharField(max_length=20, default="")
+    region = models.ForeignKey(Region, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
