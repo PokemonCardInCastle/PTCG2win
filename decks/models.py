@@ -183,7 +183,7 @@ class Attack(models.Model):
 
 class ArchType(models.Model):
     name = models.CharField(max_length=100)
-    expansion = models.ForeignKey(Regulation, on_delete=models.PROTECT)
+    regulation = models.ForeignKey(Regulation, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
@@ -195,6 +195,7 @@ class Deck(models.Model):
     mod_date = models.DateTimeField()
     description = models.CharField(max_length=100000)
     owner = models.ForeignKey(User, on_delete=models.PROTECT)
+    regulation = models.ForeignKey(Regulation, on_delete=models.PROTECT)
     arch_type = models.ForeignKey(ArchType, on_delete=models.PROTECT)
 
     def __str__(self):
