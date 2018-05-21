@@ -1,0 +1,4664 @@
+{
+    "cards": [
+        {
+            "artist": "Toyste Beach",
+            "id": "xy7-72",
+            "imageUrl": "https://images.pokemontcg.io/xy7/72.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/72_hires.png",
+            "name": "Energy Recycler",
+            "number": "72",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Shuffle 5 basic Energy cards from your discard pile into your deck."
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "id": "xy7-74",
+            "imageUrl": "https://images.pokemontcg.io/xy7/74.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/74_hires.png",
+            "name": "Forest of Giant Plants",
+            "number": "74",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stadium",
+            "supertype": "Trainer",
+            "text": [
+                "Each player's Grass Pok\u00e9mon can evolve during his or her first turn or the turn he or she plays those Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy7-76",
+            "imageUrl": "https://images.pokemontcg.io/xy7/76.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/76_hires.png",
+            "name": "Level Ball",
+            "number": "76",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Search your deck for a Pok\u00e9mon with 90 HP or less, reveal it, and put it into your hand. Shuffle your deck afterward."
+            ]
+        },
+        {
+            "ability": {
+                "name": "Irritating Pollen",
+                "text": "Each player can't play any Item cards from his or her hand.",
+                "type": "Ability"
+            },
+            "artist": "Midori Harada",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Grass",
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Solar Beam",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Gloom",
+            "hp": "130",
+            "id": "xy7-3",
+            "imageUrl": "https://images.pokemontcg.io/xy7/3.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/3_hires.png",
+            "name": "Vileplume",
+            "nationalPokedexNumber": 45,
+            "number": "3",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sumiyoshi Kizuki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Nap",
+                    "text": "Heal 20 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Wave Splash",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "xy7-38",
+            "imageUrl": "https://images.pokemontcg.io/xy7/38.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/38_hires.png",
+            "name": "Wooper",
+            "nationalPokedexNumber": 194,
+            "number": "38",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "match",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "",
+                    "name": "Bail Out",
+                    "text": "Put 2 Pok\u00e9mon from your discard pile into your hand."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Grass"
+                    ],
+                    "damage": "40+",
+                    "name": "Prize Count",
+                    "text": "If you have more Prize cards left than your opponent, this attack does 80 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "110",
+            "id": "xy7-12",
+            "imageUrl": "https://images.pokemontcg.io/xy7/12.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/12_hires.png",
+            "name": "Virizion",
+            "nationalPokedexNumber": 640,
+            "number": "12",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Flare Effect",
+                "text": "Each of your Stage 1 Pok\u00e9mon in play is now a Fire Pok\u00e9mon in addition to its existing types.",
+                "type": "Ability"
+            },
+            "artist": "sui",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fire",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Heat Breath",
+                    "text": "Flip a coin. If heads, this attack does 20 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Eevee",
+            "hp": "90",
+            "id": "xy7-13",
+            "imageUrl": "https://images.pokemontcg.io/xy7/13.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/13_hires.png",
+            "name": "Flareon",
+            "nationalPokedexNumber": 136,
+            "number": "13",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Aqua Effect",
+                "text": "Each of your Stage 1 Pok\u00e9mon in play is now a Water Pok\u00e9mon in addition to its existing types.",
+                "type": "Ability"
+            },
+            "artist": "kirisAki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Hydro Splash",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Eevee",
+            "hp": "90",
+            "id": "xy7-22",
+            "imageUrl": "https://images.pokemontcg.io/xy7/22.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/22_hires.png",
+            "name": "Vaporeon",
+            "nationalPokedexNumber": 134,
+            "number": "22",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Lightning",
+                        "Lightning",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "120+",
+                    "name": "Exavolt",
+                    "text": "You may do 50 more damage and leave your opponent's Active Pok\u00e9mon Paralyzed. If you do, this Pok\u00e9mon does 30 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Ampharos-EX",
+            "hp": "220",
+            "id": "xy7-28",
+            "imageUrl": "https://images.pokemontcg.io/xy7/28.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/28_hires.png",
+            "name": "M Ampharos-EX",
+            "nationalPokedexNumber": 181,
+            "number": "28",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Farewell Letter",
+                "text": "Once during your turn (before your attack), if this Pok\u00e9mon is on your Bench, you may discard this Pok\u00e9mon and all cards attached to it (this does not count as a Knock Out). If you do, draw a card.",
+                "type": "Ability"
+            },
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Hidden Power",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy7-30",
+            "imageUrl": "https://images.pokemontcg.io/xy7/30.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/30_hires.png",
+            "name": "Unown",
+            "nationalPokedexNumber": 201,
+            "number": "30",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Scoundrel Ring",
+                "text": "When you play this Pok\u00e9mon from your hand onto your Bench, you may search your deck for up to 3 Pok\u00e9mon-EX (except for Hoopa-EX), reveal them, and put them into your hand. Shuffle your deck afterward.",
+                "type": "Ability"
+            },
+            "artist": "Ryota Murayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Psychic",
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Hyperspace Fury",
+                    "text": "Discard 2 Energy attached to this Pok\u00e9mon. This attack does 100 damage to 1 of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy7-36",
+            "imageUrl": "https://images.pokemontcg.io/xy7/36.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/36_hires.png",
+            "name": "Hoopa-EX",
+            "nationalPokedexNumber": 720,
+            "number": "36",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoyo Kimura",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Wave Splash",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Landslide",
+                    "text": "This attack's damage isn't affected by Resistance."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Wooper",
+            "hp": "110",
+            "id": "xy7-39",
+            "imageUrl": "https://images.pokemontcg.io/xy7/39.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/39_hires.png",
+            "name": "Quagsire",
+            "nationalPokedexNumber": 195,
+            "number": "39",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "40",
+                    "name": "Rock Throw",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Unyielding Rock",
+                    "text": "If your opponent's Active Pok\u00e9mon is a Pok\u00e9mon-EX, this attack does 60 more damage."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "120",
+            "id": "xy7-40",
+            "imageUrl": "https://images.pokemontcg.io/xy7/40.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/40_hires.png",
+            "name": "Regirock",
+            "nationalPokedexNumber": 377,
+            "number": "40",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Hammer In",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Darkness",
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Break Ground",
+                    "text": "This attack does 10 damage to each of your Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "hp": "180",
+            "id": "xy7-42",
+            "imageUrl": "https://images.pokemontcg.io/xy7/42.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/42_hires.png",
+            "name": "Tyranitar-EX",
+            "nationalPokedexNumber": 248,
+            "number": "42",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Darkness",
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "110+",
+                    "name": "Destroyer King",
+                    "text": "This attack does 60 more damage for each damage counter on your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Tyranitar-EX",
+            "hp": "240",
+            "id": "xy7-43",
+            "imageUrl": "https://images.pokemontcg.io/xy7/43.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/43_hires.png",
+            "name": "M Tyranitar-EX",
+            "nationalPokedexNumber": 248,
+            "number": "43",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "This Pok\u00e9mon may have up to 2 Pok\u00e9mon Tool cards attached to it.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Hitoshi Ariga",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Darkness"
+                    ],
+                    "damage": "",
+                    "name": "Bewitching Eyes",
+                    "text": "Choose a Supporter card from your opponent's discard pile and use it as the effect of this attack."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Darkness",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Furtive Drop",
+                    "text": "Put 3 damage counters on your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "xy7-44",
+            "imageUrl": "https://images.pokemontcg.io/xy7/44.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/44_hires.png",
+            "name": "Sableye",
+            "nationalPokedexNumber": 302,
+            "number": "44",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ]
+        },
+        {
+            "artist": "Yuka Morii",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Metal"
+                    ],
+                    "damage": "10",
+                    "name": "Ram",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Metal",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Spinning Attack",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "xy7-47",
+            "imageUrl": "https://images.pokemontcg.io/xy7/47.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/47_hires.png",
+            "name": "Beldum",
+            "nationalPokedexNumber": 374,
+            "number": "47",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shigenori Negishi",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Metal",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Metal Claw",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Metal",
+                        "Metal",
+                        "Colorless"
+                    ],
+                    "damage": "50+",
+                    "name": "Bullet Punch",
+                    "text": "Flip 2 coins. This attack does 20 more damage for each heads."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Beldum",
+            "hp": "90",
+            "id": "xy7-48",
+            "imageUrl": "https://images.pokemontcg.io/xy7/48.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/48_hires.png",
+            "name": "Metang",
+            "nationalPokedexNumber": 375,
+            "number": "48",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Hitoshi Ariga",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20+",
+                    "name": "Machine Gun Stomp",
+                    "text": "This attack does 10 more damage for each card in your hand."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Metal",
+                        "Metal",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Guard Press",
+                    "text": "During your opponent's next turn, any damage done to this Pok\u00e9mon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Metang",
+            "hp": "150",
+            "id": "xy7-50",
+            "imageUrl": "https://images.pokemontcg.io/xy7/50.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/50_hires.png",
+            "name": "Metagross",
+            "nationalPokedexNumber": 376,
+            "number": "50",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "This Pok\u00e9mon may have up to 2 Pok\u00e9mon Tool cards attached to it."
+            ],
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kouki Saitou",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Metal",
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Iron Head",
+                    "text": "Flip a coin until you get tails. This attack does 30 damage times the number of heads."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Metal",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Forbidden Iron Hammer",
+                    "text": "If your opponent's Active Pok\u00e9mon is a Pok\u00e9mon-EX, discard an Energy attached to that Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "120",
+            "id": "xy7-51",
+            "imageUrl": "https://images.pokemontcg.io/xy7/51.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/51_hires.png",
+            "name": "Registeel",
+            "nationalPokedexNumber": 379,
+            "number": "51",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Bright Heal",
+                "text": "Once during your turn (before your attack), you may heal 20 damage from each of your Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "TOKIYA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Telekinesis",
+                    "text": "This attack does 50 damage to 1 of your opponent's Pok\u00e9mon. This attack's damage isn't affected by Weakness or Resistance."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Kirlia",
+            "hp": "130",
+            "id": "xy7-54",
+            "imageUrl": "https://images.pokemontcg.io/xy7/54.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/54_hires.png",
+            "name": "Gardevoir",
+            "nationalPokedexNumber": 282,
+            "number": "54",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Atsuko Nishida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "",
+                    "name": "Windy Mischief",
+                    "text": "Move all damage counters from 1 of your Benched Pok\u00e9mon to your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Rolling Tackle",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Cottonee",
+            "hp": "70",
+            "id": "xy7-56",
+            "imageUrl": "https://images.pokemontcg.io/xy7/56.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/56_hires.png",
+            "name": "Whimsicott",
+            "nationalPokedexNumber": 547,
+            "number": "56",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Renegade Pulse",
+                "text": "Prevent all effects of attacks, including damage, done to this Pok\u00e9mon by your opponent's Mega Evolution Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "PLANETA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Grass",
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Chaos Wheel",
+                    "text": "Your opponent can't play any Pok\u00e9mon Tool, Special Energy, or Stadium cards from his or her hand during his or her next turn."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "170",
+            "id": "xy7-57",
+            "imageUrl": "https://images.pokemontcg.io/xy7/57.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/57_hires.png",
+            "name": "Giratina-EX",
+            "nationalPokedexNumber": 487,
+            "number": "57",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Yukiko Baba",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Data Check",
+                    "text": "Look through your deck. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Sharpen",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy7-64",
+            "imageUrl": "https://images.pokemontcg.io/xy7/64.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/64_hires.png",
+            "name": "Porygon",
+            "nationalPokedexNumber": 137,
+            "number": "64",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "TOKIYA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Cyber Crush",
+                    "text": "Discard all Special Energy attached to each of your opponent's Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Slowing Beam",
+                    "text": "During your opponent's next turn, the Defending Pok\u00e9mon's attacks cost Colorless more."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Porygon2",
+            "hp": "130",
+            "id": "xy7-66",
+            "imageUrl": "https://images.pokemontcg.io/xy7/66.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/66_hires.png",
+            "name": "Porygon-Z",
+            "nationalPokedexNumber": 474,
+            "number": "66",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy7-77",
+            "imageUrl": "https://images.pokemontcg.io/xy7/77.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/77_hires.png",
+            "name": "Lucky Helmet",
+            "number": "77",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "Whenever the Pok\u00e9mon this card is attached to is your Active Pok\u00e9mon and is damaged by an opponent's attack (even if that Pok\u00e9mon is Knocked Out), draw 2 cards."
+            ]
+        },
+        {
+            "artist": "Ken Sugimori",
+            "id": "xy7-78",
+            "imageUrl": "https://images.pokemontcg.io/xy7/78.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/78_hires.png",
+            "name": "Lysandre",
+            "number": "78",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Switch 1 of your opponent's Benched Pok\u00e9mon with his or her Active Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy7-79",
+            "imageUrl": "https://images.pokemontcg.io/xy7/79.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/79_hires.png",
+            "name": "Paint Roller",
+            "number": "79",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Discard any Stadium card in play. Then, draw a card."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy7-83",
+            "imageUrl": "https://images.pokemontcg.io/xy7/83.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/83_hires.png",
+            "name": "Flash Energy",
+            "number": "83",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Special",
+            "supertype": "Energy",
+            "text": [
+                "This card can only be attached to Lightning Pok\u00e9mon. This card provides Lightning Energy only while this card is attached to a Lightning Pok\u00e9mon. The Lightning Pok\u00e9mon this card is attached to has no Weakness. (If this card is attached to anything other than a Lightning Pok\u00e9mon, discard this card.)"
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "10",
+                    "name": "Sleep Poison",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Asleep and Poisoned."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Unseen Claw",
+                    "text": "If your opponent's Active Pok\u00e9mon is affected by a Special Condition, this attack does 70 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "170",
+            "id": "xy7-84",
+            "imageUrl": "https://images.pokemontcg.io/xy7/84.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/84_hires.png",
+            "name": "Sceptile-EX",
+            "nationalPokedexNumber": 254,
+            "number": "84",
+            "rarity": "Rare Ultra",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Thunder Rod",
+                    "text": "Look at the top 4 cards of your deck and attach as many Lightning Energy cards you find there as you like to this Pok\u00e9mon. Shuffle the other cards back into your deck."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Lightning",
+                        "Lightning",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Sparkling Tail",
+                    "text": "This attack's damage isn't affected by Weakness, Resistance, or any other effects on your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy7-87",
+            "imageUrl": "https://images.pokemontcg.io/xy7/87.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/87_hires.png",
+            "name": "Ampharos-EX",
+            "nationalPokedexNumber": 181,
+            "number": "87",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Lightning",
+                        "Lightning",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "120+",
+                    "name": "Exavolt",
+                    "text": "You may do 50 more damage and leave your opponent's Active Pok\u00e9mon Paralyzed. If you do, this Pok\u00e9mon does 30 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Ampharos-EX",
+            "hp": "220",
+            "id": "xy7-88",
+            "imageUrl": "https://images.pokemontcg.io/xy7/88.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/88_hires.png",
+            "name": "M Ampharos-EX",
+            "nationalPokedexNumber": 181,
+            "number": "88",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Hammer In",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Darkness",
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Break Ground",
+                    "text": "This attack does 10 damage to each of your Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "hp": "180",
+            "id": "xy7-91",
+            "imageUrl": "https://images.pokemontcg.io/xy7/91.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/91_hires.png",
+            "name": "Tyranitar-EX",
+            "nationalPokedexNumber": 248,
+            "number": "91",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "100+",
+                    "name": "Gaia Volcano",
+                    "text": "If there is any Stadium card in play, this attack does 100 more damage. Discard that Stadium card."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Groudon-EX",
+            "hp": "240",
+            "id": "xy7-97",
+            "imageUrl": "https://images.pokemontcg.io/xy7/97.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/97_hires.png",
+            "name": "Primal Groudon-EX",
+            "nationalPokedexNumber": 383,
+            "number": "97",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "When 1 of your Pok\u00e9mon becomes this Pok\u00e9mon, heal all damage from it."
+            ],
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy7-100",
+            "imageUrl": "https://images.pokemontcg.io/xy7/100.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/100_hires.png",
+            "name": "Trainers' Mail",
+            "number": "100",
+            "rarity": "Rare Holo",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Look at the top 4 cards of your deck. You may reveal a Trainer card you find there (except for Trainers' Mail) and put it into your hand. Shuffle the other cards back into your deck."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Jagged Saber",
+                    "text": "You may attach up to 2 Grass Energy cards from your hand to your Benched Pok\u00e9mon in any way you like. If you attached Energy to a Pok\u00e9mon in this way, heal all damage from that Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Sceptile-EX",
+            "hp": "220",
+            "id": "xy7-85",
+            "imageUrl": "https://images.pokemontcg.io/xy7/85.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/85_hires.png",
+            "name": "M Sceptile-EX",
+            "nationalPokedexNumber": 254,
+            "number": "85",
+            "rarity": "Rare Ultra",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "Prevent all effects of your opponent's Pok\u00e9mon's Abilities done to this Pok\u00e9mon.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kanako Eo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10+",
+                    "name": "Act Tough",
+                    "text": "If this Pok\u00e9mon has any Darkness Energy attached to it, this attack does 20 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy7-61",
+            "imageUrl": "https://images.pokemontcg.io/xy7/61.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/61_hires.png",
+            "name": "Meowth",
+            "nationalPokedexNumber": 52,
+            "number": "61",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy7-70",
+            "imageUrl": "https://images.pokemontcg.io/xy7/70.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/70_hires.png",
+            "name": "Ampharos Spirit Link",
+            "number": "70",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "Your turn does not end if the Pok\u00e9mon this card is attached to becomes M Ampharos-EX."
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "id": "xy7-73",
+            "imageUrl": "https://images.pokemontcg.io/xy7/73.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/73_hires.png",
+            "name": "Faded Town",
+            "number": "73",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stadium",
+            "supertype": "Trainer",
+            "text": [
+                "At any time between turns, put 2 damage counters on each Mega Evolution Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "Kouki Saitou",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "10",
+                    "name": "Slap",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Spinning Attack",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy7-31",
+            "imageUrl": "https://images.pokemontcg.io/xy7/31.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/31_hires.png",
+            "name": "Baltoy",
+            "nationalPokedexNumber": 343,
+            "number": "31",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Smash Punch",
+                    "text": "Flip a coin. If tails, this attack does nothing."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "90",
+            "id": "xy7-34",
+            "imageUrl": "https://images.pokemontcg.io/xy7/34.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/34_hires.png",
+            "name": "Golett",
+            "nationalPokedexNumber": 622,
+            "number": "34",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Yusuke Ohmura",
+            "id": "xy7-75a",
+            "imageUrl": "https://images.pokemontcg.io/xy7/75a.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/75a_hires.png",
+            "name": "Hex Maniac",
+            "number": "75a",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Until the end of your opponent's next turn, each Pok\u00e9mon in play, in each player's hand, and in each player's discard pile has no Abilities. (This includes cards that come into play on that turn.)"
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy7-71",
+            "imageUrl": "https://images.pokemontcg.io/xy7/71.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/71_hires.png",
+            "name": "Eco Arm",
+            "number": "71",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Shuffle 3 Pok\u00e9mon Tool cards from your discard pile into your deck."
+            ]
+        },
+        {
+            "artist": "Megumi Mizutani",
+            "id": "xy7-95",
+            "imageUrl": "https://images.pokemontcg.io/xy7/95.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/95_hires.png",
+            "name": "Steven",
+            "number": "95",
+            "rarity": "Rare Ultra",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Search your deck for a Supporter card and a basic Energy card, reveal them, and put them into your hand. Shuffle your deck afterward."
+            ]
+        },
+        {
+            "artist": "Miki Tanaka",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Ice Beam",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Resistance Blizzard",
+                    "text": "During your opponent's next turn, prevent all effects of attacks, including damage, done to this Pok\u00e9mon by Pok\u00e9mon-EX."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "120",
+            "id": "xy7-24",
+            "imageUrl": "https://images.pokemontcg.io/xy7/24.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/24_hires.png",
+            "name": "Regice",
+            "nationalPokedexNumber": 378,
+            "number": "24",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Aya Kusube",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Mumble",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Magical Shot",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy7-52",
+            "imageUrl": "https://images.pokemontcg.io/xy7/52.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/52_hires.png",
+            "name": "Ralts",
+            "nationalPokedexNumber": 280,
+            "number": "52",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Yusuke Ohmura",
+            "id": "xy7-75",
+            "imageUrl": "https://images.pokemontcg.io/xy7/75.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/75_hires.png",
+            "name": "Hex Maniac",
+            "number": "75",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Until the end of your opponent's next turn, each Pok\u00e9mon in play, in each player's hand, and in each player's discard pile has no Abilities. (This includes cards that come into play on that turn.)"
+            ]
+        },
+        {
+            "artist": "Masakazu Fukuda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Drool",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Oddish",
+            "hp": "80",
+            "id": "xy7-2",
+            "imageUrl": "https://images.pokemontcg.io/xy7/2.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/2_hires.png",
+            "name": "Gloom",
+            "nationalPokedexNumber": 44,
+            "number": "2",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "30",
+                    "name": "Epic Splash",
+                    "text": "Flip 2 coins. If either of them is tails, this attack does nothing."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "30",
+            "id": "xy7-19",
+            "imageUrl": "https://images.pokemontcg.io/xy7/19.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/19_hires.png",
+            "name": "Magikarp",
+            "nationalPokedexNumber": 129,
+            "number": "19",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy7-81",
+            "imageUrl": "https://images.pokemontcg.io/xy7/81.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/81_hires.png",
+            "name": "Tyranitar Spirit Link",
+            "number": "81",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "Your turn does not end if the Pok\u00e9mon this card is attached to becomes M Tyranitar-EX."
+            ]
+        },
+        {
+            "artist": "kawayoo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Intelligence Gathering",
+                    "text": "You may draw cards until you have 6 cards in your hand."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20+",
+                    "name": "Bee Revenge",
+                    "text": "This attack does 10 more damage for each Pok\u00e9mon in your discard pile."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Combee",
+            "hp": "90",
+            "id": "xy7-10",
+            "imageUrl": "https://images.pokemontcg.io/xy7/10.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/10_hires.png",
+            "name": "Vespiquen",
+            "nationalPokedexNumber": 416,
+            "number": "10",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kagemaru Himeno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fire"
+                    ],
+                    "damage": "20+",
+                    "name": "Burning Scales",
+                    "text": "Flip 2 coins. This attack does 20 more damage for each heads."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fire",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Wind Wheel",
+                    "text": "Your opponent switches his or her Active Pok\u00e9mon with 1 of his or her Benched Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Larvesta",
+            "hp": "110",
+            "id": "xy7-18",
+            "imageUrl": "https://images.pokemontcg.io/xy7/18.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/18_hires.png",
+            "name": "Volcarona",
+            "nationalPokedexNumber": 637,
+            "number": "18",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "Prevent all effects of your opponent's Pok\u00e9mon's Abilities done to this Pok\u00e9mon."
+            ],
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy7-82",
+            "imageUrl": "https://images.pokemontcg.io/xy7/82.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/82_hires.png",
+            "name": "Dangerous Energy",
+            "number": "82",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Special",
+            "supertype": "Energy",
+            "text": [
+                "This card can only be attached to Darkness Pok\u00e9mon. This card provides Darkness Energy only while this card is attached to a Darkness Pok\u00e9mon. Whenever the Darkness Pok\u00e9mon this card is attached to is your Active Pok\u00e9mon and is damaged by an attack from your opponent's Pok\u00e9mon-EX (even if that Pok\u00e9mon is Knocked Out), put 2 damage counters on the Attacking Pok\u00e9mon-EX. (If this card is attached to anything other than a Darkness Pok\u00e9mon, discard this card.)"
+            ]
+        },
+        {
+            "artist": "MAHOU",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "10+",
+                    "name": "Trip Over",
+                    "text": "Flip a coin. If heads, this attack does 10 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy7-1",
+            "imageUrl": "https://images.pokemontcg.io/xy7/1.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/1_hires.png",
+            "name": "Oddish",
+            "nationalPokedexNumber": 43,
+            "number": "1",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mizue",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "20",
+                    "name": "Windmill",
+                    "text": "Switch this Pok\u00e9mon with 1 of your Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Flower Tornado",
+                    "text": "Move as many Grass Energy attached to your Pok\u00e9mon to your other Pok\u00e9mon in any way you like."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Gloom",
+            "hp": "120",
+            "id": "xy7-4",
+            "imageUrl": "https://images.pokemontcg.io/xy7/4.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/4_hires.png",
+            "name": "Bellossom",
+            "nationalPokedexNumber": 182,
+            "number": "4",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoyo Kimura",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "String Shot",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy7-5",
+            "imageUrl": "https://images.pokemontcg.io/xy7/5.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/5_hires.png",
+            "name": "Spinarak",
+            "nationalPokedexNumber": 167,
+            "number": "5",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Poisonous Nest",
+                "text": "Once during your turn (before your attack), you may use this Ability. Both Active Pok\u00e9mon (except for Grass Pok\u00e9mon) are now Poisoned.",
+                "type": "Ability"
+            },
+            "artist": "Hajime Kusajima",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Impound",
+                    "text": "The Defending Pok\u00e9mon can't retreat during your opponent's next turn."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Spinarak",
+            "hp": "70",
+            "id": "xy7-6",
+            "imageUrl": "https://images.pokemontcg.io/xy7/6.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/6_hires.png",
+            "name": "Ariados",
+            "nationalPokedexNumber": 168,
+            "number": "6",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "10",
+                    "name": "Sleep Poison",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Asleep and Poisoned."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Unseen Claw",
+                    "text": "If your opponent's Active Pok\u00e9mon is affected by a Special Condition, this attack does 70 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "170",
+            "id": "xy7-7",
+            "imageUrl": "https://images.pokemontcg.io/xy7/7.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/7_hires.png",
+            "name": "Sceptile-EX",
+            "nationalPokedexNumber": 254,
+            "number": "7",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Jagged Saber",
+                    "text": "You may attach up to 2 Grass Energy cards from your hand to your Benched Pok\u00e9mon in any way you like. If you attached Energy to a Pok\u00e9mon in this way, heal all damage from that Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Sceptile-EX",
+            "hp": "220",
+            "id": "xy7-8",
+            "imageUrl": "https://images.pokemontcg.io/xy7/8.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/8_hires.png",
+            "name": "M Sceptile-EX",
+            "nationalPokedexNumber": 254,
+            "number": "8",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "Prevent all effects of your opponent's Pok\u00e9mon's Abilities done to this Pok\u00e9mon.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sumiyoshi Kizuki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "10",
+                    "name": "Bug Bite",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "40",
+            "id": "xy7-9",
+            "imageUrl": "https://images.pokemontcg.io/xy7/9.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/9_hires.png",
+            "name": "Combee",
+            "nationalPokedexNumber": 415,
+            "number": "9",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ayaka Yoshida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "20",
+                    "name": "Bee Drain",
+                    "text": "Heal from this Pok\u00e9mon the same amount of damage you did to your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Fury Swipes",
+                    "text": "Flip 3 coins. This attack does 30 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Combee",
+            "hp": "90",
+            "id": "xy7-11",
+            "imageUrl": "https://images.pokemontcg.io/xy7/11.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/11_hires.png",
+            "name": "Vespiquen",
+            "nationalPokedexNumber": 416,
+            "number": "11",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "This Pok\u00e9mon may have up to 2 Pok\u00e9mon Tool cards attached to it."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Burning Roar",
+                    "text": "Discard the top 4 cards of your deck. If any of those cards are Fire Energy cards, attach them to your Pok\u00e9mon in any way you like."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fire",
+                        "Fire"
+                    ],
+                    "damage": "20+",
+                    "name": "Combat Blaze",
+                    "text": "This attack does 20 more damage for each of your opponent's Benched Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "120",
+            "id": "xy7-14",
+            "imageUrl": "https://images.pokemontcg.io/xy7/14.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/14_hires.png",
+            "name": "Entei",
+            "nationalPokedexNumber": 244,
+            "number": "14",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Flame Screen",
+                    "text": "During your opponent's next turn, any damage done to this Pok\u00e9mon by attacks is reduced by 30 (after applying Weakness and Resistance)."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fire",
+                        "Fire",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Heat Tackle",
+                    "text": "Flip a coin. If tails, this Pok\u00e9mon does 30 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "130",
+            "id": "xy7-15",
+            "imageUrl": "https://images.pokemontcg.io/xy7/15.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/15_hires.png",
+            "name": "Entei",
+            "nationalPokedexNumber": 244,
+            "number": "15",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "This Pok\u00e9mon may have up to 2 Pok\u00e9mon Tool cards attached to it."
+            ],
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Satoshi Shirai",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Combustion",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "70",
+            "id": "xy7-16",
+            "imageUrl": "https://images.pokemontcg.io/xy7/16.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/16_hires.png",
+            "name": "Larvesta",
+            "nationalPokedexNumber": 636,
+            "number": "16",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kyoko Umemoto",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Solar Birth",
+                    "text": "Search your deck for a Basic Pok\u00e9mon and put it onto your Bench. Then, search your deck for up to 2 basic Energy cards and attach them to that Pok\u00e9mon. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Flamethrower",
+                    "text": "Discard an Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Larvesta",
+            "hp": "100",
+            "id": "xy7-17",
+            "imageUrl": "https://images.pokemontcg.io/xy7/17.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/17_hires.png",
+            "name": "Volcarona",
+            "nationalPokedexNumber": 637,
+            "number": "17",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Berserker Splash",
+                    "text": "This attack does 10 damage to each Benched Pok\u00e9mon (both yours and your opponent's). (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "90+",
+                    "name": "Aqua Tail",
+                    "text": "Flip a coin for each Water Energy attached to this Pok\u00e9mon. This attack does 30 more damage for each heads."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Magikarp",
+            "hp": "130",
+            "id": "xy7-20",
+            "imageUrl": "https://images.pokemontcg.io/xy7/20.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/20_hires.png",
+            "name": "Gyarados",
+            "nationalPokedexNumber": 130,
+            "number": "20",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ancientTrait": {
+                "name": "\u03b8 Double",
+                "text": "This Pok\u00e9mon may have up to 2 Pok\u00e9mon Tool cards attached to it."
+            },
+            "artist": "TOKIYA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30+",
+                    "name": "Full Retaliation",
+                    "text": "This attack does 30 more damage for each damage counter on each of your Benched Magikarp."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100+",
+                    "name": "Thrash",
+                    "text": "Flip a coin. If heads, this attack does 30 more damage. If tails, this Pok\u00e9mon does 30 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Magikarp",
+            "hp": "130",
+            "id": "xy7-21",
+            "imageUrl": "https://images.pokemontcg.io/xy7/21.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/21_hires.png",
+            "name": "Gyarados",
+            "nationalPokedexNumber": 130,
+            "number": "21",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kagemaru Himeno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Deep Sea Search",
+                    "text": "Search your deck for up to 2 Pok\u00e9mon Tool cards, reveal them, and put them into your hand. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Take Down",
+                    "text": "This Pok\u00e9mon does 10 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "90",
+            "id": "xy7-23",
+            "imageUrl": "https://images.pokemontcg.io/xy7/23.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/23_hires.png",
+            "name": "Relicanth",
+            "nationalPokedexNumber": 369,
+            "number": "23",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "PLANETA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Glaciate",
+                    "text": "This attack does 30 damage to each of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Icecalibur",
+                    "text": "Discard an Energy attached to this Pok\u00e9mon. The Defending Pok\u00e9mon can't attack during your opponent's next turn."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "180",
+            "id": "xy7-25",
+            "imageUrl": "https://images.pokemontcg.io/xy7/25.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/25_hires.png",
+            "name": "Kyurem-EX",
+            "nationalPokedexNumber": 646,
+            "number": "25",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Electric Effect",
+                "text": "Each of your Stage 1 Pok\u00e9mon in play is now a Lightning Pok\u00e9mon in addition to its existing types.",
+                "type": "Ability"
+            },
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Lightning",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Thunder Blast",
+                    "text": "Discard an Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Eevee",
+            "hp": "90",
+            "id": "xy7-26",
+            "imageUrl": "https://images.pokemontcg.io/xy7/26.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/26_hires.png",
+            "name": "Jolteon",
+            "nationalPokedexNumber": 135,
+            "number": "26",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Thunder Rod",
+                    "text": "Look at the top 4 cards of your deck and attach as many Lightning Energy cards you find there as you like to this Pok\u00e9mon. Shuffle the other cards back into your deck."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Lightning",
+                        "Lightning",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Sparkling Tail",
+                    "text": "This attack's damage isn't affected by Weakness, Resistance, or any other effects on your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy7-27",
+            "imageUrl": "https://images.pokemontcg.io/xy7/27.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/27_hires.png",
+            "name": "Ampharos-EX",
+            "nationalPokedexNumber": 181,
+            "number": "27",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mizue",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Lightning"
+                    ],
+                    "damage": "20",
+                    "name": "Electro Ball",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Electric Mischief",
+                    "text": "Flip 3 coins. For each heads, choose a random card from your opponent's hand. Your opponent reveals that card and shuffles it into his or her deck."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "xy7-29",
+            "imageUrl": "https://images.pokemontcg.io/xy7/29.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/29_hires.png",
+            "name": "Rotom",
+            "nationalPokedexNumber": 479,
+            "number": "29",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ayaka Yoshida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Future Spin",
+                    "text": "Look at the top 3 cards of either player's deck and put them back on top of that player's deck in any order."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy7-32",
+            "imageUrl": "https://images.pokemontcg.io/xy7/32.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/32_hires.png",
+            "name": "Baltoy",
+            "nationalPokedexNumber": 343,
+            "number": "32",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "Prevent all effects of your opponent's Pok\u00e9mon's Abilities done to this Pok\u00e9mon."
+            ],
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Satoshi Shirai",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Rewind",
+                    "text": "Devolve each of your opponent's evolved Pok\u00e9mon and put the highest Stage Evolution card on it into your opponent's hand."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Hyper Beam",
+                    "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Baltoy",
+            "hp": "100",
+            "id": "xy7-33",
+            "imageUrl": "https://images.pokemontcg.io/xy7/33.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/33_hires.png",
+            "name": "Claydol",
+            "nationalPokedexNumber": 344,
+            "number": "33",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Double Type",
+                "text": "As long as this Pok\u00e9mon is in play, it is Psychic and Fighting type.",
+                "type": "Ability"
+            },
+            "artist": "kawayoo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80+",
+                    "name": "Superpower",
+                    "text": "You may do 40 more damage. If you do, this Pok\u00e9mon does 20 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Golett",
+            "hp": "130",
+            "id": "xy7-35",
+            "imageUrl": "https://images.pokemontcg.io/xy7/35.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/35_hires.png",
+            "name": "Golurk",
+            "nationalPokedexNumber": 623,
+            "number": "35",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "Prevent all effects of your opponent's Pok\u00e9mon's Abilities done to this Pok\u00e9mon."
+            ],
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Steaming Mad",
+                    "text": "This attack does 20 damage times the number of damage counters on this Pok\u00e9mon. This Pok\u00e9mon is now Confused."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "80+",
+                    "name": "Crazy Hammer",
+                    "text": "If this Pok\u00e9mon is affected by a Special Condition, this attack does 80 more damage. Then, remove all Special Conditions from this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "180",
+            "id": "xy7-37",
+            "imageUrl": "https://images.pokemontcg.io/xy7/37.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/37_hires.png",
+            "name": "Machamp-EX",
+            "nationalPokedexNumber": 68,
+            "number": "37",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Suwama Chiaki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Dig Out",
+                    "text": "Discard the top card of your deck. If that card is a Fighting Energy card, attach it to this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fighting",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "90\u00d7",
+                    "name": "Double Lariat",
+                    "text": "Flip 2 coins. This attack does 90 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Golett",
+            "hp": "130",
+            "id": "xy7-41",
+            "imageUrl": "https://images.pokemontcg.io/xy7/41.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/41_hires.png",
+            "name": "Golurk",
+            "nationalPokedexNumber": 623,
+            "number": "41",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Tomokazu Komiya",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Darkness"
+                    ],
+                    "damage": "10",
+                    "name": "Ink Spit",
+                    "text": "If the Defending Pok\u00e9mon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy7-45",
+            "imageUrl": "https://images.pokemontcg.io/xy7/45.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/45_hires.png",
+            "name": "Inkay",
+            "nationalPokedexNumber": 686,
+            "number": "45",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Masakazu Fukuda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Entangling Control",
+                    "text": "Switch 1 of your opponent's Benched Pok\u00e9mon with his or her Active Pok\u00e9mon. The new Active Pok\u00e9mon is now Confused."
+                },
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Darkness"
+                    ],
+                    "damage": "30",
+                    "name": "Trash Tentacle",
+                    "text": "Put a card from your discard pile into your hand."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Inkay",
+            "hp": "90",
+            "id": "xy7-46",
+            "imageUrl": "https://images.pokemontcg.io/xy7/46.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/46_hires.png",
+            "name": "Malamar",
+            "nationalPokedexNumber": 687,
+            "number": "46",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Magnetic Warp",
+                "text": "Once during your turn (before your attack), you may switch your Active Pok\u00e9mon with 1 of your Benched Pok\u00e9mon. If you do, your opponent switches his or her Active Pok\u00e9mon with 1 of his or her Benched Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "kirisAki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Metal",
+                        "Metal",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80+",
+                    "name": "Iron Cannon",
+                    "text": "You may discard all Metal Energy attached to this Pok\u00e9mon. If you do, this attack does 80 more damage."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Metang",
+            "hp": "150",
+            "id": "xy7-49",
+            "imageUrl": "https://images.pokemontcg.io/xy7/49.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/49_hires.png",
+            "name": "Metagross",
+            "nationalPokedexNumber": 376,
+            "number": "49",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "match",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Calm Mind",
+                    "text": "Heal 30 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fairy",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50",
+                    "name": "Magical Shot",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Ralts",
+            "hp": "80",
+            "id": "xy7-53",
+            "imageUrl": "https://images.pokemontcg.io/xy7/53.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/53_hires.png",
+            "name": "Kirlia",
+            "nationalPokedexNumber": 281,
+            "number": "53",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kanako Eo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "10",
+                    "name": "Cotton Bed",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Asleep."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "40",
+            "id": "xy7-55",
+            "imageUrl": "https://images.pokemontcg.io/xy7/55.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/55_hires.png",
+            "name": "Cottonee",
+            "nationalPokedexNumber": 546,
+            "number": "55",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Water Down",
+                "text": "Whenever you attach a Water Energy card from your hand to this Pok\u00e9mon, you may search your deck for Goomy and put it onto your Bench. Shuffle your deck afterward.",
+                "type": "Ability"
+            },
+            "artist": "sui",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Stampede",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "40",
+            "id": "xy7-58",
+            "imageUrl": "https://images.pokemontcg.io/xy7/58.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/58_hires.png",
+            "name": "Goomy",
+            "nationalPokedexNumber": 704,
+            "number": "58",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Midori Harada",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Bubble",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Fairy"
+                    ],
+                    "damage": "20",
+                    "name": "Melt",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Goomy",
+            "hp": "70",
+            "id": "xy7-59",
+            "imageUrl": "https://images.pokemontcg.io/xy7/59.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/59_hires.png",
+            "name": "Sliggoo",
+            "nationalPokedexNumber": 705,
+            "number": "59",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Saya Tsuruta",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Liquid Blow",
+                    "text": "This attack does 20 damage to 1 of your opponent's Pok\u00e9mon for each Colorless in its Retreat Cost. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Fairy",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "110",
+                    "name": "Shining Breath",
+                    "text": "During your opponent's next turn, this Pok\u00e9mon can't be affected by any Special Conditions."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Sliggoo",
+            "hp": "150",
+            "id": "xy7-60",
+            "imageUrl": "https://images.pokemontcg.io/xy7/60.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/60_hires.png",
+            "name": "Goodra",
+            "nationalPokedexNumber": 706,
+            "number": "60",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Fake Out",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40+",
+                    "name": "Ambush",
+                    "text": "Flip a coin. If heads, this attack does 30 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Meowth",
+            "hp": "90",
+            "id": "xy7-62",
+            "imageUrl": "https://images.pokemontcg.io/xy7/62.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/62_hires.png",
+            "name": "Persian",
+            "nationalPokedexNumber": 53,
+            "number": "62",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kouki Saitou",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Tackle",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Lunge",
+                    "text": "Flip a coin. If tails, this attack does nothing."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy7-63",
+            "imageUrl": "https://images.pokemontcg.io/xy7/63.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/63_hires.png",
+            "name": "Eevee",
+            "nationalPokedexNumber": 133,
+            "number": "63",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "MAHOU",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Sharpen",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Tri Attack",
+                    "text": "Flip 3 coins. This attack does 30 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Porygon",
+            "hp": "80",
+            "id": "xy7-65",
+            "imageUrl": "https://images.pokemontcg.io/xy7/65.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/65_hires.png",
+            "name": "Porygon2",
+            "nationalPokedexNumber": 233,
+            "number": "65",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Digital Reboot",
+                    "text": "Devolve as many of your Benched Pok\u00e9mon as many times as you like. Put each Evolution card removed this way into your hand."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50",
+                    "name": "Dazzle Blast",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Confused."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Porygon2",
+            "hp": "130",
+            "id": "xy7-67",
+            "imageUrl": "https://images.pokemontcg.io/xy7/67.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/67_hires.png",
+            "name": "Porygon-Z",
+            "nationalPokedexNumber": 474,
+            "number": "67",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "Prevent all effects of your opponent's Pok\u00e9mon's Abilities done to this Pok\u00e9mon."
+            ],
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Aero Ball",
+                    "text": "This attack does 20 damage times the amount of Energy attached to both Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80+",
+                    "name": "Deep Hurricane",
+                    "text": "If there is any Stadium card in play, this attack does 70 more damage. Then, discard that Stadium card."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy7-68",
+            "imageUrl": "https://images.pokemontcg.io/xy7/68.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/68_hires.png",
+            "name": "Lugia-EX",
+            "nationalPokedexNumber": 249,
+            "number": "68",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ken Sugimori",
+            "id": "xy7-69",
+            "imageUrl": "https://images.pokemontcg.io/xy7/69.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/69_hires.png",
+            "name": "Ace Trainer",
+            "number": "69",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "You can play this card only if you have more Prize cards left than your opponent. Each player shuffles his or her hand into his or her deck. Then, draw 6 cards. Your opponent draws 3 cards."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy7-80",
+            "imageUrl": "https://images.pokemontcg.io/xy7/80.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/80_hires.png",
+            "name": "Sceptile Spirit Link",
+            "number": "80",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "Your turn does not end if the Pok\u00e9mon this card is attached to becomes M Sceptile-EX."
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Glaciate",
+                    "text": "This attack does 30 damage to each of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Icecalibur",
+                    "text": "Discard an Energy attached to this Pok\u00e9mon. The Defending Pok\u00e9mon can't attack during your opponent's next turn."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "180",
+            "id": "xy7-86",
+            "imageUrl": "https://images.pokemontcg.io/xy7/86.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/86_hires.png",
+            "name": "Kyurem-EX",
+            "nationalPokedexNumber": 646,
+            "number": "86",
+            "rarity": "Rare Ultra",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Scoundrel Ring",
+                "text": "When you play this Pok\u00e9mon from your hand onto your Bench, you may search your deck for up to 3 Pok\u00e9mon-EX (except for Hoopa-EX), reveal them, and put them into your hand. Shuffle your deck afterward.",
+                "type": "Ability"
+            },
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Psychic",
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Hyperspace Fury",
+                    "text": "Discard 2 Energy attached to this Pok\u00e9mon. This attack does 100 damage to 1 of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy7-89",
+            "imageUrl": "https://images.pokemontcg.io/xy7/89.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/89_hires.png",
+            "name": "Hoopa-EX",
+            "nationalPokedexNumber": 720,
+            "number": "89",
+            "rarity": "Rare Ultra",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Steaming Mad",
+                    "text": "This attack does 20 damage times the number of damage counters on this Pok\u00e9mon. This Pok\u00e9mon is now Confused."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "80+",
+                    "name": "Crazy Hammer",
+                    "text": "If this Pok\u00e9mon is affected by a Special Condition, this attack does 80 more damage. Then, remove all Special Conditions from this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "180",
+            "id": "xy7-90",
+            "imageUrl": "https://images.pokemontcg.io/xy7/90.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/90_hires.png",
+            "name": "Machamp-EX",
+            "nationalPokedexNumber": 68,
+            "number": "90",
+            "rarity": "Rare Ultra",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Darkness",
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "110+",
+                    "name": "Destroyer King",
+                    "text": "This attack does 60 more damage for each damage counter on your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Tyranitar-EX",
+            "hp": "240",
+            "id": "xy7-92",
+            "imageUrl": "https://images.pokemontcg.io/xy7/92.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/92_hires.png",
+            "name": "M Tyranitar-EX",
+            "nationalPokedexNumber": 248,
+            "number": "92",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "This Pok\u00e9mon may have up to 2 Pok\u00e9mon Tool cards attached to it.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Renegade Pulse",
+                "text": "Prevent all effects of attacks, including damage, done to this Pok\u00e9mon by your opponent's Mega Evolution Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Grass",
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Chaos Wheel",
+                    "text": "Your opponent can't play any Pok\u00e9mon Tool, Special Energy, or Stadium cards from his or her hand during his or her next turn."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "170",
+            "id": "xy7-93",
+            "imageUrl": "https://images.pokemontcg.io/xy7/93.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/93_hires.png",
+            "name": "Giratina-EX",
+            "nationalPokedexNumber": 487,
+            "number": "93",
+            "rarity": "Rare Ultra",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Aero Ball",
+                    "text": "This attack does 20 damage times the amount of Energy attached to both Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80+",
+                    "name": "Deep Hurricane",
+                    "text": "If there is any Stadium card in play, this attack does 70 more damage. Then, discard that Stadium card."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy7-94",
+            "imageUrl": "https://images.pokemontcg.io/xy7/94.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/94_hires.png",
+            "name": "Lugia-EX",
+            "nationalPokedexNumber": 249,
+            "number": "94",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "150",
+                    "name": "Tidal Storm",
+                    "text": "Move 2 Energy from this Pok\u00e9mon to 1 of your Benched Pok\u00e9mon. This attack does 30 damage to each of your opponent's Benched Pok\u00e9mon-EX. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Kyogre-EX",
+            "hp": "240",
+            "id": "xy7-96",
+            "imageUrl": "https://images.pokemontcg.io/xy7/96.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/96_hires.png",
+            "name": "Primal Kyogre-EX",
+            "nationalPokedexNumber": 382,
+            "number": "96",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "When 1 of your Pok\u00e9mon becomes this Pok\u00e9mon, heal all damage from it."
+            ],
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Emerald Break",
+                    "text": "This attack does 30 damage times the number of your Benched Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Rayquaza-EX",
+            "hp": "220",
+            "id": "xy7-98",
+            "imageUrl": "https://images.pokemontcg.io/xy7/98.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/98_hires.png",
+            "name": "M Rayquaza-EX",
+            "nationalPokedexNumber": 384,
+            "number": "98",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "When 1 of your Pok\u00e9mon becomes this Pok\u00e9mon, heal all damage from it.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy7-99",
+            "imageUrl": "https://images.pokemontcg.io/xy7/99.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/99_hires.png",
+            "name": "Energy Retrieval",
+            "number": "99",
+            "rarity": "Rare Holo",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Put 2 basic Energy cards from your discard pile into your hand."
+            ]
+        }
+    ]
+}

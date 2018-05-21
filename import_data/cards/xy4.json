@@ -1,0 +1,5479 @@
+{
+    "cards": [
+        {
+            "artist": "Hitoshi Ariga",
+            "id": "xy4-99",
+            "imageUrl": "https://images.pokemontcg.io/xy4/99.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/99_hires.png",
+            "name": "Lysandre's Trump Card",
+            "number": "99",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Each player shuffles all cards in his or her discard pile into his or her deck (except for Lysandre's Trump Card)."
+            ]
+        },
+        {
+            "ability": {
+                "name": "Mighty Shield",
+                "text": "Prevent all damage done to this Pok\u00e9mon by attacks from each of your opponent's Pok\u00e9mon that has Special Energy attached to it.",
+                "type": "Ability"
+            },
+            "artist": "Ayaka Yoshida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40+",
+                    "name": "Slash Blast",
+                    "text": "This attack does 20 more damage for each Metal Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "170",
+            "id": "xy4-65",
+            "imageUrl": "https://images.pokemontcg.io/xy4/65.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/65_hires.png",
+            "name": "Aegislash-EX",
+            "nationalPokedexNumber": 681,
+            "number": "65",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy4-111",
+            "imageUrl": "https://images.pokemontcg.io/xy4/111.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/111_hires.png",
+            "name": "Double Colorless Energy",
+            "number": "111",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Special",
+            "supertype": "Energy",
+            "text": [
+                "Double Colorless Energy provides ColorlessColorless Energy."
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "id": "xy4-93",
+            "imageUrl": "https://images.pokemontcg.io/xy4/93.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/93_hires.png",
+            "name": "Dimension Valley",
+            "number": "93",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stadium",
+            "supertype": "Trainer",
+            "text": [
+                "Each Psychic Pok\u00e9mon's attacks (both yours and your opponent's) cost Colorless less."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy4-109",
+            "imageUrl": "https://images.pokemontcg.io/xy4/109.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/109_hires.png",
+            "name": "VS Seeker",
+            "number": "109",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Put a Supporter card from your discard pile into your hand."
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy4-100",
+            "imageUrl": "https://images.pokemontcg.io/xy4/100.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/100_hires.png",
+            "name": "Manectric Spirit Link",
+            "number": "100",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "Your turn does not end if the Pok\u00e9mon this card is attached to becomes M Manectric-EX."
+            ]
+        },
+        {
+            "artist": "Masakazu Fukuda",
+            "id": "xy4-119",
+            "imageUrl": "https://images.pokemontcg.io/xy4/119.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/119_hires.png",
+            "name": "Xerosic",
+            "number": "119",
+            "rarity": "Rare Ultra",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Choose a Pok\u00e9mon Tool or Special Energy card attached to a Pok\u00e9mon in play (yours or your opponent's) and discard it."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10+",
+                    "name": "Quick Attack",
+                    "text": "Flip a coin. If heads, this attack does 10 more damage."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Lightning",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Static Shock",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-29",
+            "imageUrl": "https://images.pokemontcg.io/xy4/29.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/29_hires.png",
+            "name": "Helioptile",
+            "nationalPokedexNumber": 694,
+            "number": "29",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Gooey",
+                    "text": "Heal 30 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "40",
+                    "name": "Gentle Slap",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Goomy",
+            "hp": "80",
+            "id": "xy4-76",
+            "imageUrl": "https://images.pokemontcg.io/xy4/76.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/76_hires.png",
+            "name": "Sliggoo",
+            "nationalPokedexNumber": 705,
+            "number": "76",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy4-102",
+            "imageUrl": "https://images.pokemontcg.io/xy4/102.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/102_hires.png",
+            "name": "Robo Substitute Team Flare Gear",
+            "number": "102",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Play this card as if it were a 30 HP Colorless Basic Pok\u00e9mon. At any time during your turn (before your attack), you may discard this card from play. This card can't retreat. If this card is Knocked Out, your opponent can't take any Prize cards for it."
+            ]
+        },
+        {
+            "artist": "kawayoo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "",
+                    "name": "Nap",
+                    "text": "Heal 20 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Bug Bite",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-5",
+            "imageUrl": "https://images.pokemontcg.io/xy4/5.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/5_hires.png",
+            "name": "Sewaddle",
+            "nationalPokedexNumber": 540,
+            "number": "5",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy4-106",
+            "imageUrl": "https://images.pokemontcg.io/xy4/106.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/106_hires.png",
+            "name": "Target Whistle Team Flare Gear",
+            "number": "106",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Put a Basic Pok\u00e9mon from your opponent's discard pile onto his or her Bench."
+            ]
+        },
+        {
+            "artist": "Atsuko Nishida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Roar",
+                    "text": "Your opponent switches his or her Active Pok\u00e9mon with 1 of his or her Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Live Coal",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "xy4-11",
+            "imageUrl": "https://images.pokemontcg.io/xy4/11.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/11_hires.png",
+            "name": "Litleo",
+            "nationalPokedexNumber": 667,
+            "number": "11",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "kirisAki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "10",
+                    "name": "Vice Grip",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Water"
+                    ],
+                    "damage": "50",
+                    "name": "Crabhammer",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "70",
+            "id": "xy4-13",
+            "imageUrl": "https://images.pokemontcg.io/xy4/13.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/13_hires.png",
+            "name": "Krabby",
+            "nationalPokedexNumber": 98,
+            "number": "13",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shigenori Negishi",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "10",
+                    "name": "Pound",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-18",
+            "imageUrl": "https://images.pokemontcg.io/xy4/18.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/18_hires.png",
+            "name": "Finneon",
+            "nationalPokedexNumber": 456,
+            "number": "18",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kyoko Umemoto",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "",
+                    "name": "Confuse Ray",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Confused."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "70",
+            "id": "xy4-20",
+            "imageUrl": "https://images.pokemontcg.io/xy4/20.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/20_hires.png",
+            "name": "Frillish",
+            "nationalPokedexNumber": 592,
+            "number": "20",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "HiRON",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "10+",
+                    "name": "Tail Rap",
+                    "text": "Flip 2 coins. This attack does 20 more damage for each heads."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-28",
+            "imageUrl": "https://images.pokemontcg.io/xy4/28.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/28_hires.png",
+            "name": "Helioptile",
+            "nationalPokedexNumber": 694,
+            "number": "28",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "match",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Skill Dive",
+                    "text": "This attack does 10 damage to 1 of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-31",
+            "imageUrl": "https://images.pokemontcg.io/xy4/31.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/31_hires.png",
+            "name": "Zubat",
+            "nationalPokedexNumber": 41,
+            "number": "31",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "MAHOU",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "See Through",
+                    "text": "Your opponent reveals his or her hand."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Double Headbutt",
+                    "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "70",
+            "id": "xy4-39",
+            "imageUrl": "https://images.pokemontcg.io/xy4/39.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/39_hires.png",
+            "name": "Munna",
+            "nationalPokedexNumber": 517,
+            "number": "39",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Yusuke Ohmura",
+            "id": "xy4-110",
+            "imageUrl": "https://images.pokemontcg.io/xy4/110.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/110_hires.png",
+            "name": "Xerosic",
+            "number": "110",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Choose a Pok\u00e9mon Tool or Special Energy card attached to a Pok\u00e9mon in play (yours or your opponent's) and discard it."
+            ]
+        },
+        {
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Rock Cannon",
+                    "text": "Flip a coin until you get tails. This attack does 20 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-46",
+            "imageUrl": "https://images.pokemontcg.io/xy4/46.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/46_hires.png",
+            "name": "Gligar",
+            "nationalPokedexNumber": 207,
+            "number": "46",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kouki Saitou",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Darkness"
+                    ],
+                    "damage": "10",
+                    "name": "Fake Out",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-56",
+            "imageUrl": "https://images.pokemontcg.io/xy4/56.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/56_hires.png",
+            "name": "Purrloin",
+            "nationalPokedexNumber": 509,
+            "number": "56",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Nuzzle",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fairy",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Spiral Drain",
+                    "text": "Heal 20 damage from this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "xy4-70",
+            "imageUrl": "https://images.pokemontcg.io/xy4/70.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/70_hires.png",
+            "name": "Dedenne",
+            "nationalPokedexNumber": 702,
+            "number": "70",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40",
+                    "name": "Fly",
+                    "text": "Flip a coin. If tails, this attack does nothing. If heads, prevent all effects of attacks, including damage, done to this Pok\u00e9mon during your opponent's next turn."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Drill Peck",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Spearow",
+            "hp": "90",
+            "id": "xy4-79",
+            "imageUrl": "https://images.pokemontcg.io/xy4/79.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/79_hires.png",
+            "name": "Fearow",
+            "nationalPokedexNumber": 22,
+            "number": "79",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kagemaru Himeno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Tackle",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Mud Shot",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-87",
+            "imageUrl": "https://images.pokemontcg.io/xy4/87.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/87_hires.png",
+            "name": "Bunnelby",
+            "nationalPokedexNumber": 659,
+            "number": "87",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ken Sugimori",
+            "id": "xy4-91",
+            "imageUrl": "https://images.pokemontcg.io/xy4/91.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/91_hires.png",
+            "name": "AZ",
+            "number": "91",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Put 1 of your Pok\u00e9mon into your hand. (Discard all cards attached to that Pok\u00e9mon.)"
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy4-92",
+            "imageUrl": "https://images.pokemontcg.io/xy4/92.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/92_hires.png",
+            "name": "Battle Compressor Team Flare Gear",
+            "number": "92",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Search your deck for up to 3 cards and discard them. Shuffle your deck afterward."
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "id": "xy4-105",
+            "imageUrl": "https://images.pokemontcg.io/xy4/105.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/105_hires.png",
+            "name": "Steel Shelter",
+            "number": "105",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stadium",
+            "supertype": "Trainer",
+            "text": [
+                "Each Metal Pok\u00e9mon (both yours and your opponent's) can't be affected by any Special Conditions. (Remove any Special Conditions affecting those Pok\u00e9mon.)"
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "id": "xy4-94",
+            "imageUrl": "https://images.pokemontcg.io/xy4/94.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/94_hires.png",
+            "name": "Enhanced Hammer",
+            "number": "94",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Discard a Special Energy attached to 1 of your opponent's Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "id": "xy4-117",
+            "imageUrl": "https://images.pokemontcg.io/xy4/117.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/117_hires.png",
+            "name": "AZ",
+            "number": "117",
+            "rarity": "Rare Ultra",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Put 1 of your Pok\u00e9mon into your hand. (Discard all cards attached to that Pok\u00e9mon.)"
+            ]
+        },
+        {
+            "artist": "Hitoshi Ariga",
+            "id": "xy4-118",
+            "imageUrl": "https://images.pokemontcg.io/xy4/118.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/118_hires.png",
+            "name": "Lysandre's Trump Card",
+            "number": "118",
+            "rarity": "Rare Ultra",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Each player shuffles all cards in his or her discard pile into his or her deck (except for Lysandre's Trump Card)."
+            ]
+        },
+        {
+            "artist": "Sumiyoshi Kizuki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Stun Spore",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-1",
+            "imageUrl": "https://images.pokemontcg.io/xy4/1.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/1_hires.png",
+            "name": "Venonat",
+            "nationalPokedexNumber": 48,
+            "number": "1",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "",
+                    "name": "Dizzying Wind",
+                    "text": "Whenever your opponent plays a Trainer card from his or her hand during his or her next turn, your opponent flips a coin. If tails, that card has no effect. (Your opponent still discards that card.)"
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Grass",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50",
+                    "name": "Noxious Scales",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Confused and Poisoned."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Venonat",
+            "hp": "90",
+            "id": "xy4-2",
+            "imageUrl": "https://images.pokemontcg.io/xy4/2.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/2_hires.png",
+            "name": "Venomoth",
+            "nationalPokedexNumber": 49,
+            "number": "2",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Air Slash",
+                    "text": "Discard an Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "xy4-3",
+            "imageUrl": "https://images.pokemontcg.io/xy4/3.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/3_hires.png",
+            "name": "Yanma",
+            "nationalPokedexNumber": 193,
+            "number": "3",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Tomokazu Komiya",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "",
+                    "name": "Protect",
+                    "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pok\u00e9mon during your opponent's next turn."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Grass",
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "40",
+                    "name": "Corkscrew Punch",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Sewaddle",
+            "hp": "70",
+            "id": "xy4-6",
+            "imageUrl": "https://images.pokemontcg.io/xy4/6.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/6_hires.png",
+            "name": "Swadloon",
+            "nationalPokedexNumber": 541,
+            "number": "6",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fire"
+                    ],
+                    "damage": "30+",
+                    "name": "Acrobatics",
+                    "text": "Flip 2 coins. This attack does 30 more damage for each heads."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fire",
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "120",
+                    "name": "Jet Shoot",
+                    "text": "During your opponent's next turn, any damage done to this Pok\u00e9mon by attacks is increased by 40 (after applying Weakness and Resistance)."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Fletchinder",
+            "hp": "130",
+            "id": "xy4-10",
+            "imageUrl": "https://images.pokemontcg.io/xy4/10.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/10_hires.png",
+            "name": "Talonflame",
+            "nationalPokedexNumber": 663,
+            "number": "10",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Flare Command",
+                "text": "Once during your turn (before your attack), you may discard a Fire Energy attached to this Pok\u00e9mon. If you do, switch 1 of your opponent's Benched Pok\u00e9mon with his or her Active Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fire",
+                        "Fire",
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "110",
+                    "name": "Inferno Onrush",
+                    "text": "This Pok\u00e9mon does 30 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Litleo",
+            "hp": "110",
+            "id": "xy4-12",
+            "imageUrl": "https://images.pokemontcg.io/xy4/12.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/12_hires.png",
+            "name": "Pyroar",
+            "nationalPokedexNumber": 668,
+            "number": "12",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kagemaru Himeno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "10\u00d7",
+                    "name": "Fury Strikes",
+                    "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-15",
+            "imageUrl": "https://images.pokemontcg.io/xy4/15.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/15_hires.png",
+            "name": "Totodile",
+            "nationalPokedexNumber": 158,
+            "number": "15",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sumiyoshi Kizuki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Wave Splash",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40",
+                    "name": "Crunch",
+                    "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Totodile",
+            "hp": "80",
+            "id": "xy4-16",
+            "imageUrl": "https://images.pokemontcg.io/xy4/16.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/16_hires.png",
+            "name": "Croconaw",
+            "nationalPokedexNumber": 159,
+            "number": "16",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kouki Saitou",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "",
+                    "name": "Super Deep Dive",
+                    "text": "Heal 30 damage from this Pok\u00e9mon. Switch this Pok\u00e9mon with 1 of your Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Surf",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "100",
+            "id": "xy4-22",
+            "imageUrl": "https://images.pokemontcg.io/xy4/22.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/22_hires.png",
+            "name": "Alomomola",
+            "nationalPokedexNumber": 594,
+            "number": "22",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "TOKIYA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Lightning"
+                    ],
+                    "damage": "10",
+                    "name": "Gnaw",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Night March",
+                    "text": "This attack does 20 damage times the number of Pok\u00e9mon in your discard pile that have the Night March attack."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "30",
+            "id": "xy4-26",
+            "imageUrl": "https://images.pokemontcg.io/xy4/26.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/26_hires.png",
+            "name": "Joltik",
+            "nationalPokedexNumber": 595,
+            "number": "26",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Masakazu Fukuda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Lightning"
+                    ],
+                    "damage": "",
+                    "name": "Cobweb Trip",
+                    "text": "Switch 1 of your opponent's Benched Pok\u00e9mon with your opponent's Active Pok\u00e9mon. The new Active Pok\u00e9mon is now Confused."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Lightning",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Electroweb",
+                    "text": "The Defending Pok\u00e9mon can't retreat during your opponent's next turn."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Joltik",
+            "hp": "80",
+            "id": "xy4-27",
+            "imageUrl": "https://images.pokemontcg.io/xy4/27.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/27_hires.png",
+            "name": "Galvantula",
+            "nationalPokedexNumber": 596,
+            "number": "27",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Surprise Bite",
+                "text": "When you play this Pok\u00e9mon from your hand to evolve 1 of your Pok\u00e9mon, you may put 3 damage counters on 1 of your opponent's Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Satoshi Shirai",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Skill Dive",
+                    "text": "This attack does 30 damage to 1 of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Golbat",
+            "hp": "130",
+            "id": "xy4-33",
+            "imageUrl": "https://images.pokemontcg.io/xy4/33.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/33_hires.png",
+            "name": "Crobat",
+            "nationalPokedexNumber": 169,
+            "number": "33",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Night Attack",
+                    "text": "Put 3 damage counters on 1 of your opponent's Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Dark Corridor",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Poisoned. Switch this Pok\u00e9mon with 1 of your Benched Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy4-34",
+            "imageUrl": "https://images.pokemontcg.io/xy4/34.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/34_hires.png",
+            "name": "Gengar-EX",
+            "nationalPokedexNumber": 94,
+            "number": "34",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Bide Barricade",
+                "text": "As long as this Pok\u00e9mon is your Active Pok\u00e9mon, each Pok\u00e9mon in play, in each player's hand, and in each player's discard pile has no Abilities (except for Psychic Pok\u00e9mon).",
+                "type": "Ability"
+            },
+            "artist": "sui",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "10+",
+                    "name": "Psychic Assault",
+                    "text": "This attack does 10 more damage for each damage counter on your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "110",
+            "id": "xy4-36",
+            "imageUrl": "https://images.pokemontcg.io/xy4/36.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/36_hires.png",
+            "name": "Wobbuffet",
+            "nationalPokedexNumber": 202,
+            "number": "36",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Suwama Chiaki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Dream of Memories",
+                    "text": "Shuffle 3 cards from your discard pile into your deck."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Dream Dance",
+                    "text": "Both Active Pok\u00e9mon are now Asleep."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Munna",
+            "hp": "90",
+            "id": "xy4-40",
+            "imageUrl": "https://images.pokemontcg.io/xy4/40.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/40_hires.png",
+            "name": "Musharna",
+            "nationalPokedexNumber": 518,
+            "number": "40",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Fainting Spell",
+                "text": "If this Pok\u00e9mon is Knocked Out by damage from an opponent's attack, flip a coin. If heads, the Attacking Pok\u00e9mon is Knocked Out.",
+                "type": "Ability"
+            },
+            "artist": "PLANETA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Cursed Drop",
+                    "text": "Put 6 damage counters on your opponent's Pok\u00e9mon in any way you like."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Lampent",
+            "hp": "130",
+            "id": "xy4-43",
+            "imageUrl": "https://images.pokemontcg.io/xy4/43.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/43_hires.png",
+            "name": "Chandelure",
+            "nationalPokedexNumber": 609,
+            "number": "43",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "HiRON",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "10",
+                    "name": "Ram",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Night March",
+                    "text": "This attack does 20 damage times the number of Pok\u00e9mon in your discard pile that have the Night March attack."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "xy4-44",
+            "imageUrl": "https://images.pokemontcg.io/xy4/44.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/44_hires.png",
+            "name": "Pumpkaboo",
+            "nationalPokedexNumber": 710,
+            "number": "44",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "High Density Armor",
+                "text": "If this Pok\u00e9mon has full HP, any damage done to this Pok\u00e9mon by an opponent's attack is reduced by 50 (after applying Weakness and Resistance).",
+                "type": "Ability"
+            },
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Overdrive Smash",
+                    "text": "During your next turn, this Pok\u00e9mon's Overdrive Smash attack does 40 more damage (before applying Weakness and Resistance)."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Boldore",
+            "hp": "140",
+            "id": "xy4-50",
+            "imageUrl": "https://images.pokemontcg.io/xy4/50.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/50_hires.png",
+            "name": "Gigalith",
+            "nationalPokedexNumber": 526,
+            "number": "50",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "PLANETA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "B Cancel",
+                    "text": "Your opponent can't play any Pok\u00e9mon from his or her hand to evolve the Defending Pok\u00e9mon during his or her next turn."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Darkness",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Confuse Ray",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Confused."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "xy4-55",
+            "imageUrl": "https://images.pokemontcg.io/xy4/55.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/55_hires.png",
+            "name": "Spiritomb",
+            "nationalPokedexNumber": 442,
+            "number": "55",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ]
+        },
+        {
+            "ability": {
+                "name": "Tasting",
+                "text": "Once during your turn (before your attack), you may draw a card. If this Pok\u00e9mon is your Active Pok\u00e9mon, draw 1 more card.",
+                "type": "Ability"
+            },
+            "artist": "sui",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fairy",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Light Pulse",
+                    "text": "Prevent all effects of your opponent's attacks, except damage, done to this Pok\u00e9mon during your opponent's next turn."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Swirlix",
+            "hp": "90",
+            "id": "xy4-69",
+            "imageUrl": "https://images.pokemontcg.io/xy4/69.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/69_hires.png",
+            "name": "Slurpuff",
+            "nationalPokedexNumber": 685,
+            "number": "69",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Gooey",
+                    "text": "Heal 10 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Fairy"
+                    ],
+                    "damage": "20",
+                    "name": "Tackle",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "50",
+            "id": "xy4-75",
+            "imageUrl": "https://images.pokemontcg.io/xy4/75.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/75_hires.png",
+            "name": "Goomy",
+            "nationalPokedexNumber": 704,
+            "number": "75",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "MAHOU",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Pound",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30+",
+                    "name": "Energy Press",
+                    "text": "This attack does 30 more damage for each Energy attached to your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Whismur",
+            "hp": "90",
+            "id": "xy4-84",
+            "imageUrl": "https://images.pokemontcg.io/xy4/84.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/84_hires.png",
+            "name": "Loudred",
+            "nationalPokedexNumber": 294,
+            "number": "84",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Tight Jaw",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50",
+                    "name": "Sharp Fang",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "90",
+            "id": "xy4-90",
+            "imageUrl": "https://images.pokemontcg.io/xy4/90.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/90_hires.png",
+            "name": "Furfrou",
+            "nationalPokedexNumber": 676,
+            "number": "90",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy4-95",
+            "imageUrl": "https://images.pokemontcg.io/xy4/95.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/95_hires.png",
+            "name": "Gengar Spirit Link",
+            "number": "95",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "Your turn does not end if the Pok\u00e9mon this card is attached to becomes M Gengar-EX."
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy4-96",
+            "imageUrl": "https://images.pokemontcg.io/xy4/96.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/96_hires.png",
+            "name": "Hand Scope",
+            "number": "96",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Your opponent reveals his or her hand."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 0,
+                    "cost": [
+                        "Free"
+                    ],
+                    "damage": "",
+                    "name": "Pok\u00e9mon Tool Flare Rule",
+                    "text": "Attach this Pok\u00e9mon Tool to 1 of your opponent's Pok\u00e9mon-EX that doesn't already have a Pok\u00e9mon Tool attached to it."
+                }
+            ],
+            "id": "xy4-97",
+            "imageUrl": "https://images.pokemontcg.io/xy4/97.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/97_hires.png",
+            "name": "Head Ringer Team Flare Hyper Gear",
+            "number": "97",
+            "rarity": "Rare Holo",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "The attacks of the Pok\u00e9mon this card is attached to cost Colorless more. When this card is removed from a Pok\u00e9mon for any reason, put this card in its owner's discard pile."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy4-103",
+            "imageUrl": "https://images.pokemontcg.io/xy4/103.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/103_hires.png",
+            "name": "Roller Skates",
+            "number": "103",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Flip a coin. If heads, draw 3 cards."
+            ]
+        },
+        {
+            "artist": "Ken Sugimori",
+            "id": "xy4-107",
+            "imageUrl": "https://images.pokemontcg.io/xy4/107.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/107_hires.png",
+            "name": "Tierno",
+            "number": "107",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Draw 3 cards."
+            ]
+        },
+        {
+            "artist": "match",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "20",
+                    "name": "Guard Claw",
+                    "text": "During your opponent's next turn, any damage done to this Pok\u00e9mon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Water",
+                        "Water"
+                    ],
+                    "damage": "100",
+                    "name": "Crabhammer",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Krabby",
+            "hp": "100",
+            "id": "xy4-14",
+            "imageUrl": "https://images.pokemontcg.io/xy4/14.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/14_hires.png",
+            "name": "Kingler",
+            "nationalPokedexNumber": 99,
+            "number": "14",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Overrun",
+                    "text": "This attack does 20 damage to 1 of your opponent's Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Assault Laser",
+                    "text": "If your opponent's Active Pok\u00e9mon has a Pok\u00e9mon Tool card attached to it, this attack does 60 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "170",
+            "id": "xy4-23",
+            "imageUrl": "https://images.pokemontcg.io/xy4/23.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/23_hires.png",
+            "name": "Manectric-EX",
+            "nationalPokedexNumber": 310,
+            "number": "23",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "110",
+                    "name": "Turbo Bolt",
+                    "text": "Attach 2 basic Energy cards from your discard pile to 1 of your Benched Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Manectric-EX",
+            "hp": "210",
+            "id": "xy4-24",
+            "imageUrl": "https://images.pokemontcg.io/xy4/24.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/24_hires.png",
+            "name": "M Manectric-EX",
+            "nationalPokedexNumber": 310,
+            "number": "24",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "110",
+                    "name": "Turbo Bolt",
+                    "text": "Attach 2 basic Energy cards from your discard pile to 1 of your Benched Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Manectric-EX",
+            "hp": "210",
+            "id": "xy4-24a",
+            "imageUrl": "https://images.pokemontcg.io/xy4/24a.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/24a_hires.png",
+            "name": "M Manectric-EX",
+            "nationalPokedexNumber": 310,
+            "number": "24a",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Midori Harada",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "10+",
+                    "name": "Trip Over",
+                    "text": "Flip a coin. If heads, this attack does 10 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-41",
+            "imageUrl": "https://images.pokemontcg.io/xy4/41.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/41_hires.png",
+            "name": "Litwick",
+            "nationalPokedexNumber": 607,
+            "number": "41",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Midori Harada",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fighting"
+                    ],
+                    "damage": "",
+                    "name": "Core Heal",
+                    "text": "Discard a Fighting Energy attached to this Pok\u00e9mon and heal 50 damage from it."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Fighting"
+                    ],
+                    "damage": "60",
+                    "name": "Power Gem",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Roggenrola",
+            "hp": "90",
+            "id": "xy4-49",
+            "imageUrl": "https://images.pokemontcg.io/xy4/49.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/49_hires.png",
+            "name": "Boldore",
+            "nationalPokedexNumber": 525,
+            "number": "49",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Bite",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Darkness",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Lunge",
+                    "text": "Flip a coin. If tails, this attack does nothing."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-53",
+            "imageUrl": "https://images.pokemontcg.io/xy4/53.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/53_hires.png",
+            "name": "Poochyena",
+            "nationalPokedexNumber": 261,
+            "number": "53",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kagemaru Himeno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Darkness"
+                    ],
+                    "damage": "10+",
+                    "name": "Ambush",
+                    "text": "Flip a coin. If heads, this attack does 10 more damage."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Wing Attack",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-51",
+            "imageUrl": "https://images.pokemontcg.io/xy4/51.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/51_hires.png",
+            "name": "Murkrow",
+            "nationalPokedexNumber": 198,
+            "number": "51",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Metal"
+                    ],
+                    "damage": "10",
+                    "name": "Tackle",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-60",
+            "imageUrl": "https://images.pokemontcg.io/xy4/60.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/60_hires.png",
+            "name": "Bronzor",
+            "nationalPokedexNumber": 436,
+            "number": "60",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Metal Links",
+                "text": "Once during your turn (before your attack), you may attach a Metal Energy card from your discard pile to 1 of your Benched Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "match",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Metal",
+                        "Metal",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Hammer In",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Bronzor",
+            "hp": "90",
+            "id": "xy4-61",
+            "imageUrl": "https://images.pokemontcg.io/xy4/61.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/61_hires.png",
+            "name": "Bronzong",
+            "nationalPokedexNumber": 437,
+            "number": "61",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Midori Harada",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Metal",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40+",
+                    "name": "Steel Drop",
+                    "text": "If there is any Stadium card in play, this attack does 40 more damage."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Metal",
+                        "Metal",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Steam Blast",
+                    "text": "Discard an Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "130",
+            "id": "xy4-63",
+            "imageUrl": "https://images.pokemontcg.io/xy4/63.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/63_hires.png",
+            "name": "Heatran",
+            "nationalPokedexNumber": 485,
+            "number": "63",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Mighty Shield",
+                "text": "Prevent all damage done to this Pok\u00e9mon by attacks from each of your opponent's Pok\u00e9mon that has Special Energy attached to it.",
+                "type": "Ability"
+            },
+            "artist": "Ayaka Yoshida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40+",
+                    "name": "Slash Blast",
+                    "text": "This attack does 20 more damage for each Metal Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "170",
+            "id": "xy4-65a",
+            "imageUrl": "https://images.pokemontcg.io/xy4/65a.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/65a_hires.png",
+            "name": "Aegislash-EX",
+            "nationalPokedexNumber": 681,
+            "number": "65a",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "",
+                    "name": "Lead",
+                    "text": "Search your deck for a Supporter card, reveal it, and put it into your hand. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Bright Garden",
+                    "text": "This attack does 20 damage times the number of Grass Pok\u00e9mon and Fairy Pok\u00e9mon you have in play."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "160",
+            "id": "xy4-67",
+            "imageUrl": "https://images.pokemontcg.io/xy4/67.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/67_hires.png",
+            "name": "Florges-EX",
+            "nationalPokedexNumber": 671,
+            "number": "67",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Dark Impulse",
+                "text": "Once during your turn (before your attack), you may attach a Darkness Energy card from your discard pile to your Active Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Psychic",
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Crazy Headbutt",
+                    "text": "Discard an Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Zweilous",
+            "hp": "140",
+            "id": "xy4-74",
+            "imageUrl": "https://images.pokemontcg.io/xy4/74.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/74_hires.png",
+            "name": "Hydreigon",
+            "nationalPokedexNumber": 635,
+            "number": "74",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Screaming Fit",
+                    "text": "Both Active Pok\u00e9mon are now Confused."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-83",
+            "imageUrl": "https://images.pokemontcg.io/xy4/83.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/83_hires.png",
+            "name": "Whismur",
+            "nationalPokedexNumber": 293,
+            "number": "83",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ken Sugimori",
+            "id": "xy4-104",
+            "imageUrl": "https://images.pokemontcg.io/xy4/104.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/104_hires.png",
+            "name": "Shauna",
+            "number": "104",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Shuffle your hand into your deck. Then, draw 5 cards."
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "",
+                    "name": "Windfall",
+                    "text": "Shuffle your hand into your deck. Then, draw 6 cards."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50+",
+                    "name": "Surprise Strike",
+                    "text": "If this Pok\u00e9mon was on the Bench and became an Active Pok\u00e9mon this turn, this attack does 50 more damage."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Yanma",
+            "hp": "110",
+            "id": "xy4-4",
+            "imageUrl": "https://images.pokemontcg.io/xy4/4.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/4_hires.png",
+            "name": "Yanmega",
+            "nationalPokedexNumber": 469,
+            "number": "4",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Atsuko Nishida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "",
+                    "name": "Coordinate",
+                    "text": "Choose up to 2 of your Benched Pok\u00e9mon that have no Pok\u00e9mon Tools attached to them. For each of those Pok\u00e9mon, search your deck for a Pok\u00e9mon Tool card and attach it to that Pok\u00e9mon. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Grass",
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Leaf Storm",
+                    "text": "Heal 20 damage from each of your Grass Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Swadloon",
+            "hp": "130",
+            "id": "xy4-7",
+            "imageUrl": "https://images.pokemontcg.io/xy4/7.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/7_hires.png",
+            "name": "Leavanny",
+            "nationalPokedexNumber": 542,
+            "number": "7",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Peck",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Headbutt",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-8",
+            "imageUrl": "https://images.pokemontcg.io/xy4/8.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/8_hires.png",
+            "name": "Karrablast",
+            "nationalPokedexNumber": 588,
+            "number": "8",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Suwama Chiaki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fire"
+                    ],
+                    "damage": "20",
+                    "name": "Peck",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fire",
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Combustion",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Fletchling",
+            "hp": "80",
+            "id": "xy4-9",
+            "imageUrl": "https://images.pokemontcg.io/xy4/9.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/9_hires.png",
+            "name": "Fletchinder",
+            "nationalPokedexNumber": 662,
+            "number": "9",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Hyper Whirlpool",
+                    "text": "Flip a coin until you get tails. For each heads, discard an Energy attached to your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80+",
+                    "name": "Second Strike",
+                    "text": "If your opponent's Active Pok\u00e9mon already has any damage counters on it, this attack does 80 more damage."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Croconaw",
+            "hp": "150",
+            "id": "xy4-17",
+            "imageUrl": "https://images.pokemontcg.io/xy4/17.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/17_hires.png",
+            "name": "Feraligatr",
+            "nationalPokedexNumber": 160,
+            "number": "17",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "sui",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Neon Sign",
+                    "text": "Search your deck for up to 2 Pok\u00e9mon, reveal them, and put them into your hand. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Water Pulse",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Asleep."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Finneon",
+            "hp": "80",
+            "id": "xy4-19",
+            "imageUrl": "https://images.pokemontcg.io/xy4/19.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/19_hires.png",
+            "name": "Lumineon",
+            "nationalPokedexNumber": 457,
+            "number": "19",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Masakazu Fukuda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "",
+                    "name": "Meddling",
+                    "text": "Attach 3 Energy cards from your opponent's discard pile to his or her Pok\u00e9mon in any way you like."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50+",
+                    "name": "Ensnaring Spray",
+                    "text": "This attack does 10 more damage for each Energy attached to your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Frillish",
+            "hp": "100",
+            "id": "xy4-21",
+            "imageUrl": "https://images.pokemontcg.io/xy4/21.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/21_hires.png",
+            "name": "Jellicent",
+            "nationalPokedexNumber": 593,
+            "number": "21",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mizue",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Trick Sticker",
+                    "text": "The Defending Pok\u00e9mon's Weakness is now Lightning until the end of your next turn. (The amount of Weakness doesn't change.)"
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "20+",
+                    "name": "Pachi",
+                    "text": "Flip a coin. If heads, this attack does 30 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "xy4-25",
+            "imageUrl": "https://images.pokemontcg.io/xy4/25.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/25_hires.png",
+            "name": "Pachirisu",
+            "nationalPokedexNumber": 417,
+            "number": "25",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kouki Saitou",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Lightning"
+                    ],
+                    "damage": "30",
+                    "name": "Pound",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Parabolic Spark",
+                    "text": "Discard as many Lightning Energy attached to your Pok\u00e9mon as you like. This attack does 30 damage times the number of Energy cards you discarded."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Helioptile",
+            "hp": "90",
+            "id": "xy4-30",
+            "imageUrl": "https://images.pokemontcg.io/xy4/30.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/30_hires.png",
+            "name": "Heliolisk",
+            "nationalPokedexNumber": 695,
+            "number": "30",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Sneaky Bite",
+                "text": "When you play this Pok\u00e9mon from your hand to evolve 1 of your Pok\u00e9mon, you may put 2 damage counters on 1 of your opponent's Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Kanako Eo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Swoop Across",
+                    "text": "This attack does 10 damage to each of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Zubat",
+            "hp": "70",
+            "id": "xy4-32",
+            "imageUrl": "https://images.pokemontcg.io/xy4/32.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/32_hires.png",
+            "name": "Golbat",
+            "nationalPokedexNumber": 42,
+            "number": "32",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Phantom Gate",
+                    "text": "Choose 1 of your opponent's Pok\u00e9mon's attacks and use it as this attack."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Gengar-EX",
+            "hp": "220",
+            "id": "xy4-35",
+            "imageUrl": "https://images.pokemontcg.io/xy4/35.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/35_hires.png",
+            "name": "M Gengar-EX",
+            "nationalPokedexNumber": 94,
+            "number": "35",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Hajime Kusajima",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Poison Gas",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Poisoned."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Sludge Bomb",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "xy4-37",
+            "imageUrl": "https://images.pokemontcg.io/xy4/37.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/37_hires.png",
+            "name": "Gulpin",
+            "nationalPokedexNumber": 316,
+            "number": "37",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Tomokazu Komiya",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Poison Gas",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Poisoned."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50+",
+                    "name": "Swallow Up",
+                    "text": "If, before doing damage, your opponent's Active Pok\u00e9mon has fewer remaining HP than this Pok\u00e9mon, this attack does 50 more damage."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Gulpin",
+            "hp": "110",
+            "id": "xy4-38",
+            "imageUrl": "https://images.pokemontcg.io/xy4/38.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/38_hires.png",
+            "name": "Swalot",
+            "nationalPokedexNumber": 317,
+            "number": "38",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "kawayoo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Cursed Drop",
+                    "text": "Put 3 damage counters on your opponent's Pok\u00e9mon in any way you like."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Night March",
+                    "text": "This attack does 20 damage times the number of Pok\u00e9mon in your discard pile that have the Night March attack."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Litwick",
+            "hp": "70",
+            "id": "xy4-42",
+            "imageUrl": "https://images.pokemontcg.io/xy4/42.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/42_hires.png",
+            "name": "Lampent",
+            "nationalPokedexNumber": 608,
+            "number": "42",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Gourgantic",
+                "text": "If this Pok\u00e9mon has any Grass Energy attached to it, its maximum HP is 200.",
+                "type": "Ability"
+            },
+            "artist": "Kanako Eo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "10\u00d7",
+                    "name": "Horror Note",
+                    "text": "This attack does 10 damage times the number of cards in your hand."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Pumpkaboo",
+            "hp": "100",
+            "id": "xy4-45",
+            "imageUrl": "https://images.pokemontcg.io/xy4/45.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/45_hires.png",
+            "name": "Gourgeist",
+            "nationalPokedexNumber": 711,
+            "number": "45",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoyo Kimura",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fighting"
+                    ],
+                    "damage": "20",
+                    "name": "Submission Hold",
+                    "text": "Your opponent can't attach Energy from his or her hand to the Defending Pok\u00e9mon during his or her next turn."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Poison Jab",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Poisoned."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Gligar",
+            "hp": "90",
+            "id": "xy4-47",
+            "imageUrl": "https://images.pokemontcg.io/xy4/47.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/47_hires.png",
+            "name": "Gliscor",
+            "nationalPokedexNumber": 472,
+            "number": "47",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Fighting"
+                    ],
+                    "damage": "30",
+                    "name": "Tackle",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "70",
+            "id": "xy4-48",
+            "imageUrl": "https://images.pokemontcg.io/xy4/48.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/48_hires.png",
+            "name": "Roggenrola",
+            "nationalPokedexNumber": 524,
+            "number": "48",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Hajime Kusajima",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Darkness"
+                    ],
+                    "damage": "20",
+                    "name": "Hypnoblast",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Asleep."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Nightmare Mambo",
+                    "text": "If your opponent's Active Pok\u00e9mon is Asleep, this attack does 60 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Murkrow",
+            "hp": "100",
+            "id": "xy4-52",
+            "imageUrl": "https://images.pokemontcg.io/xy4/52.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/52_hires.png",
+            "name": "Honchkrow",
+            "nationalPokedexNumber": 430,
+            "number": "52",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Darkness",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Crunch",
+                    "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Darkness Fang",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Poochyena",
+            "hp": "90",
+            "id": "xy4-54",
+            "imageUrl": "https://images.pokemontcg.io/xy4/54.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/54_hires.png",
+            "name": "Mightyena",
+            "nationalPokedexNumber": 262,
+            "number": "54",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "TOKIYA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Darkness"
+                    ],
+                    "damage": "10",
+                    "name": "Gentle Bite",
+                    "text": "During your opponent's next turn, any damage done by attacks from the Defending Pok\u00e9mon is reduced by 60 (before applying Weakness and Resistance)."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Darkness",
+                        "Darkness"
+                    ],
+                    "damage": "40",
+                    "name": "Mach Claw",
+                    "text": "This attack's damage isn't affected by Resistance."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Purrloin",
+            "hp": "90",
+            "id": "xy4-57",
+            "imageUrl": "https://images.pokemontcg.io/xy4/57.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/57_hires.png",
+            "name": "Liepard",
+            "nationalPokedexNumber": 510,
+            "number": "57",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Hyper Hypnosis",
+                "text": "When you attach an Energy from your hand to this Pok\u00e9mon, you may use this Ability. Your opponent's Active Pok\u00e9mon is now Asleep.",
+                "type": "Ability"
+            },
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Darkness",
+                        "Colorless"
+                    ],
+                    "damage": "60\u00d7",
+                    "name": "MAXamar",
+                    "text": "Flip a coin for each Energy attached to this Pok\u00e9mon. This attack does 60 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy4-58",
+            "imageUrl": "https://images.pokemontcg.io/xy4/58.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/58_hires.png",
+            "name": "Malamar-EX",
+            "nationalPokedexNumber": 687,
+            "number": "58",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Slash",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Metal",
+                        "Metal",
+                        "Colorless"
+                    ],
+                    "damage": "90",
+                    "name": "Iron Wing",
+                    "text": "Discard a Metal Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "100",
+            "id": "xy4-59",
+            "imageUrl": "https://images.pokemontcg.io/xy4/59.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/59_hires.png",
+            "name": "Skarmory",
+            "nationalPokedexNumber": 227,
+            "number": "59",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ayaka Yoshida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Metal",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Chrono Wind",
+                    "text": "If the Defending Pok\u00e9mon is a Pok\u00e9mon-EX, it can't attack during your opponent's next turn."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Metal",
+                        "Metal",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "150",
+                    "name": "Full Metal Impact",
+                    "text": "Discard 2 Metal Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "180",
+            "id": "xy4-62",
+            "imageUrl": "https://images.pokemontcg.io/xy4/62.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/62_hires.png",
+            "name": "Dialga-EX",
+            "nationalPokedexNumber": 483,
+            "number": "62",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Metal"
+                    ],
+                    "damage": "20",
+                    "name": "Poke Through",
+                    "text": "Discard a random card from your opponent's hand."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Metal",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Spiral Rush",
+                    "text": "Flip a coin until you get tails. This attack does 30 more damage for each heads."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Karrablast",
+            "hp": "100",
+            "id": "xy4-64",
+            "imageUrl": "https://images.pokemontcg.io/xy4/64.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/64_hires.png",
+            "name": "Escavalier",
+            "nationalPokedexNumber": 589,
+            "number": "64",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Metal"
+                    ],
+                    "damage": "",
+                    "name": "Call for Family",
+                    "text": "Search your deck for up to 2 Basic Pok\u00e9mon and put them onto your Bench. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Metal",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Dull Light",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Confused."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "xy4-66",
+            "imageUrl": "https://images.pokemontcg.io/xy4/66.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/66_hires.png",
+            "name": "Klefki",
+            "nationalPokedexNumber": 707,
+            "number": "66",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Metal"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Satoshi Shirai",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "",
+                    "name": "Lick Away",
+                    "text": "Remove all Special Conditions from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Tackle",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-68",
+            "imageUrl": "https://images.pokemontcg.io/xy4/68.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/68_hires.png",
+            "name": "Swirlix",
+            "nationalPokedexNumber": 684,
+            "number": "68",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "",
+                    "name": "Sparkle",
+                    "text": "If the Defending Pok\u00e9mon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fairy",
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Diamond Storm",
+                    "text": "Heal 30 damage from each of your Fairy Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "90",
+            "id": "xy4-71",
+            "imageUrl": "https://images.pokemontcg.io/xy4/71.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/71_hires.png",
+            "name": "Diancie",
+            "nationalPokedexNumber": 719,
+            "number": "71",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shigenori Negishi",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Darkness"
+                    ],
+                    "damage": "20+",
+                    "name": "Gnaw Off",
+                    "text": "Flip a coin. If heads, this attack does 10 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-72",
+            "imageUrl": "https://images.pokemontcg.io/xy4/72.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/72_hires.png",
+            "name": "Deino",
+            "nationalPokedexNumber": 633,
+            "number": "72",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kagemaru Himeno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Darkness"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Slam",
+                    "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Deino",
+            "hp": "90",
+            "id": "xy4-73",
+            "imageUrl": "https://images.pokemontcg.io/xy4/73.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/73_hires.png",
+            "name": "Zweilous",
+            "nationalPokedexNumber": 634,
+            "number": "73",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Slip Trip",
+                "text": "Each player can't attach any Pok\u00e9mon Tool cards from his or her hand to any of his or her Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Fairy",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Dragon Pulse",
+                    "text": "Discard the top card of your deck."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Sliggoo",
+            "hp": "140",
+            "id": "xy4-77",
+            "imageUrl": "https://images.pokemontcg.io/xy4/77.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/77_hires.png",
+            "name": "Goodra",
+            "nationalPokedexNumber": 706,
+            "number": "77",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Dragon"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fairy",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mizue",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Whirlwind",
+                    "text": "Your opponent switches his or her Active Pok\u00e9mon with 1 of his or her Benched Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "xy4-78",
+            "imageUrl": "https://images.pokemontcg.io/xy4/78.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/78_hires.png",
+            "name": "Spearow",
+            "nationalPokedexNumber": 21,
+            "number": "78",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoyo Kimura",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Nap",
+                    "text": "Heal 30 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Lucky Punch",
+                    "text": "If you don't have exactly 7 cards in your hand, this attack does nothing."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "100",
+            "id": "xy4-80",
+            "imageUrl": "https://images.pokemontcg.io/xy4/80.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/80_hires.png",
+            "name": "Chansey",
+            "nationalPokedexNumber": 113,
+            "number": "80",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "kirisAki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "10\u00d7",
+                    "name": "Tender Vengeance",
+                    "text": "Flip a coin. If heads, this attack does 10 damage times the number of damage counters on each of your Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Charge Dash",
+                    "text": "You may do 20 more damage. If you do, this Pok\u00e9mon does 20 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Chansey",
+            "hp": "130",
+            "id": "xy4-81",
+            "imageUrl": "https://images.pokemontcg.io/xy4/81.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/81_hires.png",
+            "name": "Blissey",
+            "nationalPokedexNumber": 242,
+            "number": "81",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Tackle",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50+",
+                    "name": "Psybite",
+                    "text": "If this Pok\u00e9mon has any Psychic Energy attached to it, this attack does 30 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "90",
+            "id": "xy4-82",
+            "imageUrl": "https://images.pokemontcg.io/xy4/82.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/82_hires.png",
+            "name": "Girafarig",
+            "nationalPokedexNumber": 203,
+            "number": "82",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kouki Saitou",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Boomburst",
+                    "text": "This attack does 20 damage to each of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "90",
+                    "name": "Hyper Voice",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Loudred",
+            "hp": "140",
+            "id": "xy4-85",
+            "imageUrl": "https://images.pokemontcg.io/xy4/85.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/85_hires.png",
+            "name": "Exploud",
+            "nationalPokedexNumber": 295,
+            "number": "85",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "kawayoo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Daunt",
+                    "text": "During your opponent's next turn, any damage done by attacks from the Defending Pok\u00e9mon is reduced by 40 (before applying Weakness and Resistance)."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Heavy Impact",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "hp": "130",
+            "id": "xy4-86",
+            "imageUrl": "https://images.pokemontcg.io/xy4/86.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/86_hires.png",
+            "name": "Regigigas",
+            "nationalPokedexNumber": 486,
+            "number": "86",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "match",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Smithereen Smash",
+                    "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Earthquake",
+                    "text": "This attack does 10 damage to each of your Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Bunnelby",
+            "hp": "100",
+            "id": "xy4-88",
+            "imageUrl": "https://images.pokemontcg.io/xy4/88.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/88_hires.png",
+            "name": "Diggersby",
+            "nationalPokedexNumber": 660,
+            "number": "88",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kyoko Umemoto",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Peck",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "10+",
+                    "name": "Quick Attack",
+                    "text": "Flip a coin. If heads, this attack does 20 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "xy4-89",
+            "imageUrl": "https://images.pokemontcg.io/xy4/89.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/89_hires.png",
+            "name": "Fletchling",
+            "nationalPokedexNumber": 661,
+            "number": "89",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy4-98",
+            "imageUrl": "https://images.pokemontcg.io/xy4/98.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/98_hires.png",
+            "name": "Jamming Net Team Flare Hyper Gear",
+            "number": "98",
+            "rarity": "Rare Holo",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "The attacks of the Pok\u00e9mon this card is attached to do 20 less damage to all Defending Pok\u00e9mon (before applying Weakness and Resistance). (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.) When this card is removed from a Pok\u00e9mon for any reason, put this card in its owner's discard pile."
+            ]
+        },
+        {
+            "artist": "Yusuke Ohmura",
+            "id": "xy4-101",
+            "imageUrl": "https://images.pokemontcg.io/xy4/101.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/101_hires.png",
+            "name": "Professor Sycamore",
+            "number": "101",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Discard your hand and draw 7 cards."
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "xy4-108",
+            "imageUrl": "https://images.pokemontcg.io/xy4/108.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/108_hires.png",
+            "name": "Trick Coin",
+            "number": "108",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "Once during your turn, after you flip any coins for an attack of the Pok\u00e9mon this card is attached to, you may ignore all effects of those coin flips and begin flipping those coins again. (You may only use effects that let you flip coins again, including effects from other cards, once during your turn.)"
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "xy4-112",
+            "imageUrl": "https://images.pokemontcg.io/xy4/112.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/112_hires.png",
+            "name": "Mystery Energy",
+            "number": "112",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "Special",
+            "supertype": "Energy",
+            "text": [
+                "This card can only be attached to Psychic Pok\u00e9mon. This card provides Psychic Energy, but only while this card is attached to a Psychic Pok\u00e9mon. The Retreat Cost of the Pok\u00e9mon this card is attached to is ColorlessColorless less. (If this card is attached to anything other than a Psychic Pok\u00e9mon, discard this card.)"
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Overrun",
+                    "text": "This attack does 20 damage to 1 of your opponent's Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Assault Laser",
+                    "text": "If your opponent's Active Pok\u00e9mon has a Pok\u00e9mon Tool card attached to it, this attack does 60 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "170",
+            "id": "xy4-113",
+            "imageUrl": "https://images.pokemontcg.io/xy4/113.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/113_hires.png",
+            "name": "Manectric-EX",
+            "nationalPokedexNumber": 310,
+            "number": "113",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Night Attack",
+                    "text": "Put 3 damage counters on 1 of your opponent's Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Dark Corridor",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Poisoned. Switch this Pok\u00e9mon with 1 of your Benched Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy4-114",
+            "imageUrl": "https://images.pokemontcg.io/xy4/114.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/114_hires.png",
+            "name": "Gengar-EX",
+            "nationalPokedexNumber": 94,
+            "number": "114",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Hyper Hypnosis",
+                "text": "When you attach an Energy from your hand to this Pok\u00e9mon, you may use this Ability. Your opponent's Active Pok\u00e9mon is now Asleep.",
+                "type": "Ability"
+            },
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Darkness",
+                        "Colorless"
+                    ],
+                    "damage": "60\u00d7",
+                    "name": "MAXamar",
+                    "text": "Flip a coin for each Energy attached to this Pok\u00e9mon. This attack does 60 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "xy4-115",
+            "imageUrl": "https://images.pokemontcg.io/xy4/115.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/115_hires.png",
+            "name": "Malamar-EX",
+            "nationalPokedexNumber": 687,
+            "number": "115",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "",
+                    "name": "Lead",
+                    "text": "Search your deck for a Supporter card, reveal it, and put it into your hand. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Bright Garden",
+                    "text": "This attack does 20 damage times the number of Grass Pok\u00e9mon and Fairy Pok\u00e9mon you have in play."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "160",
+            "id": "xy4-116",
+            "imageUrl": "https://images.pokemontcg.io/xy4/116.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/xy4/116_hires.png",
+            "name": "Florges-EX",
+            "nationalPokedexNumber": 671,
+            "number": "116",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Phantom Forces",
+            "setCode": "xy4",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        }
+    ]
+}

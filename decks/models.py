@@ -28,8 +28,13 @@ class Country(models.Model):
 
 class Expansion(models.Model):
     name = models.CharField(max_length=100)
+    region = models.ForeignKey(Region, on_delete=models.PROTECT)
     pub_date = models.DateField()
     code = models.CharField(max_length=10)
+    logo_url = models.CharField(max_length=200)
+    symbol_url = models.CharField(max_length=200)
+    total_cards = models.IntegerField()
+    series = models.CharField(max_length=20)
 
     def __str__(self):
         return self.name
@@ -39,8 +44,7 @@ class Regulation(models.Model):
     name = models.CharField(max_length=100)
     region = models.ForeignKey(Region, on_delete=models.CASCADE)
     is_available = models.BooleanField(default=False)
-    regulation_from = models.ForeignKey(Expansion, related_name="regulation_from", on_delete=models.PROTECT)
-    regulation_to = models.ForeignKey(Expansion, related_name="regulation_to", on_delete=models.PROTECT)
+    expansions = models.ManyToManyField(Expansion)
 
     def __str__(self):
         return self.name

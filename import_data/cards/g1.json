@@ -1,0 +1,5053 @@
+{
+    "cards": [
+        {
+            "artist": "",
+            "id": "g1-76",
+            "imageUrl": "https://images.pokemontcg.io/g1/76.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/76_hires.png",
+            "name": "Basic Fire Energy",
+            "number": "76",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Energy"
+        },
+        {
+            "artist": "",
+            "id": "g1-78",
+            "imageUrl": "https://images.pokemontcg.io/g1/78.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/78_hires.png",
+            "name": "Basic Lightning Energy",
+            "number": "78",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Energy"
+        },
+        {
+            "artist": "",
+            "id": "g1-81",
+            "imageUrl": "https://images.pokemontcg.io/g1/81.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/81_hires.png",
+            "name": "Basic Darkness Energy",
+            "number": "81",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Energy"
+        },
+        {
+            "artist": "",
+            "id": "g1-83",
+            "imageUrl": "https://images.pokemontcg.io/g1/83.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/83_hires.png",
+            "name": "Basic Fairy Energy",
+            "number": "83",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Energy"
+        },
+        {
+            "artist": "match",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Absorb",
+                    "text": "Heal 20 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Grass",
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Vine Whip",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "80",
+            "id": "g1-8",
+            "imageUrl": "https://images.pokemontcg.io/g1/8.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/8_hires.png",
+            "name": "Tangela",
+            "nationalPokedexNumber": 114,
+            "number": "8",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Hideki Ishikawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fire"
+                    ],
+                    "damage": "10",
+                    "name": "Ram",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Ember",
+                    "text": "Discard a Fire Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "80",
+            "id": "g1-16",
+            "imageUrl": "https://images.pokemontcg.io/g1/16.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/16_hires.png",
+            "name": "Magmar",
+            "nationalPokedexNumber": 126,
+            "number": "16",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mina Nakai",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fighting"
+                    ],
+                    "damage": "10",
+                    "name": "Knuckle Punch",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "70",
+            "id": "g1-40",
+            "imageUrl": "https://images.pokemontcg.io/g1/40.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/40_hires.png",
+            "name": "Machop",
+            "nationalPokedexNumber": 66,
+            "number": "40",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Fighting"
+                    ],
+                    "damage": "40",
+                    "name": "Beatdown",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Machop",
+            "hp": "90",
+            "id": "g1-41",
+            "imageUrl": "https://images.pokemontcg.io/g1/41.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/41_hires.png",
+            "name": "Machoke",
+            "nationalPokedexNumber": 67,
+            "number": "41",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "match",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20+",
+                    "name": "Bullet Punch",
+                    "text": "Flip 2 coins. This attack does 20 more damage for each heads."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Mach Cross",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "90",
+            "id": "g1-48",
+            "imageUrl": "https://images.pokemontcg.io/g1/48.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/48_hires.png",
+            "name": "Hitmonchan",
+            "nationalPokedexNumber": 107,
+            "number": "48",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "g1-64",
+            "imageUrl": "https://images.pokemontcg.io/g1/64.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/64_hires.png",
+            "name": "Maintenance",
+            "number": "64",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Shuffle 2 cards from your hand into your deck. (If you can't shuffle 2 cards into your deck, you can't play this card.) Then, draw a card."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "g1-65",
+            "imageUrl": "https://images.pokemontcg.io/g1/65.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/65_hires.png",
+            "name": "Max Revive",
+            "number": "65",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Put a Pok\u00e9mon from your discard pile on top of your deck."
+            ]
+        },
+        {
+            "artist": "Maiko Fujiwara",
+            "id": "g1-68",
+            "imageUrl": "https://images.pokemontcg.io/g1/68.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/68_hires.png",
+            "name": "Pok\u00e9mon Center Lady",
+            "number": "68",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Heal 60 damage and remove all Special Conditions from 1 of your Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "g1-70",
+            "imageUrl": "https://images.pokemontcg.io/g1/70.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/70_hires.png",
+            "name": "Revitalizer",
+            "number": "70",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Put 2 Grass Pok\u00e9mon from your discard pile into your hand."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "g1-71",
+            "imageUrl": "https://images.pokemontcg.io/g1/71.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/71_hires.png",
+            "name": "Red Card",
+            "number": "71",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Your opponent shuffles his or her hand into his or her deck and draws 4 cards."
+            ]
+        },
+        {
+            "artist": "Yusuke\nOhmura",
+            "id": "g1-73",
+            "imageUrl": "https://images.pokemontcg.io/g1/73.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/73_hires.png",
+            "name": "Team Flare Grunt",
+            "number": "73",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Discard an Energy attached to your opponent's Active Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "g1-61",
+            "imageUrl": "https://images.pokemontcg.io/g1/61.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/61_hires.png",
+            "name": "Energy Switch",
+            "number": "61",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Move a basic Energy from 1 of your Pok\u00e9mon to another of your Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "",
+            "id": "g1-63",
+            "imageUrl": "https://images.pokemontcg.io/g1/63.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/63_hires.png",
+            "name": "Imakuni?",
+            "number": "63",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Your Active Pok\u00e9mon is now Confused."
+            ]
+        },
+        {
+            "artist": "Kagemaru Himeno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Nuzzle",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20+",
+                    "name": "Quick Attack",
+                    "text": "Flip a coin. If heads, this attack does 10 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-rc29",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC29.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC29_hires.png",
+            "name": "Pikachu",
+            "nationalPokedexNumber": 25,
+            "number": "RC29",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Yuka Morii",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "",
+                    "name": "Lick Away",
+                    "text": "Remove all Special Conditions from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Tackle",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-rc19",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC19.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC19_hires.png",
+            "name": "Swirlix",
+            "nationalPokedexNumber": 684,
+            "number": "RC19",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kanako Eo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30+",
+                    "name": "Dress Up",
+                    "text": "If this Pok\u00e9mon has a Pok\u00e9mon Tool card attached to it, this attack does 30 more damage."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fairy",
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Precious Ribbon",
+                    "text": "Move a Fairy Energy from this Pok\u00e9mon to 1 of your Benched Pok\u00e9mon. If you do, heal 50 damage from that Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "g1-rc32",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC32.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC32_hires.png",
+            "name": "Sylveon-EX",
+            "nationalPokedexNumber": 700,
+            "number": "RC32",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Flame Cloak",
+                    "text": "Attach a Fire Energy card from your discard pile to this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fire",
+                        "Fire",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80+",
+                    "name": "Burning Breath",
+                    "text": "Flip 2 coins. This attack does 40 more damage for each heads."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "180",
+            "id": "g1-11",
+            "imageUrl": "https://images.pokemontcg.io/g1/11.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/11_hires.png",
+            "name": "Charizard-EX",
+            "nationalPokedexNumber": 6,
+            "number": "11",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "g1-67",
+            "imageUrl": "https://images.pokemontcg.io/g1/67.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/67_hires.png",
+            "name": "Pok\u00e9 Ball",
+            "number": "67",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Flip a coin. If heads, search your deck for a Pok\u00e9mon, reveal it, and put it into your hand. Shuffle your deck afterward."
+            ]
+        },
+        {
+            "artist": "",
+            "id": "g1-77",
+            "imageUrl": "https://images.pokemontcg.io/g1/77.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/77_hires.png",
+            "name": "Basic Water Energy",
+            "number": "77",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Energy"
+        },
+        {
+            "artist": "",
+            "id": "g1-79",
+            "imageUrl": "https://images.pokemontcg.io/g1/79.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/79_hires.png",
+            "name": "Basic Psychic Energy",
+            "number": "79",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Energy"
+        },
+        {
+            "artist": "",
+            "id": "g1-80",
+            "imageUrl": "https://images.pokemontcg.io/g1/80.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/80_hires.png",
+            "name": "Basic Fighting Energy",
+            "number": "80",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Energy"
+        },
+        {
+            "artist": "",
+            "id": "g1-82",
+            "imageUrl": "https://images.pokemontcg.io/g1/82.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/82_hires.png",
+            "name": "Basic Metal Energy",
+            "number": "82",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Energy"
+        },
+        {
+            "artist": "kanahei",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Rest",
+                    "text": "Heal 30 damage from this Pok\u00e9mon. This Pok\u00e9mon is now Asleep."
+                },
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Lightning"
+                    ],
+                    "damage": "10+",
+                    "name": "Pachi",
+                    "text": "Flip a coin. If heads, this attack does 20 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-rc10",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC10.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC10_hires.png",
+            "name": "Dedenne",
+            "nationalPokedexNumber": 702,
+            "number": "RC10",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "MAHOU",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "",
+                    "name": "Lap Up",
+                    "text": "Draw 3 cards."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40",
+                    "name": "Fairy Wind",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Swirlix",
+            "hp": "90",
+            "id": "g1-rc20",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC20.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC20_hires.png",
+            "name": "Slurpuff",
+            "nationalPokedexNumber": 685,
+            "number": "RC20",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Tomokazu Komiya",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fire"
+                    ],
+                    "damage": "10",
+                    "name": "Agility",
+                    "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pok\u00e9mon during your opponent's next turn."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Flame Tail",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-14",
+            "imageUrl": "https://images.pokemontcg.io/g1/14.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/14_hires.png",
+            "name": "Ponyta",
+            "nationalPokedexNumber": 77,
+            "number": "14",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Fake Out",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40+",
+                    "name": "Ambush",
+                    "text": "Flip a coin. If heads, this attack does 30 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Meowth",
+            "hp": "90",
+            "id": "g1-54",
+            "imageUrl": "https://images.pokemontcg.io/g1/54.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/54_hires.png",
+            "name": "Persian",
+            "nationalPokedexNumber": 53,
+            "number": "54",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Megumi Mizutani",
+            "id": "g1-rc27",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC27.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC27_hires.png",
+            "name": "Wally",
+            "number": "RC27",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Search your deck for a card that evolves from 1 of your Pok\u00e9mon (excluding Pok\u00e9mon-EX) and put it onto that Pok\u00e9mon. (This counts as evolving that Pok\u00e9mon.) Shuffle your deck afterward. You can use this card during your first turn or on a Pok\u00e9mon that was put into play this turn."
+            ]
+        },
+        {
+            "artist": "Ken Sugimori",
+            "id": "g1-59",
+            "imageUrl": "https://images.pokemontcg.io/g1/59.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/59_hires.png",
+            "name": "Clemont",
+            "number": "59",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Search your deck for up to 4 Lightning Energy cards, reveal them, and put them into your hand. Shuffle your deck afterward."
+            ]
+        },
+        {
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Recall",
+                    "text": "Choose 1 of this Pok\u00e9mon's attacks from its previous Evolutions and use it as this attack."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fire",
+                        "Fire",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Combustion Blast",
+                    "text": "This Pok\u00e9mon can't use Combustion Blast during your next turn."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Charmeleon",
+            "hp": "160",
+            "id": "g1-rc5",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC5.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC5_hires.png",
+            "name": "Charizard",
+            "nationalPokedexNumber": 6,
+            "number": "RC5",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Flash Fire",
+                "text": "Once during your turn (before your attack), you may move a Fire Energy from 1 of your Pok\u00e9mon to this Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Atsuko Nishida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50+",
+                    "name": "Blaze Ball",
+                    "text": "This attack does 20 more damage for each Fire Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "g1-rc6",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC6.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC6_hires.png",
+            "name": "Flareon-EX",
+            "nationalPokedexNumber": 136,
+            "number": "RC6",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "MAHOU",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Icy Snow",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "g1-rc7",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC7.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC7_hires.png",
+            "name": "Snorunt",
+            "nationalPokedexNumber": 361,
+            "number": "RC7",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Drag Along",
+                "text": "If this Pok\u00e9mon is your Active Pok\u00e9mon and is Knocked Out by damage from an opponent's attack, flip a coin. If heads, the Attacking Pok\u00e9mon is Knocked Out.",
+                "type": "Ability"
+            },
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Snowy Drop",
+                    "text": "Put 4 damage counters on your opponent's Pok\u00e9mon in any way you like."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Snorunt",
+            "hp": "90",
+            "id": "g1-rc8",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC8.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC8_hires.png",
+            "name": "Froslass",
+            "nationalPokedexNumber": 478,
+            "number": "RC8",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Atsuko Nishida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Bind Wound",
+                    "text": "Heal 20 damage from 1 of your Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "40",
+            "id": "g1-rc23",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC23.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC23_hires.png",
+            "name": "Swablu",
+            "nationalPokedexNumber": 333,
+            "number": "RC23",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kanako Eo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Twinkle",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Asleep."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "g1-rc14",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC14.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC14_hires.png",
+            "name": "Espurr",
+            "nationalPokedexNumber": 677,
+            "number": "RC14",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Aya Kusube",
+            "id": "g1-rc26",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC26.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC26_hires.png",
+            "name": "Floral Crown",
+            "number": "RC26",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "At the end of your opponent's turn, heal 20 damage from the Basic Pok\u00e9mon this card is attached to."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fire",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100+",
+                    "name": "Heat Typhoon",
+                    "text": "Flip a coin for each Fire Energy attached to this Pok\u00e9mon. This attack does 50 more damage for each heads."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Charizard-EX",
+            "hp": "220",
+            "id": "g1-12",
+            "imageUrl": "https://images.pokemontcg.io/g1/12.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/12_hires.png",
+            "name": "M Charizard-EX",
+            "nationalPokedexNumber": 6,
+            "number": "12",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "kirisAki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "10",
+                    "name": "Vice Grip",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Water"
+                    ],
+                    "damage": "50",
+                    "name": "Crabhammer",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "70",
+            "id": "g1-21",
+            "imageUrl": "https://images.pokemontcg.io/g1/21.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/21_hires.png",
+            "name": "Krabby",
+            "nationalPokedexNumber": 98,
+            "number": "21",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Berserker Splash",
+                    "text": "This attack does 10 damage to each Benched Pok\u00e9mon (both yours and your opponent's). (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "90+",
+                    "name": "Aqua Tail",
+                    "text": "Flip a coin for each Water Energy attached to this Pok\u00e9mon. This attack does 30 more damage for each heads."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Magikarp",
+            "hp": "130",
+            "id": "g1-23",
+            "imageUrl": "https://images.pokemontcg.io/g1/23.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/23_hires.png",
+            "name": "Gyarados",
+            "nationalPokedexNumber": 130,
+            "number": "23",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Bubble Drain",
+                    "text": "Heal 30 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "130\u2212",
+                    "name": "Deep Squall",
+                    "text": "This attack does 130 damage minus 10 damage for each damage counter on this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "180",
+            "id": "g1-24",
+            "imageUrl": "https://images.pokemontcg.io/g1/24.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/24_hires.png",
+            "name": "Vaporeon-EX",
+            "nationalPokedexNumber": 134,
+            "number": "24",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Atsuko Nishida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Nuzzle",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20+",
+                    "name": "Quick Attack",
+                    "text": "Flip a coin. If heads, this attack does 10 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-26",
+            "imageUrl": "https://images.pokemontcg.io/g1/26.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/26_hires.png",
+            "name": "Pikachu",
+            "nationalPokedexNumber": 25,
+            "number": "26",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Lightning"
+                    ],
+                    "damage": "20",
+                    "name": "Drill Peck",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Lightning",
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "120",
+                    "name": "Raging Thunder",
+                    "text": "This attack does 40 damage to 1 of your Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "120",
+            "id": "g1-29",
+            "imageUrl": "https://images.pokemontcg.io/g1/29.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/29_hires.png",
+            "name": "Zapdos",
+            "nationalPokedexNumber": 145,
+            "number": "29",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Atsuko Nishida",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Follow Me",
+                    "text": "Switch 1 of your opponent's Benched Pok\u00e9mon with your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Moonblast",
+                    "text": "During your opponent's next turn, any damage done by attacks from the Defending Pok\u00e9mon is reduced by 30 (before applying Weakness and Resistance)."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Clefairy",
+            "hp": "90",
+            "id": "g1-51",
+            "imageUrl": "https://images.pokemontcg.io/g1/51.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/51_hires.png",
+            "name": "Clefable",
+            "nationalPokedexNumber": 36,
+            "number": "51",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Run Around",
+                    "text": "Switch this Pok\u00e9mon with 1 of your Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Vine Whip",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "g1-rc1",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC1.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC1_hires.png",
+            "name": "Chikorita",
+            "nationalPokedexNumber": 152,
+            "number": "RC1",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Yusuke\nOhmura",
+            "id": "g1-73a",
+            "imageUrl": "https://images.pokemontcg.io/g1/73a.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/73a_hires.png",
+            "name": "Team Flare Grunt",
+            "number": "73a",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Discard an Energy attached to your opponent's Active Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Playful",
+                    "text": "Flip a coin. If heads, this attack does 20 damage times the number of damage counters on this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "70",
+            "id": "g1-rc3",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC3.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC3_hires.png",
+            "name": "Charmander",
+            "nationalPokedexNumber": 4,
+            "number": "RC3",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "sui",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Ear Influence",
+                    "text": "Move as many damage counters on your opponent's Pok\u00e9mon as you like to any of your opponent's other Pok\u00e9mon in any way you like."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Psychic",
+                        "Psychic"
+                    ],
+                    "damage": "60+",
+                    "name": "Psychic",
+                    "text": "This attack does 10 more damage for each Energy attached to your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Espurr",
+            "hp": "90",
+            "id": "g1-rc15",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC15.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC15_hires.png",
+            "name": "Meowstic",
+            "nationalPokedexNumber": 678,
+            "number": "RC15",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kagemaru Himeno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Flap",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30+",
+                    "name": "Fairy Friend",
+                    "text": "If you have any Fairy Pok\u00e9mon on your Bench, this attack does 30 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Swablu",
+            "hp": "90",
+            "id": "g1-rc24",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC24.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC24_hires.png",
+            "name": "Altaria",
+            "nationalPokedexNumber": 334,
+            "number": "RC24",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Flash Fire",
+                "text": "Once during your turn (before your attack), you may move a Fire Energy from 1 of your Pok\u00e9mon to this Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "kirisAki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50+",
+                    "name": "Blaze Ball",
+                    "text": "This attack does 20 more damage for each Fire Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "g1-rc28",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC28.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC28_hires.png",
+            "name": "Flareon-EX",
+            "nationalPokedexNumber": 136,
+            "number": "RC28",
+            "rarity": "Rare Ultra",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Aya Kusube",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Warble",
+                    "text": "Search your deck for up to 2 Fletchling, reveal them, and put them into your hand. Shuffle your deck afterward."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "40",
+            "id": "g1-rc25",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC25.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC25_hires.png",
+            "name": "Fletchling",
+            "nationalPokedexNumber": 661,
+            "number": "RC25",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "g1-62",
+            "imageUrl": "https://images.pokemontcg.io/g1/62.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/62_hires.png",
+            "name": "Evosoda",
+            "number": "62",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Search your deck for a card that evolves from 1 of your Pok\u00e9mon and put it onto that Pok\u00e9mon. (This counts as evolving that Pok\u00e9mon.) Shuffle your deck afterward. You can't use this card during your first turn or on a Pok\u00e9mon that was put into play this turn."
+            ]
+        },
+        {
+            "artist": "Ken Sugimori",
+            "id": "g1-66",
+            "imageUrl": "https://images.pokemontcg.io/g1/66.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/66_hires.png",
+            "name": "Olympia",
+            "number": "66",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Switch your Active Pok\u00e9mon with 1 of your Benched Pok\u00e9mon. If you do, heal 30 damage from the Pok\u00e9mon you moved to your Bench."
+            ]
+        },
+        {
+            "artist": "Yusuke\nOhmura",
+            "id": "g1-69",
+            "imageUrl": "https://images.pokemontcg.io/g1/69.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/69_hires.png",
+            "name": "Pok\u00e9mon Fan Club",
+            "number": "69",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Search your deck for up to 2 Basic Pok\u00e9mon, reveal them, and put them into your hand. Shuffle your deck afterward."
+            ]
+        },
+        {
+            "artist": "Miki Tanaka",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "30",
+                    "name": "Epic Splash",
+                    "text": "Flip 2 coins. If either of them is tails, this attack does nothing."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "30",
+            "id": "g1-22",
+            "imageUrl": "https://images.pokemontcg.io/g1/22.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/22_hires.png",
+            "name": "Magikarp",
+            "nationalPokedexNumber": 129,
+            "number": "22",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Masakazu Fukuda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Clamp Crush",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Paralyzed and discard an Energy attached to that Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Spike Cannon",
+                    "text": "Flip 5 coins. This attack does 30 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Shellder",
+            "hp": "100",
+            "id": "g1-20",
+            "imageUrl": "https://images.pokemontcg.io/g1/20.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/20_hires.png",
+            "name": "Cloyster",
+            "nationalPokedexNumber": 91,
+            "number": "20",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "",
+                    "name": "Find Ice",
+                    "text": "Search your deck for up to 3 Water Energy cards, reveal them, and put them into your hand. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Freezing Wind",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "120",
+            "id": "g1-25",
+            "imageUrl": "https://images.pokemontcg.io/g1/25.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/25_hires.png",
+            "name": "Articuno",
+            "nationalPokedexNumber": 144,
+            "number": "25",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "g1-74",
+            "imageUrl": "https://images.pokemontcg.io/g1/74.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/74_hires.png",
+            "name": "Double Colorless Energy",
+            "number": "74",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Special",
+            "supertype": "Energy",
+            "text": [
+                "Double Colorless Energy provides ColorlessColorless Energy."
+            ]
+        },
+        {
+            "artist": "kodama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Sleep Poison",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Asleep and Poisoned."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "g1-33",
+            "imageUrl": "https://images.pokemontcg.io/g1/33.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/33_hires.png",
+            "name": "Gastly",
+            "nationalPokedexNumber": 92,
+            "number": "33",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fighting"
+                    ],
+                    "damage": "60",
+                    "name": "Earthquake",
+                    "text": "This attack does 10 damage to each of your Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Rock Tumble",
+                    "text": "This attack's damage isn't affected by Resistance."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Diglett",
+            "hp": "90",
+            "id": "g1-39",
+            "imageUrl": "https://images.pokemontcg.io/g1/39.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/39_hires.png",
+            "name": "Dugtrio",
+            "nationalPokedexNumber": 51,
+            "number": "39",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Stir and Snooze",
+                "text": "If this Pok\u00e9mon is Asleep, flip 2 coins instead of 1 between turns. If either of them is tails, this Pok\u00e9mon is still Asleep.",
+                "type": "Ability"
+            },
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "120",
+                    "name": "Sleepy Press",
+                    "text": "Heal 20 damage from this Pok\u00e9mon. This Pok\u00e9mon is now Asleep."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "hp": "130",
+            "id": "g1-58",
+            "imageUrl": "https://images.pokemontcg.io/g1/58.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/58_hires.png",
+            "name": "Snorlax",
+            "nationalPokedexNumber": 143,
+            "number": "58",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Midori Harada",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Fighting"
+                    ],
+                    "damage": "40",
+                    "name": "Take Down",
+                    "text": "This Pok\u00e9mon does 10 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "80",
+            "id": "g1-49",
+            "imageUrl": "https://images.pokemontcg.io/g1/49.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/49_hires.png",
+            "name": "Rhyhorn",
+            "nationalPokedexNumber": 111,
+            "number": "49",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ken Sugimori",
+            "id": "g1-72",
+            "imageUrl": "https://images.pokemontcg.io/g1/72.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/72_hires.png",
+            "name": "Shauna",
+            "number": "72",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Shuffle your hand into your deck. Then, draw 5 cards."
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Grass",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40+",
+                    "name": "Frog Hop",
+                    "text": "Flip a coin. If heads, this attack does 40 more damage."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Grass",
+                        "Grass",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Poison Impact",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Asleep and Poisoned."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "hp": "180",
+            "id": "g1-1",
+            "imageUrl": "https://images.pokemontcg.io/g1/1.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/1_hires.png",
+            "name": "Venusaur-EX",
+            "nationalPokedexNumber": 3,
+            "number": "1",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Grass",
+                        "Grass",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Bloom Buster",
+                    "text": "Flip a coin. If heads, this attack does 30 damage to each of your opponent's Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Venusaur-EX",
+            "hp": "230",
+            "id": "g1-2",
+            "imageUrl": "https://images.pokemontcg.io/g1/2.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/2_hires.png",
+            "name": "M Venusaur-EX",
+            "nationalPokedexNumber": 3,
+            "number": "2",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Adaptive Evolution",
+                "text": "This Pok\u00e9mon can evolve during your first turn or the turn you play it.",
+                "type": "Ability"
+            },
+            "artist": "Sumiyoshi Kizuki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "10",
+                    "name": "Bug Bite",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "40",
+            "id": "g1-3",
+            "imageUrl": "https://images.pokemontcg.io/g1/3.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/3_hires.png",
+            "name": "Caterpie",
+            "nationalPokedexNumber": 10,
+            "number": "3",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Adaptive Evolution",
+                "text": "This Pok\u00e9mon can evolve during your first turn or the turn you play it.",
+                "type": "Ability"
+            },
+            "artist": "kawayoo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Harden",
+                    "text": "During your opponent's next turn, if this Pok\u00e9mon would be damaged by an attack, prevent that attack's damage done to this Pok\u00e9mon if that damage is 60 or less."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Caterpie",
+            "hp": "70",
+            "id": "g1-4",
+            "imageUrl": "https://images.pokemontcg.io/g1/4.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/4_hires.png",
+            "name": "Metapod",
+            "nationalPokedexNumber": 11,
+            "number": "4",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "miki kudo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "",
+                    "name": "Quiver Dance",
+                    "text": "Search your deck for a basic Energy card and attach it to this Pok\u00e9mon. Shuffle your deck afterward. If you attached Energy in this way, heal 40 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Grass",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Gust",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Metapod",
+            "hp": "130",
+            "id": "g1-5",
+            "imageUrl": "https://images.pokemontcg.io/g1/5.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/5_hires.png",
+            "name": "Butterfree",
+            "nationalPokedexNumber": 12,
+            "number": "5",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Aya Kusube",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Blot",
+                    "text": "Heal 10 damage from this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-6",
+            "imageUrl": "https://images.pokemontcg.io/g1/6.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/6_hires.png",
+            "name": "Paras",
+            "nationalPokedexNumber": 46,
+            "number": "6",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sumiyoshi Kizuki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Colorful Spores",
+                    "text": "Choose 3 of your Pok\u00e9mon. For each of those Pok\u00e9mon, search your deck for a different type of basic Energy card and attach it to that Pok\u00e9mon. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "30+",
+                    "name": "X-Scissor",
+                    "text": "Flip a coin. If heads, this attack does 30 more damage."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Paras",
+            "hp": "100",
+            "id": "g1-7",
+            "imageUrl": "https://images.pokemontcg.io/g1/7.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/7_hires.png",
+            "name": "Parasect",
+            "nationalPokedexNumber": 47,
+            "number": "7",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Satoshi Shirai",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "30",
+                    "name": "Overhead Throw",
+                    "text": "This attack does 20 damage to 1 of your Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Grass",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40+",
+                    "name": "Heavy Suplex",
+                    "text": "This attack does 20 more damage for each Colorless in your opponent's Active Pok\u00e9mon's Retreat Cost."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "100",
+            "id": "g1-9",
+            "imageUrl": "https://images.pokemontcg.io/g1/9.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/9_hires.png",
+            "name": "Pinsir",
+            "nationalPokedexNumber": 127,
+            "number": "9",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "30+",
+                    "name": "Leaf Blade",
+                    "text": "Flip a coin. If heads, this attack does 30 more damage."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Grass",
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "damage": "90+",
+                    "name": "Nature's Breath",
+                    "text": "If there is any Stadium card in play, this attack does 30 more damage and heal 30 damage from this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "g1-10",
+            "imageUrl": "https://images.pokemontcg.io/g1/10.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/10_hires.png",
+            "name": "Leafeon-EX",
+            "nationalPokedexNumber": 470,
+            "number": "10",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fire"
+                    ],
+                    "damage": "",
+                    "name": "Flare Bonus",
+                    "text": "Discard a Fire Energy card from your hand. If you do, draw 3 cards."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fire",
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "130",
+                    "name": "Fire Blast",
+                    "text": "Flip a coin. If tails, discard a Fire Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "170",
+            "id": "g1-13",
+            "imageUrl": "https://images.pokemontcg.io/g1/13.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/13_hires.png",
+            "name": "Ninetales-EX",
+            "nationalPokedexNumber": 38,
+            "number": "13",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "DemizuPosuka",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fire"
+                    ],
+                    "damage": "20",
+                    "name": "Agility",
+                    "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pok\u00e9mon during your opponent's next turn."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40",
+                    "name": "Overrun",
+                    "text": "This attack does 20 damage to 1 of your opponent's Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Ponyta",
+            "hp": "90",
+            "id": "g1-15",
+            "imageUrl": "https://images.pokemontcg.io/g1/15.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/15_hires.png",
+            "name": "Rapidash",
+            "nationalPokedexNumber": 78,
+            "number": "15",
+            "rarity": "Rare",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Hyper Whirlpool",
+                    "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Hydro Press",
+                    "text": "This attack does 20 damage to 1 of your opponent's Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "hp": "180",
+            "id": "g1-17",
+            "imageUrl": "https://images.pokemontcg.io/g1/17.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/17_hires.png",
+            "name": "Blastoise-EX",
+            "nationalPokedexNumber": 9,
+            "number": "17",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "180",
+                    "name": "Dread Launcher",
+                    "text": "Flip a coin. If tails, discard 2 Water Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Blastoise-EX",
+            "hp": "220",
+            "id": "g1-18",
+            "imageUrl": "https://images.pokemontcg.io/g1/18.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/18_hires.png",
+            "name": "M Blastoise-EX",
+            "nationalPokedexNumber": 9,
+            "number": "18",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoyo Kimura",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Rain Splash",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-19",
+            "imageUrl": "https://images.pokemontcg.io/g1/19.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/19_hires.png",
+            "name": "Shellder",
+            "nationalPokedexNumber": 90,
+            "number": "19",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Circle Circuit",
+                    "text": "This attack does 20 damage times the number of your Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Lightning",
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Thunderbolt",
+                    "text": "Discard all Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Pikachu",
+            "hp": "90",
+            "id": "g1-27",
+            "imageUrl": "https://images.pokemontcg.io/g1/27.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/27_hires.png",
+            "name": "Raichu",
+            "nationalPokedexNumber": 26,
+            "number": "27",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Lightning"
+                    ],
+                    "damage": "30",
+                    "name": "Swift",
+                    "text": "This attack's damage isn't affected by Weakness, Resistance, or any other effects on your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Lightning",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Flash Ray",
+                    "text": "During your opponent's next turn, prevent all damage done to this Pok\u00e9mon by attacks from Basic Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "hp": "160",
+            "id": "g1-28",
+            "imageUrl": "https://images.pokemontcg.io/g1/28.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/28_hires.png",
+            "name": "Jolteon-EX",
+            "nationalPokedexNumber": 135,
+            "number": "28",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Lightning"
+                    ],
+                    "damage": "30",
+                    "name": "Swift",
+                    "text": "This attack's damage isn't affected by Weakness, Resistance, or any other effects on your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Lightning",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Flash Ray",
+                    "text": "During your opponent's next turn, prevent all damage done to this Pok\u00e9mon by attacks from Basic Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "hp": "160",
+            "id": "g1-28a",
+            "imageUrl": "https://images.pokemontcg.io/g1/28a.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/28a_hires.png",
+            "name": "Jolteon-EX",
+            "nationalPokedexNumber": 135,
+            "number": "28a",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "match",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Skill Dive",
+                    "text": "This attack does 10 damage to 1 of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "g1-30",
+            "imageUrl": "https://images.pokemontcg.io/g1/30.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/30_hires.png",
+            "name": "Zubat",
+            "nationalPokedexNumber": 41,
+            "number": "30",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Sneaky Bite",
+                "text": "When you play this Pok\u00e9mon from your hand to evolve 1 of your Pok\u00e9mon, you may put 2 damage counters on 1 of your opponent's Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Kanako Eo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Swoop Across",
+                    "text": "This attack does 10 damage to each of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Zubat",
+            "hp": "70",
+            "id": "g1-31",
+            "imageUrl": "https://images.pokemontcg.io/g1/31.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/31_hires.png",
+            "name": "Golbat",
+            "nationalPokedexNumber": 42,
+            "number": "31",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Miki Tanaka",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Spacing Out",
+                    "text": "Flip a coin. If heads, heal 10 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Scavenge",
+                    "text": "Discard a Psychic Energy attached to this Pok\u00e9mon. If you do, put an Item card from your discard pile into your hand."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "g1-32",
+            "imageUrl": "https://images.pokemontcg.io/g1/32.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/32_hires.png",
+            "name": "Slowpoke",
+            "nationalPokedexNumber": 79,
+            "number": "32",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Gothic Fear",
+                "text": "When you play this Pok\u00e9mon from your hand to evolve 1 of your Pok\u00e9mon, you may leave both Active Pok\u00e9mon Confused.",
+                "type": "Ability"
+            },
+            "artist": "Midori Harada",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Poison Ring",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Poisoned. That Pok\u00e9mon can't retreat during your opponent's next turn."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Gastly",
+            "hp": "70",
+            "id": "g1-34",
+            "imageUrl": "https://images.pokemontcg.io/g1/34.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/34_hires.png",
+            "name": "Haunter",
+            "nationalPokedexNumber": 93,
+            "number": "34",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Saya Tsuruta",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Sinister Fog",
+                    "text": "Your opponent's Active Pok\u00e9mon is now Poisoned. Put 1 damage counter on each of your opponent's Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Creep Show",
+                    "text": "If your opponent's Active Pok\u00e9mon has 3 or more damage counters on it, that Pok\u00e9mon is Knocked Out."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Haunter",
+            "hp": "130",
+            "id": "g1-35",
+            "imageUrl": "https://images.pokemontcg.io/g1/35.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/35_hires.png",
+            "name": "Gengar",
+            "nationalPokedexNumber": 94,
+            "number": "35",
+            "rarity": "Rare Holo",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Darkness",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Victory Kiss",
+                "text": "Once during your turn (before your attack), if this Pok\u00e9mon is on your Bench, you may heal 10 damage from your Active Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Hug",
+                    "text": "The Defending Pok\u00e9mon can't retreat during your opponent's next turn."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "g1-36",
+            "imageUrl": "https://images.pokemontcg.io/g1/36.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/36_hires.png",
+            "name": "Jynx",
+            "nationalPokedexNumber": 124,
+            "number": "36",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Shadow Ear",
+                "text": "Once during your turn (before your attack), if this Pok\u00e9mon is your Active Pok\u00e9mon, you may move 1 damage counter from 1 of your Pok\u00e9mon to 1 of your opponent's Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Toyste Beach",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Mind Shock",
+                    "text": "This attack's damage isn't affected by Weakness or Resistance."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "160",
+            "id": "g1-37",
+            "imageUrl": "https://images.pokemontcg.io/g1/37.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/37_hires.png",
+            "name": "Meowstic-EX",
+            "nationalPokedexNumber": 678,
+            "number": "37",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Tomokazu Komiya",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fighting"
+                    ],
+                    "damage": "",
+                    "name": "Mine",
+                    "text": "Look at the top card of your opponent's deck. Then, you may have your opponent shuffle his or her deck."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Mud-Slap",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "g1-38",
+            "imageUrl": "https://images.pokemontcg.io/g1/38.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/38_hires.png",
+            "name": "Diglett",
+            "nationalPokedexNumber": 50,
+            "number": "38",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Saya Tsuruta",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Darkness"
+                    ],
+                    "damage": "30",
+                    "name": "Oblivion Wing",
+                    "text": "Attach a Darkness Energy card from your discard pile to 1 of your Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Darkness",
+                        "Darkness",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Darkness Blade",
+                    "text": "Flip a coin. If tails, this Pok\u00e9mon can't attack during your next turn."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "130",
+            "id": "g1-rc16",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC16.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC16_hires.png",
+            "name": "Yveltal",
+            "nationalPokedexNumber": 717,
+            "number": "RC16",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eske Yoshinob",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "",
+                    "name": "Petal Blizzard",
+                    "text": "This attack does 10 damage to each of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Razor Leaf",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Flab\u00e9b\u00e9",
+            "hp": "70",
+            "id": "g1-rc18",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC18.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC18_hires.png",
+            "name": "Floette",
+            "nationalPokedexNumber": 670,
+            "number": "RC18",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Miki Tanaka",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Grass"
+                    ],
+                    "damage": "10",
+                    "name": "Worry Seed",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Confused."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "g1-rc2",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC2.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC2_hires.png",
+            "name": "Shroomish",
+            "nationalPokedexNumber": 285,
+            "number": "RC2",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Grass"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Tomokazu Komiya",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Starvin'",
+                    "text": "Flip a coin. If tails, this attack does nothing."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "g1-rc12",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC12.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC12_hires.png",
+            "name": "Gulpin",
+            "nationalPokedexNumber": 316,
+            "number": "RC12",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Fighting Fury",
+                "text": "Each of your Fighting Pok\u00e9mon's attacks do 20 more damage to your opponent's Active Pok\u00e9mon (before applying Weakness and Resistance).",
+                "type": "Ability"
+            },
+            "artist": "PLANETA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Fighting"
+                    ],
+                    "damage": "80",
+                    "name": "Machamp Crush",
+                    "text": "During your opponent's next turn, any damage done by attacks from the Defending Pok\u00e9mon is reduced by 40 (before applying Weakness and Resistance)."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Machoke",
+            "hp": "150",
+            "id": "g1-42",
+            "imageUrl": "https://images.pokemontcg.io/g1/42.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/42_hires.png",
+            "name": "Machamp",
+            "nationalPokedexNumber": 68,
+            "number": "42",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "MAHOU",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fighting"
+                    ],
+                    "damage": "10",
+                    "name": "Rollout",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "10\u00d7",
+                    "name": "Flail",
+                    "text": "This attack does 10 damage times the number of damage counters on this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "g1-43",
+            "imageUrl": "https://images.pokemontcg.io/g1/43.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/43_hires.png",
+            "name": "Geodude",
+            "nationalPokedexNumber": 74,
+            "number": "43",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoyo Kimura",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Double-Edge",
+                    "text": "This Pok\u00e9mon does 20 damage to itself."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Rollout",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Geodude",
+            "hp": "100",
+            "id": "g1-44",
+            "imageUrl": "https://images.pokemontcg.io/g1/44.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/44_hires.png",
+            "name": "Graveler",
+            "nationalPokedexNumber": 75,
+            "number": "44",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Hasuno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "60+",
+                    "name": "Stone Edge",
+                    "text": "Flip a coin. If heads, this attack does 30 more damage."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "150",
+                    "name": "Explosion",
+                    "text": "This Pok\u00e9mon does 100 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Graveler",
+            "hp": "150",
+            "id": "g1-45",
+            "imageUrl": "https://images.pokemontcg.io/g1/45.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/45_hires.png",
+            "name": "Golem",
+            "nationalPokedexNumber": 76,
+            "number": "45",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Boulder Crush",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "180",
+                    "name": "Megaton Fall",
+                    "text": "This Pok\u00e9mon does 60 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "hp": "180",
+            "id": "g1-46",
+            "imageUrl": "https://images.pokemontcg.io/g1/46.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/46_hires.png",
+            "name": "Golem-EX",
+            "nationalPokedexNumber": 76,
+            "number": "46",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Hitoshi Ariga",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fighting"
+                    ],
+                    "damage": "",
+                    "name": "Stretch Kick",
+                    "text": "This attack does 30 damage to 1 of your opponent's Benched Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Fighting"
+                    ],
+                    "damage": "30",
+                    "name": "Spiral Kick",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "90",
+            "id": "g1-47",
+            "imageUrl": "https://images.pokemontcg.io/g1/47.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/47_hires.png",
+            "name": "Hitmonlee",
+            "nationalPokedexNumber": 106,
+            "number": "47",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shibuzoh.",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Moonlight",
+                    "text": "Heal 30 damage from this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Pound",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-50",
+            "imageUrl": "https://images.pokemontcg.io/g1/50.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/50_hires.png",
+            "name": "Clefairy",
+            "nationalPokedexNumber": 35,
+            "number": "50",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Bench Barrier",
+                "text": "Prevent all damage done to your Benched Pok\u00e9mon by attacks.",
+                "type": "Ability"
+            },
+            "artist": "kirisAki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "10\u00d7",
+                    "name": "Juggling",
+                    "text": "Flip 4 coins. This attack does 10 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "g1-52",
+            "imageUrl": "https://images.pokemontcg.io/g1/52.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/52_hires.png",
+            "name": "Mr. Mime",
+            "nationalPokedexNumber": 122,
+            "number": "52",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "kirisAki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Exhausted Tackle",
+                    "text": "Flip a coin. If heads, this attack does 30 damage to your opponent's Active Pok\u00e9mon. If tails, this Pok\u00e9mon does 30 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-53",
+            "imageUrl": "https://images.pokemontcg.io/g1/53.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/53_hires.png",
+            "name": "Meowth",
+            "nationalPokedexNumber": 52,
+            "number": "53",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Eri Yamaki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10\u00d7",
+                    "name": "Double Stab",
+                    "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Doduo Delivery",
+                    "text": "Draw 2 cards."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "g1-55",
+            "imageUrl": "https://images.pokemontcg.io/g1/55.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/55_hires.png",
+            "name": "Doduo",
+            "nationalPokedexNumber": 84,
+            "number": "55",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Retreat Aid",
+                "text": "As long as this Pok\u00e9mon is on your Bench, your Active Pok\u00e9mon's Retreat Cost is ColorlessColorless less.",
+                "type": "Ability"
+            },
+            "artist": "TOKIYA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "40\u00d7",
+                    "name": "Fury Attack",
+                    "text": "Flip 3 coins. This attack does 40 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Doduo",
+            "hp": "90",
+            "id": "g1-56",
+            "imageUrl": "https://images.pokemontcg.io/g1/56.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/56_hires.png",
+            "name": "Dodrio",
+            "nationalPokedexNumber": 85,
+            "number": "56",
+            "rarity": "Rare",
+            "resistances": [
+                {
+                    "type": "Fighting",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kagemaru Himeno",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Take Down",
+                    "text": "This Pok\u00e9mon does 10 damage to itself."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Seething Anger",
+                    "text": "Flip a coin for each damage counter on this Pok\u00e9mon. This attack does 30 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "110",
+            "id": "g1-57",
+            "imageUrl": "https://images.pokemontcg.io/g1/57.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/57_hires.png",
+            "name": "Tauros",
+            "nationalPokedexNumber": 128,
+            "number": "57",
+            "rarity": "Rare",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "g1-60",
+            "imageUrl": "https://images.pokemontcg.io/g1/60.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/60_hires.png",
+            "name": "Crushing Hammer",
+            "number": "60",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Flip a coin. If heads, discard an Energy attached to 1 of your opponent's Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "",
+            "id": "g1-75",
+            "imageUrl": "https://images.pokemontcg.io/g1/75.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/75_hires.png",
+            "name": "Basic Grass Energy",
+            "number": "75",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Energy"
+        },
+        {
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Call for Support",
+                    "text": "Search your deck for a Supporter card, reveal it, and put it into your hand. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fire",
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Slash",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Charmander",
+            "hp": "90",
+            "id": "g1-rc4",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC4.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC4_hires.png",
+            "name": "Charmeleon",
+            "nationalPokedexNumber": 5,
+            "number": "RC4",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Aya Kusube",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Circle Circuit",
+                    "text": "This attack does 20 damage times the number of your Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Lightning",
+                        "Lightning",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Thunderbolt",
+                    "text": "Discard all Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Pikachu",
+            "hp": "90",
+            "id": "g1-rc9",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC9.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC9_hires.png",
+            "name": "Raichu",
+            "nationalPokedexNumber": 26,
+            "number": "RC9",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Metal",
+                    "value": "-20"
+                }
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Lightning"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Bide Barricade",
+                "text": "As long as this Pok\u00e9mon is your Active Pok\u00e9mon, each Pok\u00e9mon in play, in each player's hand, and in each player's discard pile has no Abilities (except for Psychic Pok\u00e9mon).",
+                "type": "Ability"
+            },
+            "artist": "Yukiko Baba",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "10+",
+                    "name": "Psychic Assault",
+                    "text": "This attack does 10 more damage for each damage counter on your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "110",
+            "id": "g1-rc11",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC11.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC11_hires.png",
+            "name": "Wobbuffet",
+            "nationalPokedexNumber": 202,
+            "number": "RC11",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "kirisAki",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "",
+                    "name": "Wish",
+                    "text": "Search your deck for a card and put it into your hand. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "50",
+                    "name": "Heart Sign",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "70",
+            "id": "g1-rc13",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC13.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC13_hires.png",
+            "name": "Jirachi",
+            "nationalPokedexNumber": 385,
+            "number": "RC13",
+            "rarity": "Uncommon",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Saya Tsuruta",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "10",
+                    "name": "Razor Leaf",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "40",
+            "id": "g1-rc17",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC17.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC17_hires.png",
+            "name": "Flab\u00e9b\u00e9",
+            "nationalPokedexNumber": 669,
+            "number": "RC17",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "sui",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30+",
+                    "name": "Dress Up",
+                    "text": "If this Pok\u00e9mon has a Pok\u00e9mon Tool card attached to it, this attack does 30 more damage."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fairy",
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "100",
+                    "name": "Precious Ribbon",
+                    "text": "Move a Fairy Energy from this Pok\u00e9mon to 1 of your Benched Pok\u00e9mon. If you do, heal 50 damage from that Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "g1-rc21",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC21.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC21_hires.png",
+            "name": "Sylveon-EX",
+            "nationalPokedexNumber": 700,
+            "number": "RC21",
+            "rarity": "Rare Holo EX",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mizue",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "",
+                    "name": "Sparkle",
+                    "text": "If the Defending Pok\u00e9mon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fairy",
+                        "Fairy",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Diamond Storm",
+                    "text": "Heal 30 damage from each of your Fairy Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "90",
+            "id": "g1-rc22",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC22.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC22_hires.png",
+            "name": "Diancie",
+            "nationalPokedexNumber": 719,
+            "number": "RC22",
+            "rarity": "Uncommon",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mizue",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fairy"
+                    ],
+                    "damage": "20",
+                    "name": "Life Leap",
+                    "text": "Heal from this Pok\u00e9mon the same amount of damage you did to your opponent's Active Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fairy",
+                        "Fairy",
+                        "Fairy"
+                    ],
+                    "damage": "100",
+                    "name": "Shining Wind",
+                    "text": "During your opponent's next turn, this Pok\u00e9mon has no Weakness."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "170",
+            "id": "g1-rc30",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC30.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC30_hires.png",
+            "name": "Gardevoir-EX",
+            "nationalPokedexNumber": 282,
+            "number": "RC30",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Megumi Mizutani",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fairy",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Brilliant Arrow",
+                    "text": "This attack does 30 damage times the amount of Fairy Energy attached to all of your Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Gardevoir-EX",
+            "hp": "210",
+            "id": "g1-rc31",
+            "imageUrl": "https://images.pokemontcg.io/g1/RC31.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/g1/RC31_hires.png",
+            "name": "M Gardevoir-EX",
+            "nationalPokedexNumber": 282,
+            "number": "RC31",
+            "rarity": "Rare Ultra",
+            "resistances": [
+                {
+                    "type": "Darkness",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Generations",
+            "setCode": "g1",
+            "subtype": "MEGA",
+            "supertype": "Pok\u00e9mon",
+            "text": [
+                "When a Pok\u00e9mon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "When 1 of your Pok\u00e9mon becomes a Mega Evolution Pok\u00e9mon, your turn ends."
+            ],
+            "types": [
+                "Fairy"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        }
+    ]
+}

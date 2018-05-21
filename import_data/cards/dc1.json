@@ -1,0 +1,1315 @@
+{
+    "cards": [
+        {
+            "ability": {
+                "name": "Burning Draft",
+                "text": "Once during your turn (before your attack), you may attach a Fighting or Fire Energy card from your discard pile to this Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fire",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Flame Ball",
+                    "text": "Move a basic Energy from this Pok\u00e9mon to 1 of your Benched Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Team Magma's Numel",
+            "hp": "110",
+            "id": "dc1-2",
+            "imageUrl": "https://images.pokemontcg.io/dc1/2.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/2_hires.png",
+            "name": "Team Magma's Camerupt",
+            "nationalPokedexNumber": 323,
+            "number": "2",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Splatter",
+                    "text": "This attack does 20 damage to 1 of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60\uff0b",
+                    "name": "Hail Storm",
+                    "text": "If your opponent's Active Pok\u00e9mon is a Team Magma Pok\u00e9mon, this attack does 60 more damage."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Team Aqua's Spheal",
+            "hp": "90",
+            "id": "dc1-4",
+            "imageUrl": "https://images.pokemontcg.io/dc1/4.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/4_hires.png",
+            "name": "Team Aqua's Sealeo",
+            "nationalPokedexNumber": 364,
+            "number": "4",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Power Saver",
+                "text": "If there are 4 or fewer Team Aqua Pok\u00e9mon in play, this Pok\u00e9mon can't attack.",
+                "type": "Ability"
+            },
+            "artist": "nagimiso",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "80\uff0b",
+                    "name": "Aqua Impact",
+                    "text": "This attack does 20 more damage for each Colorless in your opponent's Active Pok\u00e9mon's Retreat Cost."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "hp": "190",
+            "id": "dc1-6",
+            "imageUrl": "https://images.pokemontcg.io/dc1/6.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/6_hires.png",
+            "name": "Team Aqua's Kyogre-ex",
+            "nationalPokedexNumber": 382,
+            "number": "6",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Sludge Festival",
+                "text": "The Retreat Cost of each Pok\u00e9mon in play (except for Team Aqua Pok\u00e9mon) is Colorless more.",
+                "type": "Ability"
+            },
+            "artist": "Kouki Saitou",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60\uff0b",
+                    "name": "Pester",
+                    "text": "If your opponent's Active Pok\u00e9mon is affected by a Special Condition, this attack does 60 more damage."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Team Aqua's Grimer",
+            "hp": "110",
+            "id": "dc1-8",
+            "imageUrl": "https://images.pokemontcg.io/dc1/8.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/8_hires.png",
+            "name": "Team Aqua's Muk",
+            "nationalPokedexNumber": 89,
+            "number": "8",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Fighting"
+                    ],
+                    "damage": "10",
+                    "name": "Gnaw",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "dc1-12",
+            "imageUrl": "https://images.pokemontcg.io/dc1/12.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/12_hires.png",
+            "name": "Team Magma's Aron",
+            "nationalPokedexNumber": 304,
+            "number": "12",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Kouki Saitou",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Roar",
+                    "text": "Your opponent switches his or her Active Pok\u00e9mon with 1 of his or her Benched Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Bite",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "dc1-16",
+            "imageUrl": "https://images.pokemontcg.io/dc1/16.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/16_hires.png",
+            "name": "Team Aqua's Poochyena",
+            "nationalPokedexNumber": 261,
+            "number": "16",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "TOKIYA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Infiltrate",
+                    "text": "Your opponent reveals his or her hand."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "20",
+                    "name": "Bite",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "60",
+            "id": "dc1-17",
+            "imageUrl": "https://images.pokemontcg.io/dc1/17.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/17_hires.png",
+            "name": "Team Magma's Poochyena",
+            "nationalPokedexNumber": 261,
+            "number": "17",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Teampact",
+                    "text": "Flip a coin for each Team Aqua Pok\u00e9mon you have in play. This attack does 30 damage times the number of heads."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "80",
+                    "name": "Crunch",
+                    "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Team Aqua's Poochyena",
+            "hp": "100",
+            "id": "dc1-18",
+            "imageUrl": "https://images.pokemontcg.io/dc1/18.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/18_hires.png",
+            "name": "Team Aqua's Mightyena",
+            "nationalPokedexNumber": 262,
+            "number": "18",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Hitoshi Ariga",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Bite",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "80\uff0b",
+                    "name": "Hostile Fang",
+                    "text": "If your opponent's Active Pok\u00e9mon is a Team Aqua Pok\u00e9mon, this attack does 40 more damage."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "evolvesFrom": "Team Magma's Poochyena",
+            "hp": "100",
+            "id": "dc1-19",
+            "imageUrl": "https://images.pokemontcg.io/dc1/19.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/19_hires.png",
+            "name": "Team Magma's Mightyena",
+            "nationalPokedexNumber": 262,
+            "number": "19",
+            "rarity": "Common",
+            "resistances": [
+                {
+                    "type": "Psychic",
+                    "value": "-20"
+                }
+            ],
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Hitoshi Ariga",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "30\u00d7",
+                    "name": "Power Blow",
+                    "text": "This attack does 30 damage times the amount of Energy attached to this Pok\u00e9mon."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Water",
+                        "Water",
+                        "Water",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Dual Blizzard",
+                    "text": "Discard 2 Water Energy attached to this Pok\u00e9mon. This attack does 80 damage to 2 of your opponent's Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Team Aqua's Sealeo",
+            "hp": "140",
+            "id": "dc1-5",
+            "imageUrl": "https://images.pokemontcg.io/dc1/5.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/5_hires.png",
+            "name": "Team Aqua's Walrein",
+            "nationalPokedexNumber": 365,
+            "number": "5",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Darkness"
+                    ],
+                    "damage": "10\u00d7",
+                    "name": "Fin Smack",
+                    "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "dc1-20",
+            "imageUrl": "https://images.pokemontcg.io/dc1/20.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/20_hires.png",
+            "name": "Team Aqua's Carvanha",
+            "nationalPokedexNumber": 318,
+            "number": "20",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "id": "dc1-32",
+            "imageUrl": "https://images.pokemontcg.io/dc1/32.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/32_hires.png",
+            "name": "Team Magma's Secret Base",
+            "number": "32",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stadium",
+            "supertype": "Trainer",
+            "text": [
+                "Whenever any player puts a Basic Pok\u00e9mon (except for Team Magma Pok\u00e9mon) from his or her hand onto his or her Bench, put 2 damage counters on that Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "GAME FREAK inc.",
+            "id": "dc1-29",
+            "imageUrl": "https://images.pokemontcg.io/dc1/29.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/29_hires.png",
+            "name": "Team Magma Admin",
+            "number": "29",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Put up to 3 Team Magma Pok\u00e9mon from your discard pile into your hand."
+            ]
+        },
+        {
+            "artist": "GAME FREAK inc.",
+            "id": "dc1-30",
+            "imageUrl": "https://images.pokemontcg.io/dc1/30.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/30_hires.png",
+            "name": "Team Magma Grunt",
+            "number": "30",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Discard a card from your hand. (If you can't discard a card, you can't play this card.) Draw 3 cards. If you discarded a Team Magma Pok\u00e9mon, draw 1 more card."
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "dc1-31",
+            "imageUrl": "https://images.pokemontcg.io/dc1/31.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/31_hires.png",
+            "name": "Team Magma's Great Ball",
+            "number": "31",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Search your deck for a Basic Team Magma Pok\u00e9mon and a basic Fighting Energy card, reveal them, and put them into your hand. Shuffle your deck afterward."
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "dc1-33",
+            "imageUrl": "https://images.pokemontcg.io/dc1/33.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/33_hires.png",
+            "name": "Double Aqua Energy",
+            "number": "33",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Special",
+            "supertype": "Energy",
+            "text": [
+                "This card can only be attached to Team Aqua Pok\u00e9mon. Discard this card at the end of the turn you attached it. This card provides WaterWater Energy only while it is attached to a Team Aqua Pok\u00e9mon. (If this card is attached to anything other than a Team Aqua Pok\u00e9mon, discard this card.)"
+            ]
+        },
+        {
+            "artist": "Naoki Saito",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "10",
+                    "name": "Venomous Fang",
+                    "text": "Flip a coin. If heads, your opponent's Active Pok\u00e9mon is now Poisoned."
+                },
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Venom Tail",
+                    "text": "If your opponent's Active Pok\u00e9mon is affected by a Special Condition, discard an Energy attached to that Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "90",
+            "id": "dc1-9",
+            "imageUrl": "https://images.pokemontcg.io/dc1/9.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/9_hires.png",
+            "name": "Team Aqua's Seviper",
+            "nationalPokedexNumber": 336,
+            "number": "9",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Shin Nagasawa",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Call for Family",
+                    "text": "Search your deck for up to 2 Basic Team Magma Pok\u00e9mon and put them onto your Bench. Shuffle your deck afterward."
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Colorless",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "20\u00d7",
+                    "name": "Team Play",
+                    "text": "This attack does 20 damage times the number of Team Magma Pok\u00e9mon on your Bench."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "90",
+            "id": "dc1-22",
+            "imageUrl": "https://images.pokemontcg.io/dc1/22.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/22_hires.png",
+            "name": "Team Magma's Zangoose",
+            "nationalPokedexNumber": 335,
+            "number": "22",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Colorless"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fighting",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "5ban Graphics",
+            "id": "dc1-34",
+            "imageUrl": "https://images.pokemontcg.io/dc1/34.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/34_hires.png",
+            "name": "Double Magma Energy",
+            "number": "34",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Special",
+            "supertype": "Energy",
+            "text": [
+                "This card can only be attached to Team Magma Pok\u00e9mon. Discard this card at the end of the turn you attached it. This card provides FightingFighting Energy only while it is attached to a Team Magma Pok\u00e9mon. (If this card is attached to anything other than a Team Magma Pok\u00e9mon, discard this card.)"
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "dc1-23",
+            "imageUrl": "https://images.pokemontcg.io/dc1/23.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/23_hires.png",
+            "name": "Aqua Diffuser",
+            "number": "23",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "The Team Aqua Pok\u00e9mon this card is attached to can also use the attack on this card. (You still need the necessary Energy to use this attack.)"
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "dc1-24",
+            "imageUrl": "https://images.pokemontcg.io/dc1/24.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/24_hires.png",
+            "name": "Magma Pointer",
+            "number": "24",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Pok\u00e9mon Tool",
+            "supertype": "Trainer",
+            "text": [
+                "The Team Magma Pok\u00e9mon this card is attached to can also use the attack on this card. (You still need the necessary Energy to use this attack.)"
+            ]
+        },
+        {
+            "artist": "GAME FREAK inc.",
+            "id": "dc1-25",
+            "imageUrl": "https://images.pokemontcg.io/dc1/25.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/25_hires.png",
+            "name": "Team Aqua Admin",
+            "number": "25",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Attach a basic Energy card from your discard pile to your Active Team Aqua Pok\u00e9mon."
+            ]
+        },
+        {
+            "artist": "GAME FREAK inc.",
+            "id": "dc1-26",
+            "imageUrl": "https://images.pokemontcg.io/dc1/26.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/26_hires.png",
+            "name": "Team Aqua Grunt",
+            "number": "26",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Supporter",
+            "supertype": "Trainer",
+            "text": [
+                "Discard a card from your hand. (If you can't discard a card, you can't play this card.) Draw 3 cards. If you discarded a Team Aqua Pok\u00e9mon, draw 1 more card."
+            ]
+        },
+        {
+            "artist": "Toyste Beach",
+            "id": "dc1-27",
+            "imageUrl": "https://images.pokemontcg.io/dc1/27.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/27_hires.png",
+            "name": "Team Aqua's Great Ball",
+            "number": "27",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Item",
+            "supertype": "Trainer",
+            "text": [
+                "Search your deck for a Basic Team Aqua Pok\u00e9mon and a basic Water Energy card, reveal them, and put them into your hand. Shuffle your deck afterward."
+            ]
+        },
+        {
+            "artist": "Ryo Ueda",
+            "id": "dc1-28",
+            "imageUrl": "https://images.pokemontcg.io/dc1/28.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/28_hires.png",
+            "name": "Team Aqua's Secret Base",
+            "number": "28",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stadium",
+            "supertype": "Trainer",
+            "text": [
+                "The Retreat Cost of each Pok\u00e9mon in play (except for Team Aqua Pok\u00e9mon) is Colorless more."
+            ]
+        },
+        {
+            "artist": "TOKIYA",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "40\u00d7",
+                    "name": "Rock Stomp",
+                    "text": "Discard as many Fighting Energy attached to your Pok\u00e9mon as you like. This attack does 40 damage times the amount of Fighting Energy you discarded."
+                },
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "120",
+                    "name": "Boulder Storm",
+                    "text": "This attack does 20 damage to each of your opponent's Benched Pok\u00e9mon that has any damage counters on it. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)"
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "evolvesFrom": "Team Magma's Lairon",
+            "hp": "140",
+            "id": "dc1-14",
+            "imageUrl": "https://images.pokemontcg.io/dc1/14.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/14_hires.png",
+            "name": "Team Magma's Aggron",
+            "nationalPokedexNumber": 306,
+            "number": "14",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 2",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Sanosuke Sakuma",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Water"
+                    ],
+                    "damage": "10",
+                    "name": "Water Gun",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "60",
+            "id": "dc1-3",
+            "imageUrl": "https://images.pokemontcg.io/dc1/3.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/3_hires.png",
+            "name": "Team Aqua's Spheal",
+            "nationalPokedexNumber": 363,
+            "number": "3",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Water"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Metal",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "kawayoo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 1,
+                    "cost": [
+                        "Psychic"
+                    ],
+                    "damage": "10",
+                    "name": "Pound",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Mud-Slap",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "70",
+            "id": "dc1-7",
+            "imageUrl": "https://images.pokemontcg.io/dc1/7.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/7_hires.png",
+            "name": "Team Aqua's Grimer",
+            "nationalPokedexNumber": 88,
+            "number": "7",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Power Saver",
+                "text": "If there are 4 or fewer Team Magma Pok\u00e9mon in play, this Pok\u00e9mon can't attack.",
+                "type": "Ability"
+            },
+            "artist": "nagimiso",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 4,
+                    "cost": [
+                        "Fighting",
+                        "Fighting",
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "80\uff0b",
+                    "name": "Magma Quake",
+                    "text": "If your opponent's Active Pok\u00e9mon already has any damage counters on it, this attack does 80 more damage."
+                }
+            ],
+            "convertedRetreatCost": 4,
+            "hp": "190",
+            "id": "dc1-15",
+            "imageUrl": "https://images.pokemontcg.io/dc1/15.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/15_hires.png",
+            "name": "Team Magma's Groudon-ex",
+            "nationalPokedexNumber": 383,
+            "number": "15",
+            "rarity": "Rare Holo EX",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "EX",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Aqua Search",
+                "text": "Once during your turn (before your attack), you may search your deck for a Team Aqua Pok\u00e9mon, reveal it, and put it into your hand. Shuffle your deck afterward.",
+                "type": "Ability"
+            },
+            "artist": "kawayoo",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Darkness",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Sharp Fang",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 0,
+            "evolvesFrom": "Team Aqua's Carvanha",
+            "hp": "90",
+            "id": "dc1-21",
+            "imageUrl": "https://images.pokemontcg.io/dc1/21.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/21_hires.png",
+            "name": "Team Aqua's Sharpedo",
+            "nationalPokedexNumber": 319,
+            "number": "21",
+            "rarity": "Rare Holo",
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Darkness"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Lightning",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Akira Komayama",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fire",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Ember",
+                    "text": "Discard an Energy attached to this Pok\u00e9mon."
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "hp": "70",
+            "id": "dc1-1",
+            "imageUrl": "https://images.pokemontcg.io/dc1/1.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/1_hires.png",
+            "name": "Team Magma's Numel",
+            "nationalPokedexNumber": 322,
+            "number": "1",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fire"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Water",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Mitsuhiro Arita",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Psychic",
+                        "Colorless"
+                    ],
+                    "damage": "",
+                    "name": "Telekinesis",
+                    "text": "This attack does 20 damage to 1 of your opponent's Pok\u00e9mon. This attack's damage isn't affected by Weakness or Resistance."
+                }
+            ],
+            "convertedRetreatCost": 1,
+            "hp": "50",
+            "id": "dc1-10",
+            "imageUrl": "https://images.pokemontcg.io/dc1/10.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/10_hires.png",
+            "name": "Team Magma's Baltoy",
+            "nationalPokedexNumber": 343,
+            "number": "10",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Basic",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "ability": {
+                "name": "Magma Switch",
+                "text": "Once during your turn (before your attack), you may move a basic Energy from 1 of your Pok\u00e9mon to 1 of your Team Magma Pok\u00e9mon.",
+                "type": "Ability"
+            },
+            "artist": "Masakazu Fukuda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Psychic",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "70",
+                    "name": "Power Beam",
+                    "text": ""
+                }
+            ],
+            "convertedRetreatCost": 2,
+            "evolvesFrom": "Team Magma's Baltoy",
+            "hp": "90",
+            "id": "dc1-11",
+            "imageUrl": "https://images.pokemontcg.io/dc1/11.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/11_hires.png",
+            "name": "Team Magma's Claydol",
+            "nationalPokedexNumber": 344,
+            "number": "11",
+            "rarity": "Rare Holo",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Psychic"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Psychic",
+                    "value": "\u00d72"
+                }
+            ]
+        },
+        {
+            "artist": "Masakazu Fukuda",
+            "attacks": [
+                {
+                    "convertedEnergyCost": 2,
+                    "cost": [
+                        "Fighting",
+                        "Colorless"
+                    ],
+                    "damage": "30",
+                    "name": "Gnaw",
+                    "text": ""
+                },
+                {
+                    "convertedEnergyCost": 3,
+                    "cost": [
+                        "Fighting",
+                        "Colorless",
+                        "Colorless"
+                    ],
+                    "damage": "60",
+                    "name": "Take Down",
+                    "text": "This Pok\u00e9mon does 10 damage to itself."
+                }
+            ],
+            "convertedRetreatCost": 3,
+            "evolvesFrom": "Team Magma's Aron",
+            "hp": "90",
+            "id": "dc1-13",
+            "imageUrl": "https://images.pokemontcg.io/dc1/13.png",
+            "imageUrlHiRes": "https://images.pokemontcg.io/dc1/13_hires.png",
+            "name": "Team Magma's Lairon",
+            "nationalPokedexNumber": 305,
+            "number": "13",
+            "rarity": "Common",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "series": "XY",
+            "set": "Double Crisis",
+            "setCode": "dc1",
+            "subtype": "Stage 1",
+            "supertype": "Pok\u00e9mon",
+            "types": [
+                "Fighting"
+            ],
+            "weaknesses": [
+                {
+                    "type": "Grass",
+                    "value": "\u00d72"
+                }
+            ]
+        }
+    ]
+}
