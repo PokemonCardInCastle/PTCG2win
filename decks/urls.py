@@ -11,4 +11,6 @@ urlpatterns = [
     path("<int:deck_id>/", views.detail, name="detail"),
     # # e.g. /decks/search/?from=0&to=0
     # path("search/", views.search, name="search"),
+    path("proxy_maker", views.proxy_maker, name="proxy_maker"),
+    path("proxy_result", views.proxy_result, name="proxy_result")
 ]

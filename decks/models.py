@@ -78,6 +78,7 @@ class PokemonSpecies(models.Model):
 #    form_name = models.CharField(max_length=20, default="")
     pokedex_number = models.IntegerField()
     region = models.ForeignKey(PokemonRegion, on_delete=models.PROTECT)
+    evolves_from = models.ForeignKey('self', on_delete=models.PROTECT, null=True)
 
     def __str__(self):
         return self.name

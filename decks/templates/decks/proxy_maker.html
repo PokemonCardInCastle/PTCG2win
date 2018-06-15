@@ -37,14 +37,10 @@
 <div style="clear: left">
 
 </div>
-{% if latest_deck_list %}
-    <ul>
-        {% for deck in latest_deck_list %}
-            <li><a href="{% url 'decks:detail' deck.id %}">{{ deck.name }}</a></li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No decks are available.</p>
-{% endif %}
+    <form action="/proxy_result" method="get">
+{{ form.as_p }}
+<input type="submit" value="Submit">
+</form>
+
 </body>
 </html>

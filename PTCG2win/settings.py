@@ -26,7 +26,7 @@ SECRET_KEY = 'amyl#lr2s&a5fof=pph^u(x3^#77*6jqpg7wcw7fss)t=vxuh@'
 DEBUG = True
 
 ALLOWED_HOSTS = ["52.192.15.67", "ec2-52-192-15-67.ap-northeast-1.compute.amazonaws.com", "127.0.0.1",
-                 "ptch2win.com", "www.ptcg2win.com"]
+                 "ptch2win.com", "www.ptcg2win.com", "www1.ptcg2win.com"]
 
 
 # Application definition
@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+    'bootstrap4',
+    'crispy_forms',  #追加
+    'pure_pagination', #追加
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -121,6 +124,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+STATIC_ROOT = ''
+
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+STATICFILES_DIRS = (os.path.join('static'),)
+
