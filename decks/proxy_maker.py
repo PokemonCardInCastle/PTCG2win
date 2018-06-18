@@ -17,7 +17,7 @@ class CodeInputForm(forms.Form):
                                 widget=forms.TextInput(
                                     attrs={'class': 'form-control',
                                            "type": "text",
-                                           'placeholder': 'c4c8Jx-8aVtOj-cYxcax'}))
+                                           'placeholder': '例：c4c8Jx-8aVtOj-cYxcax'}))
 
 
 def dl_img_and_return_http_response(deck_code: str):
