@@ -122,6 +122,10 @@ def dl_img_and_return_http_response(deck_code: str):
     pdf_height = 297.0*mm
     pdf_made.setPageSize((pdf_width, pdf_height))
 
+    pdf_made.setAuthor('PTCG2win')
+    pdf_made.setTitle(deck_code)
+    pdf_made.setSubject("PDF to print")
+
     # ポケモンカードのサイズは63x88なので、紙を縦置きにした場合、3枚x3枚(189x264)入る。
     num_card = cards_to_print_count
     # print("Page 1")

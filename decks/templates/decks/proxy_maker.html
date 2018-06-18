@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>デッキコード -> 印刷用PDF</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120934676-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120934676-1');
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -24,9 +37,10 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">PTCG2win</a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+            aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー">
         <span class="navbar-toggler-icon"></span>
-  </button>
+    </button>
     <div class="collapse navbar-collapse" id="Navber">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
@@ -91,7 +105,7 @@
                     </div>
                 {% endif %}
             {% endfor %}
-        <br>
+            <br>
             <div class="btn-group ml-3">
                 <button type='submit' class="btn btn-primary">ダウンロード</button>
             </div>
@@ -102,14 +116,14 @@
             そのため、対象カードがPDFでも裏面表示になります。<br/>
             また、PCでの使用を推奨します。(一部携帯端末では、サイズの大きいPDFの表示が乱れる場合があります。)
         </div>
-        </form>
     </div>
-    <div class="mx-3">
+</div>
+<div class="mx-3">
     <h4>＜お願い＞</h4>
     <p>
         サーバー使用料が1回あたり3円弱かかるので、ほどほどに使ってください。<br/>
         サービス継続と新機能開発の支援のために、<a href="https://www.amazon.co.jp/dp/B004N3APGO/"> Amazonギフト券を寄付</a>(宛先:
-        ptcg2win@outlook.jp、15円から)できます。
+        ptcg2win@outlook.jp、15円～)できます。
     </p>
 </div>
 
