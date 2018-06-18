@@ -3,80 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>デッキコード -> 印刷用PDF</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+
     {#    {% load static %}#}
     {#    <link rel="stylesheet" type="text/css" href="{% static 'decks/main.css' %}">#}
 </head>
-<body>
-<div>
-    <section role="complementary">
+<body style="padding-top:4.5rem;" class="m-3">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">PTCG2win</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+            aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー"></button>
+    <div class="collapse navbar-collapse" id="Navber">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">トップ <span class="sr-only">(現位置)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/proxy_maker">プロキシ印刷</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Decks(未実装)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Play!(未実装)</a>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input type="text" placeholder="検索(未実装)">
+        </form>
+    </div><!-- /.navbar-collapse -->
+</nav>
 
 
-        <nav role="navigation">
-            <ul>
-                <li><a href="/">トップへ</a></li>
-                <li><a href="#">Cards</a></li>
-                <li><a href="#" aria-haspopup="true">Decks</a>
-                    <ul class="dropdown" aria-label="submenu">
-                        <li><a href="#">Sub-1</a></li>
-                        <li><a href="#">Sub-2</a></li>
-                        <li><a href="#">Sub-3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Forums</a></li>
-                <li><a href="#">Play!</a></li>
-
-            </ul>
-        </nav>
-
-
-    </section>
-</div>
-<div style="clear: left">
-
-</div>
 <h4>＜使い方＞</h4>
 <p>
-    <a href="https://www.pokemon-card.com/deck/index.html" target="_blank">デッキ構築 | ポケモンカードゲーム公式ホームページ</a><br />
-    ↑に登録されているデッキコードの、印刷用のPDFを生成することができます。<br />
-    「非公開」になっている自分の作成したデッキも印刷することができます。<br />
+    <a href="https://www.pokemon-card.com/deck/index.html" target="_blank">デッキ構築 | ポケモンカードゲーム公式ホームページ</a><br/>
+    ↑に登録されているデッキコードの、印刷用のPDFを生成することができます。<br/>
+    「非公開」になっている自分の作成したデッキも印刷することができます。<br/>
 <p>
-    A4の紙に等倍で印刷してください。<br />
+    A4の紙に等倍で印刷してください。<br/>
     ネットプリントサービスと組み合わせることで、外出先での印刷も可能です。
 </p>
-</p>
+
+
+<div class="card mt-3 mb-3">
+    <div class="card-block">
+        <div class="card-header">デッキコード -> 印刷用PDF</div>
+        <form action="/proxy_result" method="get">
+            <div class="input-group mt-3 ml-3 mr-3 mb-0">
+                {% for field in form %}
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="{{ field.name }}">{{ field.label }}</label>
+                    </div>
+                    {{ field }}
+                {% endfor %}
+            </div>
+            <button type='submit' name='Submit' value='Submit' class="btn btn-primary ml-3 mt-1">送信</button>
+
+        </form>
+        <br/>
+        <div class="mb-3 ml-3 mr-3">
+            注: 6/16ごろから、一部の基本エネルギーの画像がポケモンカード公式サイトで裏面表示で配信されています。<br/>
+            そのため、対象カードがPDFでも裏面表示になります。
+        </div>
+    </div>
+</div>
+
 <h4>＜お願い＞</h4>
 <p>
     サーバー使用料が1回あたり3円弱かかるので、ほどほどに使ってください。<br/>
     Amazonギフト券(15円～)をlagyu_gift@outlook.jpに寄付してくれるとモチベが上がります。
 </p>
-<div>
 
 
-<form action="/proxy_result" method="get">
-        <div class="input-group">
-    {% for field in form %}
-        <label class="input-group-addon" for="{{ field.name }}">{{ field.label }}</label>
-        {{ field }}
-    {% endfor %}
-</div>
-    <button type='submit' name='Submit' value='Submit' class="btn btn-primary">印刷用PDFを作成!！</button>
-
-</form>
-    <br />
-<p>
-    注: 6/16ごろから、一部の基本エネルギーの画像がポケモンカード公式サイトで裏面表示で配信されているのでPDFでも裏面表示になります。
-</p>
-</div>
 </body>
 </html>

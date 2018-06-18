@@ -15,7 +15,7 @@ class CodeInputForm(forms.Form):
     deck_code = forms.CharField(max_length=20,
                                 label="デッキコード",
                                 widget=forms.TextInput(
-                                    attrs={'class': 'form-control',
+                                    attrs={'class': 'form-control mr-4',
                                            "type": "text",
                                            'placeholder': '例：c4c8Jx-8aVtOj-cYxcax'}))
 
