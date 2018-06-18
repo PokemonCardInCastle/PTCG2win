@@ -15,6 +15,7 @@ import zipfile
 
 class CodeInputForm(forms.Form):
     deck_code = forms.CharField(max_length=20,
+                                min_length=20,
                                 label="デッキコード",
                                 widget=forms.TextInput(
                                     attrs={'class': 'form-control mr-4',
@@ -32,9 +33,6 @@ class CodeInputForm(forms.Form):
 
 def dl_img_and_return_http_response(deck_code: str):
     code = deck_code
-    if len(code) != 20:
-        return HttpResponse("The code you put '" + code + "' is not a valid deck code.")
-
     file_name = deck_code
 
     # html = requests.get("https://www.pokemon-card.com/deck/deck.html?deckID=11F1Fw-VNG8m4-fk1bVF").content
@@ -155,9 +153,6 @@ def dl_img_and_return_http_response(deck_code: str):
 
 
 def dl_img_and_return_zip_http_response(deck_code: str):
-    code = deck_code
-    if len(code) != 20:
-        return HttpResponse("The code you put '" + code + "' is not a valid deck code.")
 
     file_name = deck_code
 
