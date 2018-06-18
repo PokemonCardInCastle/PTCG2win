@@ -11,7 +11,7 @@ from pure_pagination.mixins import PaginationMixin
 from .models import Deck
 from .filters import DeckFilter
 from .forms import DeckRegisterForm
-from .proxy_maker import dl_img_and_return_http_response, CodeInputForm
+from .proxy_maker import dl_img_and_return_http_response, dl_img_and_return_zip_http_response, CodeInputForm
 
 
 def index(request):
@@ -40,7 +40,12 @@ def proxy_maker(request):
 
 
 def proxy_result(request):
-    response = dl_img_and_return_http_response(request.GET.get("deck_code"))
+    if request.GET.get("type") == "pdf":
+        response = dl_img_and_return_http_response(request.GET.get("deck_code"))
+    elif request.GET.get("type") == "zip":
+        response = dl_img_and_return_zip_http_response(request.GET.get("deck_code"))
+    else:
+        response = Http404
     return response
 
 

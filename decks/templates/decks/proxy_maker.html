@@ -24,8 +24,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">PTCG2win</a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
-            aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー"></button>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー">
+        <span class="navbar-toggler-icon"></span>
+  </button>
     <div class="collapse navbar-collapse" id="Navber">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
@@ -56,7 +57,8 @@
     「非公開」になっている自分の作成したデッキも印刷することができます。<br/>
 <p>
     A4の紙に等倍で印刷してください。<br/>
-    ネットプリントサービスと組み合わせることで、外出先での印刷も可能です。
+    ネットプリントサービスと組み合わせることで、外出先での印刷も可能です。<br/>
+    ファイルサイズ制限のある場合は、分割PDF
 </p>
 
 
@@ -64,32 +66,52 @@
     <div class="card-block">
         <div class="card-header">デッキコード -> 印刷用PDF</div>
         <form action="/proxy_result" method="get">
-            <div class="input-group mt-3 ml-3 mr-3 mb-0">
-                {% for field in form %}
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="{{ field.name }}">{{ field.label }}</label>
-                    </div>
-                    {{ field }}
-                {% endfor %}
-            </div>
-            <button type='submit' name='Submit' value='Submit' class="btn btn-primary ml-3 mt-1">送信</button>
 
+            {% for field in form %}
+                {# Todo: ハードコード部分要修正。 #}
+                {% if field.label == "ファイルタイプ" %}
+
+                    <div class="btn-group mt-2 mb-2 ml-3 mr-2" data-toggle="buttons">
+                        <label class="btn btn-outline-primary active">
+                            <input name="type" value="pdf" id="pdf" checked="" type="radio">PDF(単一ファイル)
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input name="type" value="zip" id="zip" type="radio">ZIP(ページごとに分割)
+                        </label>
+                    </div>
+
+                {% else %}
+
+                    <div class="input-group mt-3 mx-3 mb-0">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="{{ field.name }}">{{ field.label }}</label>
+                        </div>
+                        {{ field }}
+
+                    </div>
+                {% endif %}
+            {% endfor %}
+        <br>
+            <div class="btn-group ml-3">
+                <button type='submit' class="btn btn-primary">ダウンロード</button>
+            </div>
         </form>
         <br/>
         <div class="mb-3 ml-3 mr-3">
             注: 6/16ごろから、一部の基本エネルギーの画像がポケモンカード公式サイトで裏面表示で配信されています。<br/>
-            そのため、対象カードがPDFでも裏面表示になります。<br />
-            また、PCでの使用を推奨します。(一部携帯端末では表示が乱れる場合があります。)
+            そのため、対象カードがPDFでも裏面表示になります。<br/>
+            また、PCでの使用を推奨します。(一部携帯端末では、サイズの大きいPDFの表示が乱れる場合があります。)
         </div>
+        </form>
     </div>
+    <div class="ml-3">
+    <h4>＜お願い＞</h4>
+    <p>
+        サーバー使用料が1回あたり3円弱かかるので、ほどほどに使ってください。<br/>
+        サービス継続と新機能開発の支援のために、<a href="https://www.amazon.co.jp/dp/B004N3APGO/"> Amazonギフト券を寄付</a>(宛先:
+        ptcg2win@outlook.jp、15円から)できます。
+    </p>
 </div>
-
-<h4>＜お願い＞</h4>
-<p>
-    サーバー使用料が1回あたり3円弱かかるので、ほどほどに使ってください。<br/>
-    サービス継続と新機能開発の支援のために、<a href="https://www.amazon.co.jp/dp/B004N3APGO/"> Amazonギフト券を寄付</a>(宛先: ptcg2win@outlook.jp、15円から)できます。
-</p>
-
 
 </body>
 </html>
