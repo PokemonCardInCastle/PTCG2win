@@ -60,13 +60,23 @@
     サーバー使用料が1回あたり3円弱かかるので、ほどほどに使ってください。<br/>
     Amazonギフト券(15円～)をlagyu_gift@outlook.jpに寄付してくれるとモチベが上がります。
 </p>
+<div>
+
 
 <form action="/proxy_result" method="get">
-    {{ form.as_p }}
-    <button type='submit' name='Submit' value='Submit'>印刷用PDFを作成!！</button>
-</form><br />
+        <div class="input-group">
+    {% for field in form %}
+        <label class="input-group-addon" for="{{ field.name }}">{{ field.label }}</label>
+        {{ field }}
+    {% endfor %}
+</div>
+    <button type='submit' name='Submit' value='Submit' class="btn btn-primary">印刷用PDFを作成!！</button>
+
+</form>
+    <br />
 <p>
     注: 6/16ごろから、一部の基本エネルギーの画像がポケモンカード公式サイトで裏面表示で配信されているのでPDFでも裏面表示になります。
 </p>
+</div>
 </body>
 </html>

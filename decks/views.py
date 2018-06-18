@@ -34,7 +34,7 @@ def detail(request, deck_id):
 
 def proxy_maker(request):
     form = CodeInputForm()
-    return render(request, 'decks/proxy_maker.html',{
+    return render(request, 'decks/proxy_maker.html', {
         'form': form,
     })
 

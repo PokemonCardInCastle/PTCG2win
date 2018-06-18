@@ -12,7 +12,12 @@ from django import forms
 
 
 class CodeInputForm(forms.Form):
-    deck_code = forms.CharField(max_length=20)
+    deck_code = forms.CharField(max_length=20,
+                                label="デッキコード",
+                                widget=forms.TextInput(
+                                    attrs={'class': 'form-control',
+                                           "type": "text",
+                                           'placeholder': 'c4c8Jx-8aVtOj-cYxcax'}))
 
 
 def dl_img_and_return_http_response(deck_code: str):
