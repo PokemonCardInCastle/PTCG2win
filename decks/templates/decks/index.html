@@ -1,67 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-{#    {% load static %}#}
-{#    <link rel="stylesheet" type="text/css" href="{% static 'decks/main.css' %}">#}
-</head>
-<body>
-<div>
-<section role="complementary">
+{% extends "./_base.html" %}
 
+{% block title %}トップページ{% endblock %}
 
-    <nav role="navigation">
+{% block content %}
+    <div class="card card-block p-3 mb-3">
+    <h4 class="card-title">About</h4>
+    <p class="card-text">
+        このサイトは、ポケモンカードゲームのコミュニティサイトになる予定です。<br />
+        ポケモンカードゲームをより手軽に、オープンに、そして活発に競技として楽しめるようにすることを目標として設立されました。<br />
+        デッキ共有や議論、サイト上での模擬対戦、対戦結果の統計データの公開等ができるプラットフォームを作っていく予定です。
+    </p>
+    <p class="card-text">
+        This site is (going to become) a community site of Pokemon TCG.<br />
+        The final goal is to make the competitive Pokemon TCG play more open, more active and easier to enjoy. <br />
+        We're going to build up deck builder, online play simulator, statistics based on the data from the simulator.
+    </p>
+    </div>
+    <div>
+        <p>
+            終わったこと:<br/>
+            ・このサイト自体の設計<br/>
+            ・全てのカードのデータを収集して、DBに入れる<br/>
+        </p>
+        <p>
+            Todo:<br/>
+            ・デッキの登録フォームを作る<br/>
+            ・試合結果のデータのDB構造を考える<br/>
+            ・Unityの使い方を学ぶ<br/>
+            ・Unityで試合ができる対戦シミュレータを作る<br/>
+            ・サイト全体のデザインを考える<br/>
+            ・カードの個別ビューのページを作る<br/>
+        </p>
+
+    </div>
+    {% if latest_deck_list %}
         <ul>
-            <li><a href="#">Cards</a></li>
-            <li><a href="#" aria-haspopup="true">Decks</a>
-                <ul class="dropdown" aria-label="submenu">
-                    <li><a href="#">Sub-1</a></li>
-                    <li><a href="#">Sub-2</a></li>
-                    <li><a href="#">Sub-3</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">Play!</a></li>
-            <li><a href="/proxy_maker">プロキシ用PDF作成</a></li>
+            {% for deck in latest_deck_list %}
+                <li><a href="{% url 'decks:detail' deck.id %}">{{ deck.name }}</a></li>
+            {% endfor %}
         </ul>
-    </nav>
-
-
-</section>
-</div>
-<div style="clear: left">
-
-</div>
-<div>
-    <p>
-        終わったこと:<br />
-        ・このサイト自体の設計<br />
-        ・全てのカードのデータを収集して、DBに入れる<br />
-    </p>
-    <p>
-        Todo:<br />
-        ・デッキの登録フォームを作る<br />
-        ・試合結果のデータのDB構造を考える<br />
-        ・Unityの使い方を学ぶ<br />
-        ・Unityで試合ができる対戦シミュレータを作る<br />
-        ・サイト全体のデザインを考える<br />
-        ・カードの個別ビューのページを作る<br />
-    </p>
-
-</div>
-{% if latest_deck_list %}
-    <ul>
-        {% for deck in latest_deck_list %}
-            <li><a href="{% url 'decks:detail' deck.id %}">{{ deck.name }}</a></li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No decks are available.</p>
-{% endif %}
-</body>
-</html>
+    {% else %}
+        <p>No decks are available.</p>
+    {% endif %}
+{% endblock %}

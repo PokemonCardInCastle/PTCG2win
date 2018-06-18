@@ -1,131 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>デッキコード -> 印刷用PDF</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120934676-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+{% extends "./_base.html" %}
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+{% block title %}デッキコード -> 印刷用PDF{% endblock %}
 
-        gtag('js', new Date());
+{% block content %}
+    <h4>- 使い方</h4>
+    <p>
+        <a href="https://www.pokemon-card.com/deck/index.html" target="_blank">デッキ構築 | ポケモンカードゲーム公式ホームページ</a><br/>
+        ↑に登録されているデッキコードの、印刷用のPDFを生成することができます。<br/>
+        「非公開」になっている自分の作成したデッキも印刷することができます。<br/>
+    <p>
+        A4の紙に等倍で印刷してください。<br/>
+        セブンイレブン等のネットプリントサービスと組み合わせることで、外出先での印刷も可能です。<br/>
+        ファイルサイズに制約がある場合は、ZIP版(ページごとに分割されたPDF)を利用してください。
+    </p>
 
-        gtag('config', 'UA-120934676-1');
-    </script>
+    <div class="card mt-3 mb-3">
+        <div class="card-block">
+            <div class="card-header">デッキコード -> 印刷用PDF</div>
+            <form action="/proxy_result" method="get">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
+                {% for field in form %}
+                    {# Todo: ハードコード部分要修正。 #}
+                    {% if field.label == "ファイルタイプ" %}
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
-
-    {#    {% load static %}#}
-    {#    <link rel="stylesheet" type="text/css" href="{% static 'decks/main.css' %}">#}
-</head>
-<body style="padding-top:4.5rem;" class="m-3">
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">PTCG2win</a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
-            aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="Navber">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">トップ <span class="sr-only">(現位置)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/proxy_maker">プロキシ印刷</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">デッキ投稿・検索(未実装)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">オンライン対戦(未実装)</a>
-            </li>
-
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input type="text" placeholder="検索(未実装)">
-        </form>
-    </div><!-- /.navbar-collapse -->
-</nav>
-
-
-<h4>＜使い方＞</h4>
-<p>
-    <a href="https://www.pokemon-card.com/deck/index.html" target="_blank">デッキ構築 | ポケモンカードゲーム公式ホームページ</a><br/>
-    ↑に登録されているデッキコードの、印刷用のPDFを生成することができます。<br/>
-    「非公開」になっている自分の作成したデッキも印刷することができます。<br/>
-<p>
-    A4の紙に等倍で印刷してください。<br/>
-    ネットプリントサービスと組み合わせることで、外出先での印刷も可能です。<br/>
-    ファイルサイズに制約がある場合は、ZIP版(ページごとに分割されたPDF)を利用してください。
-</p>
-
-
-<div class="card mt-3 mb-3">
-    <div class="card-block">
-        <div class="card-header">デッキコード -> 印刷用PDF</div>
-        <form action="/proxy_result" method="get">
-
-            {% for field in form %}
-                {# Todo: ハードコード部分要修正。 #}
-                {% if field.label == "ファイルタイプ" %}
-
-                    <div class="btn-group mt-2 mb-2 ml-3 mr-2" data-toggle="buttons">
-                        <label class="btn btn-outline-primary active">
-                            <input name="type" value="pdf" id="pdf" checked="" type="radio">PDF(単一ファイル)
-                        </label>
-                        <label class="btn btn-outline-secondary">
-                            <input name="type" value="zip" id="zip" type="radio">ZIP(ページごとに分割)
-                        </label>
-                    </div>
-
-                {% else %}
-
-                    <div class="input-group mt-3 mx-3 mb-0">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="{{ field.name }}">{{ field.label }}</label>
+                        <div class="btn-group m-2 ml-3" data-toggle="buttons">
+                            <label class="btn btn-outline-primary active">
+                                <input name="type" value="pdf" id="pdf" checked="" type="radio">PDF(単一ファイル)
+                            </label>
+                            <label class="btn btn-outline-info">
+                                <input name="type" value="zip" id="zip" type="radio">ZIP(ページごとに分割)
+                            </label>
                         </div>
-                        {{ field }}
 
-                    </div>
-                {% endif %}
-            {% endfor %}
-            <br>
-            <div class="btn-group ml-3">
-                <button type='submit' class="btn btn-primary">ダウンロード</button>
+                    {% else %}
+
+                        <div class="input-group mt-3 mx-3 mb-0">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="{{ field.name }}">{{ field.label }}</label>
+                            </div>
+                            {{ field }}
+
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                <br>
+                <div class="btn-group ml-3">
+                    <button type='submit' class="btn btn-primary">ダウンロード</button>
+                </div>
+            </form>
+            <br/>
+            <div class="mb-3 mx-3">
+                注: 6/16ごろから、一部の基本エネルギーの画像がポケモンカード公式サイトで裏面表示で配信されています。<br/>
+                そのため、対象カードがPDFでも裏面表示になります。<br/>
+                また、PCでの使用を推奨します。(一部携帯端末では、サイズの大きいPDFの表示が乱れる場合があります。)
             </div>
-        </form>
-        <br/>
-        <div class="mb-3 mx-3">
-            注: 6/16ごろから、一部の基本エネルギーの画像がポケモンカード公式サイトで裏面表示で配信されています。<br/>
-            そのため、対象カードがPDFでも裏面表示になります。<br/>
-            また、PCでの使用を推奨します。(一部携帯端末では、サイズの大きいPDFの表示が乱れる場合があります。)
         </div>
     </div>
-</div>
-<div class="mx-3">
-    <h4>＜お願い＞</h4>
-    <p>
-        サーバー使用料が1回あたり3円弱かかるので、ほどほどに使ってください。<br/>
-        サービス継続と新機能開発の支援のために、<a href="https://www.amazon.co.jp/dp/B004N3APGO/"> Amazonギフト券を寄付</a>(宛先:
-        ptcg2win@outlook.jp、15円～)できます。
-    </p>
-</div>
+    <div class="mx-3">
+        <h4>- お願い</h4>
+        <p>
+            サーバー使用料が1回あたり3円弱かかるので、ほどほどに使ってください。<br/>
+            サービス継続と新機能開発の支援のために、<a href="https://www.amazon.co.jp/dp/B004N3APGO/"> Amazonギフト券を寄付</a>(宛先:
+            ptcg2win@outlook.jp、15円～)できます。
+        </p>
+    </div>
 
-</body>
-</html>
+{% endblock %}
