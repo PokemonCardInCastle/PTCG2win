@@ -3,7 +3,7 @@ import os
 import sys
 import django
 
-sys.path.append(r"C:\Users\lagyu.DESKTOP-DCLAL1H\PycharmProjects\PTCG2win")
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "../../")
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PTCG2win.settings')
 django.setup()
 
