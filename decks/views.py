@@ -13,6 +13,9 @@ from .filters import DeckFilter
 from .forms import DeckRegisterForm
 from .proxy_maker import dl_img_and_return_http_response, dl_img_and_return_zip_http_response, CodeInputForm
 
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
+
 
 def index(request):
     latest_deck_list = Deck.objects.order_by('-pub_date')[:5]
@@ -33,6 +36,13 @@ def detail(request, deck_id):
 
 
 def proxy_maker(request):
+    form = CodeInputForm()
+    return render(request, 'decks/proxy_maker.html', {
+        'form': form,
+    })
+
+@login_required()
+def proxy_maker_login(request):
     form = CodeInputForm()
     return render(request, 'decks/proxy_maker.html', {
         'form': form,

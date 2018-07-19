@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ["52.192.15.67", "ec2-52-192-15-67.ap-northeast-1.compute.amazon
 
 INSTALLED_APPS = [
     'decks.apps.DecksConfig',
+    'accounts.apps.AccountsConfig',  # アカウント管理
     'gunicorn',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,8 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4',
-    'crispy_forms',  #追加
-    'pure_pagination', #追加
+    'crispy_forms',  # 追加
+    'pure_pagination',  # 追加
     ]
 
 MIDDLEWARE = [
