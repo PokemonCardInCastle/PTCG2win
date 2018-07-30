@@ -12,4 +12,10 @@ admin.site.register(Expansion)
 admin.site.register(Regulation)
 admin.site.register(Region)
 admin.site.register(PokemonRegion)
-admin.site.register(DeckCode)
+
+
+class DeckCodeAdmin(admin.ModelAdmin):
+    list_display = ("text", "date", "ip")
+
+
+admin.site.register(DeckCode, DeckCodeAdmin)
