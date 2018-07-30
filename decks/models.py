@@ -245,6 +245,12 @@ class DeckComments(Comments):
     parent_deck = models.ForeignKey(Deck, on_delete=models.CASCADE)
 
 
+class DeckCode(models.Model):
+    date = models.DateTimeField()
+    text = models.CharField(max_length=24, default="Invalid deck code.")
+    ip = models.CharField(max_length=20, default="0.0.0.0")
 
+    def __str__(self):
+        return self.text
 
 

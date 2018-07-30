@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Deck, User, ArchType, Expansion, Regulation, Region, Card, CardBundle, PokemonRegion
+from .models import Deck, User, ArchType, Expansion, Regulation, Region, Card, CardBundle, PokemonRegion, DeckCode
 # Register your models here.
 
 
@@ -12,4 +12,4 @@ admin.site.register(Expansion)
 admin.site.register(Regulation)
 admin.site.register(Region)
 admin.site.register(PokemonRegion)
-
+admin.site.register(DeckCode)

@@ -135,7 +135,7 @@ def dl_img_and_return_http_response(deck_code: str):
             pdf_made.showPage()
     #        print("Page", i // 9 + 1)
         # 3枚ごとに改行
-        x_pos = (15 + 63 * (i % 3)) * mm
+        x_pos = (11 + 63 * (i % 3)) * mm
         y_pos = (15 + 88 * ((i % 9) // 3)) * mm
         pdf_made.drawInlineImage(
                                   individual_print_card_list[i],
@@ -285,7 +285,7 @@ def dl_img_and_return_zip_http_response(deck_code: str):
 
         #        print("Page", i // 9 + 1)
         # 3枚ごとに改行
-        x_pos = (15 + 63 * (i % 3)) * mm
+        x_pos = (11 + 63 * (i % 3)) * mm
         y_pos = (15 + 88 * ((i % 9) // 3)) * mm
         pdf_in_memory.drawInlineImage(
                                   individual_print_card_list[i],

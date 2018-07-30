@@ -6,9 +6,10 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django_filters.views import FilterView
+from django.utils import timezone
 
 from pure_pagination.mixins import PaginationMixin
-from .models import Deck
+from .models import Deck, DeckCode
 from .filters import DeckFilter
 from .forms import DeckRegisterForm
 from .proxy_maker import dl_img_and_return_http_response, dl_img_and_return_zip_http_response, CodeInputForm
@@ -41,6 +42,7 @@ def proxy_maker(request):
         'form': form,
     })
 
+
 @login_required()
 def proxy_maker_login(request):
     form = CodeInputForm()
@@ -56,6 +58,18 @@ def proxy_result(request):
         response = dl_img_and_return_zip_http_response(request.GET.get("deck_code"))
     else:
         response = Http404
+
+    def get_client_ip(req):
+        x_forwarded_for = req.META.get('HTTP_X_FORWARDED_FOR')
+        if x_forwarded_for:
+            ip = x_forwarded_for.split(',')[0]
+        else:
+            ip = req.META.get('REMOTE_ADDR')
+        return ip
+
+    deck_code = DeckCode(text=request.GET.get("deck_code"), date=timezone.now(), ip=get_client_ip(request))
+    deck_code.save()
+
     return response
 
 
