@@ -11,6 +11,9 @@ from django.http import HttpResponse
 from django import forms
 from io import BytesIO
 import zipfile
+import csv
+from reportlab.lib.pagesizes import A4
+from PIL import Image
 
 
 class CodeInputForm(forms.Form):
@@ -52,10 +55,10 @@ def dl_img_and_return_http_response(deck_code: str):
         if soup.find(id="deck_sta")["value"] != "" else []
     deck_ene_list = [elem.split("_")[:2] for elem in soup.find(id="deck_ene")["value"].split("-")]\
         if soup.find(id="deck_ene")["value"] != "" else []
-    deck_ajs_list = [elem.split("_")[:2] for elem in soup.find(id="deck_ajs")["value"].split("-")]\
-        if soup.find(id="deck_ajs")["value"] != "" else []
+    # deck_ajs_list = [elem.split("_")[:2] for elem in soup.find(id="deck_ajs")["value"].split("-")]\
+    #     if soup.find(id="deck_ajs")["value"] != "" else []
 
-    deck_list = deck_pke_list + deck_gds_list + deck_sup_list + deck_sta_list + deck_ene_list + deck_ajs_list
+    deck_list = deck_pke_list + deck_gds_list + deck_sup_list + deck_sta_list + deck_ene_list  #+ deck_ajs_list
     cards_to_print_count = 0
 
     individual_print_card_list = []
@@ -114,13 +117,8 @@ def dl_img_and_return_http_response(deck_code: str):
     response['Content-Disposition'] = 'attachment; filename="' + deck_code + '.pdf"'
 
     # キャンバスと出力ファイルの初期化
-    pdf_made = canvas.Canvas(response)
+    pdf_made = canvas.Canvas(response, pagesize=A4)
     pdf_made.saveState()
-
-    # A4サイズに設定(JIS規格の紙の大きさ。実際の印刷範囲は10mm四方短い190x277程度だと思われる)
-    pdf_width = 210.0*mm
-    pdf_height = 297.0*mm
-    pdf_made.setPageSize((pdf_width, pdf_height))
 
     pdf_made.setAuthor('PTCG2win')
     pdf_made.setTitle(deck_code)
@@ -156,6 +154,77 @@ def dl_img_and_return_http_response(deck_code: str):
     # print("終了！")
 
 
+def generate_csv_and_return_response(deck_code: str):
+    code = deck_code
+    file_name = deck_code
+
+    # html = requests.get("https://www.pokemon-card.com/deck/deck.html?deckID=11F1Fw-VNG8m4-fk1bVF").content
+    html = requests.get("https://www.pokemon-card.com/deck/deck.html?deckID=" + code).content
+
+    soup = BeautifulSoup(html, "html.parser")
+
+    card_data_script_text = soup.find_all("script")[-1].text
+
+    # deck_pke_list の例: [["33525", "3"], ["33525", "3"]]
+    deck_pke_list = [elem.split("_")[:2] for elem in soup.find(id="deck_pke")["value"].split("-")]
+    deck_gds_list = [elem.split("_")[:2] for elem in soup.find(id="deck_gds")["value"].split("-")]\
+        if soup.find(id="deck_gds")["value"] != "" else []
+    deck_sup_list = [elem.split("_")[:2] for elem in soup.find(id="deck_sup")["value"].split("-")]\
+        if soup.find(id="deck_sup")["value"] != "" else []
+    deck_sta_list = [elem.split("_")[:2] for elem in soup.find(id="deck_sta")["value"].split("-")]\
+        if soup.find(id="deck_sta")["value"] != "" else []
+    deck_ene_list = [elem.split("_")[:2] for elem in soup.find(id="deck_ene")["value"].split("-")]\
+        if soup.find(id="deck_ene")["value"] != "" else []
+    # deck_ajs_list = [elem.split("_")[:2] for elem in soup.find(id="deck_ajs")["value"].split("-")]\
+    #     if soup.find(id="deck_ajs")["value"] != "" else []
+
+    deck_content_lists_list = [deck_pke_list, deck_gds_list, deck_sup_list, deck_sta_list, deck_ene_list]
+
+    csv_header_row = ["種類", "名前", "枚数", "エキスパンション", "コレクションID",  "URL", code]
+
+    csv_content_rows = []
+
+    def get_card_info_dict(card_id_str: str):
+        res = requests.get("https://www.pokemon-card.com/deck/deckThumbsImage.php?cardID=" + card_id_str)
+        card_info_dict = res.json()
+        return card_info_dict
+
+    for i in range(len(deck_content_lists_list)):
+        for j in range(len(deck_content_lists_list[i])):
+            card_info = get_card_info_dict(deck_content_lists_list[i][j][0])
+            categories = ["ポケモン", "グッズ", "サポート", "スタジアム", "エネルギー"]
+            csv_content_rows.append([categories[i], card_info["cardName"],  deck_content_lists_list[i][j][1], card_info["blockCode"], card_info["collectionCode"], "https://www.pokemon-card.com/card-search/details.php/card/" + card_info["cardID"] + "/"])
+
+    csv_output_dir_name = "_csv_out"
+    try:
+        os.mkdir(csv_output_dir_name)
+    except FileExistsError:
+        pass
+
+    # httpレスポンスの作成
+    response = HttpResponse(content_type='application/csv', charset="utf-8")
+    response['Content-Disposition'] = 'attachment; filename="' + deck_code + '.csv"'
+
+    response.write('\ufeff')
+
+    writer = csv.writer(response, lineterminator='\n')  # 改行コード（\n）を指定しておく
+    writer.writerow(csv_header_row)
+    writer.writerows(csv_content_rows)
+
+    with open("./" + csv_output_dir_name + "/" + code + ".csv", 'w') as f:
+        writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
+        writer.writerow(csv_header_row)
+        writer.writerows(csv_content_rows)
+
+    # レスポンスを返す
+    return response
+
+    # 削除する場合は下のコメントアウトを外す。(キャッシュが効くので削除しないことを推奨)
+    # shutil.rmtree("./" + temp_dir_name)
+
+    # print("終了！")
+
+
 def dl_img_and_return_zip_http_response(deck_code: str):
     code = deck_code
     if len(code) != 20:
@@ -180,10 +249,10 @@ def dl_img_and_return_zip_http_response(deck_code: str):
         if soup.find(id="deck_sta")["value"] != "" else []
     deck_ene_list = [elem.split("_")[:2] for elem in soup.find(id="deck_ene")["value"].split("-")]\
         if soup.find(id="deck_ene")["value"] != "" else []
-    deck_ajs_list = [elem.split("_")[:2] for elem in soup.find(id="deck_ajs")["value"].split("-")]\
-        if soup.find(id="deck_ajs")["value"] != "" else []
+    # deck_ajs_list = [elem.split("_")[:2] for elem in soup.find(id="deck_ajs")["value"].split("-")]\
+    #     if soup.find(id="deck_ajs")["value"] != "" else []
 
-    deck_list = deck_pke_list + deck_gds_list + deck_sup_list + deck_sta_list + deck_ene_list + deck_ajs_list
+    deck_list = deck_pke_list + deck_gds_list + deck_sup_list + deck_sta_list + deck_ene_list  # + deck_ajs_list
     cards_to_print_count = 0
 
     individual_print_card_list = []
@@ -312,3 +381,4 @@ def dl_img_and_return_zip_http_response(deck_code: str):
     # shutil.rmtree("./" + temp_dir_name)
 
     # print("終了！")
+

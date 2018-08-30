@@ -6,12 +6,11 @@
     <h4>- 使い方</h4>
     <p>
         <a href="https://www.pokemon-card.com/deck/index.html" target="_blank">デッキ構築 | ポケモンカードゲーム公式ホームページ</a><br/>
-        ↑に登録されているデッキコードの、印刷用のPDFを生成することができます。<br/>
-        「非公開」になっている自分の作成したデッキも印刷することができます。<br/>
+        ↑でデッキに入れるカードを選んで、プロキシを印刷できます。<br/>
     <p>
         A4の紙に等倍で印刷してください。<br/>
         セブンイレブン等のネットプリントサービスと組み合わせることで、外出先での印刷も可能です。<br/>
-        ファイルサイズに制約がある場合は、ZIP版(ページごとに分割されたPDF)を利用してください。
+        ファイルサイズに制約がある場合は、ZIP版(ページ毎に分割)を利用してください。
     </p>
 
     <div class="card mt-3 mb-3">
@@ -25,10 +24,13 @@
 
                         <div class="btn-group m-2 ml-3" data-toggle="buttons">
                             <label class="btn btn-outline-primary active">
-                                <input name="type" value="pdf" id="pdf" checked="" type="radio">PDF(単一ファイル)
+                                <input name="type" value="pdf" id="pdf" checked="" type="radio">PDF(単一ファイル、おすすめ)
                             </label>
                             <label class="btn btn-outline-info">
-                                <input name="type" value="zip" id="zip" type="radio">ZIP(ページごとに分割)
+                                <input name="type" value="zip" id="zip" type="radio">ZIP(ページ毎に分割)
+                            </label>
+                            <label class="btn btn-outline-info">
+                                <input name="type" value="csv" id="csv" type="radio">CSV(デッキリスト)
                             </label>
                         </div>
 
@@ -58,7 +60,7 @@
         <h4>- お願い</h4>
         <p>
             サーバー使用料が1回あたり3円弱かかるので、ほどほどに使ってください。<br/>
-            サービスと新機能開発の継続のために、広告を表示する予定です。使用する際にクリックしてくださると制作のモチベーションが上がります。
+            新機能開発とサービスの継続のために、そのうち広告を表示するかもしれません。
         </p>
     </div>
 
