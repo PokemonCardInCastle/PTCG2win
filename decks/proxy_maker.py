@@ -13,7 +13,6 @@ from io import BytesIO
 import zipfile
 import csv
 from reportlab.lib.pagesizes import A4
-from PIL import Image
 
 
 class CodeInputForm(forms.Form):

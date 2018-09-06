@@ -2,6 +2,7 @@
 from html.parser import HTMLParser
 from bs4 import BeautifulSoup
 from collections import Counter
+import lxml
 
 type_list = ["Grass", "Fire", "Water", "Lightning", "Fighting", "Psychic", "Colorless", "Darkness", "Metal", "Dragon",
              "Fairy", "Free"]

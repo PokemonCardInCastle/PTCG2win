@@ -1,10 +1,10 @@
-from django.conf.urls import url
-from django.contrib.auth.views import login, logout
+from django.urls import path
+
+from . import views
 
 
+app_name = 'decks'
 urlpatterns = [
-    url(r'^login/$', login,
-        {'template_name': 'accounts/login.html'},
-        name='login'),
-    url(r'^logout/$', logout, name='logout')
+    # e.g. /decks/
+    path("", views.signup, name="signup"),
 ]

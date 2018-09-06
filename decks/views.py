@@ -75,55 +75,6 @@ def proxy_result(request):
     return response
 
 
-# 検索一覧画面
-
-class DeckFilterView(LoginRequiredMixin, PaginationMixin, FilterView):
-    model = Deck
-    filterset_class = DeckFilter
-    # デフォルトの並び順を新しい順とする
-    queryset = Deck.objects.all().order_by('-pub_date')
-
-    # pure_pagination用設定
-    paginate_by = 3
-    object = Deck
-
-    # 検索条件をセッションに保存する or 呼び出す
-    def get(self, request, **kwargs):
-        if request.GET:
-            request.session['query'] = request.GET
-        else:
-            request.GET = request.GET.copy()
-            if 'query' in request.session.keys():
-                for key in request.session['query'].keys():
-                    request.GET[key] = request.session['query'][key]
-
-        return super().get(request, **kwargs)
-
-
-# 詳細画面
-class DeckDetailView(LoginRequiredMixin, DetailView):
-    model = Deck
-
-
-# 登録画面
-class DeckCreateView(LoginRequiredMixin, CreateView):
-    model = Deck
-    form_class = DeckRegisterForm
-    success_url = reverse_lazy('index')
-
-
-# 更新画面
-class DeckUpdateView(LoginRequiredMixin, UpdateView):
-    model = Deck
-    form_class = DeckRegisterForm
-    success_url = reverse_lazy('index')
-
-
-# 削除画面
-class DeckDeleteView(LoginRequiredMixin, DeleteView):
-    model = Deck
-    success_url = reverse_lazy('index')
-
 
 # def search(request, deck_id_from, deck_id_to):
 #     return HttpResponse("You are looking from %s to " % deck_id_from + "%s" % deck_id_to)
