@@ -22,7 +22,6 @@ def index(request):
     latest_deck_list = Deck.objects.order_by('-pub_date')[:5]
     context = {
         'latest_deck_list': latest_deck_list,
-        "disable_breadcrumb": True,
     }
     return render(request, 'decks/index.html', context)
 
@@ -41,7 +40,6 @@ def proxy_maker(request):
     form = CodeInputForm()
     return render(request, 'decks/proxy_maker.html', {
         'form': form,
-        "disable_breadcrumb": True,
     })
 
 

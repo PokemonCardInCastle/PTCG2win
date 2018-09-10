@@ -41,11 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts.apps.AccountsConfig',
+    'accounts',
     'bootstrap4',
     'crispy_forms',  # 追加
     'pure_pagination',  # 追加
-    'widget_tweaks',
     ]
 
 MIDDLEWARE = [
@@ -76,10 +75,6 @@ TEMPLATES = [
         },
     },
 ]
-
-LOGIN_URL = 'accounts:login'
-LOGOUT_REDIRECT_URL = "decks:index"
-LOGIN_REDIRECT_URL = "decks:index"
 
 WSGI_APPLICATION = 'PTCG2win.wsgi.application'
 
@@ -136,9 +131,4 @@ STATIC_ROOT = ''
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join('static'),)
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-
-
 
