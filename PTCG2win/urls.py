@@ -17,10 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path("decks/", include("decks.urls")),
     path('admin/', admin.site.urls),
     # path('accounts_old/', include('accounts_old.urls')),  # アカウント管理
-    path('signup/', include('accounts.urls')),
-    path(r'^$', include('decks.urls')),
-    path(r'', include('decks.urls')),
+    path('accounts/', include('accounts.urls')),
+    path('', include('decks.urls')),
 ]
