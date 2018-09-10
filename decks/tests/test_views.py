@@ -2,9 +2,9 @@ from django.test import TestCase
 from django.urls import reverse
 from django.urls import resolve
 from decks.views import index
-from .models import DeckCode
+from decks.models import DeckCode
 from django.utils import timezone
-from .views import proxy_maker
+from decks.views import proxy_maker
 
 # Create your tests here.
 
