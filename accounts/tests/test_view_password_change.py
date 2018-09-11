@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse, resolve
-from django.contrib.auth.models import User
+from accounts.models import PTCG2winUser
 
 
 class LoginRequiredPasswordChangeTests(TestCase):
@@ -13,7 +13,7 @@ class LoginRequiredPasswordChangeTests(TestCase):
 
 class PasswordChangeTestCase(TestCase):
     def setUp(self, data={}):
-        self.user = User.objects.create_user(username='john', email='john@doe.com', password='old_password')
+        self.user = PTCG2winUser.objects.create_user(username='john', email='john@doe.com', password='old_password')
         self.url = reverse('accounts:password_change')
         self.client.login(username='john', password='old_password')
         self.response = self.client.post(self.url, data)

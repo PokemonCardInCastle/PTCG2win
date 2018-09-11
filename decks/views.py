@@ -27,6 +27,15 @@ def index(request):
     return render(request, 'decks/index.html', context)
 
 
+def deck_board(request):
+    latest_deck_list = Deck.objects.order_by('-pub_date')[:5]
+    context = {
+        'decks_to_show': latest_deck_list,
+        "disable_breadcrumb": False,
+    }
+    return render(request, 'decks/deck_board.html', context)
+
+
 def detail(request, deck_id):
     # try:
     #     deck = Deck.objects.get(pk=deck_id)

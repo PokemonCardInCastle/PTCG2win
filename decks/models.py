@@ -1,13 +1,5 @@
 from django.db import models
-
-
-# Create your models here.
-class User(models.Model):
-    name = models.CharField(max_length=30)
-    login_id = models.CharField(max_length=30)
-
-    def __str__(self):
-        return self.name
+from accounts.models import PTCG2winUser
 
 
 class Region(models.Model):
@@ -26,7 +18,7 @@ class Country(models.Model):
         return self.name
 
 
-class Expansion(models.Model):
+class Set(models.Model):
     name = models.CharField(max_length=100)
     region = models.ForeignKey(Region, on_delete=models.PROTECT)
     pub_date = models.DateField()
@@ -44,7 +36,7 @@ class Regulation(models.Model):
     name = models.CharField(max_length=100)
     region = models.ForeignKey(Region, on_delete=models.CASCADE)
     is_available = models.BooleanField(default=False)
-    expansions = models.ManyToManyField(Expansion)
+    expansions = models.ManyToManyField(Set)
 
     def __str__(self):
         return self.name
@@ -84,16 +76,29 @@ class PokemonSpecies(models.Model):
         return self.name
 
 
+class SuperType(models.Model):
+    name = models.CharField(max_length=20)
+    name_j = models.CharField(max_length=20)
+
+
+class SubType(models.Model):
+    name = models.CharField(max_length=20)
+    name_j = models.CharField(max_length=20)
+    supertype = models.ForeignKey(SuperType, on_delete=models.CASCADE)
+
+
 class Card(models.Model):
     artist = models.CharField(max_length=50)
-    expansion = models.ForeignKey(Expansion, on_delete=models.PROTECT)  # setと対応
-    global_id = models.CharField(max_length=30)
+    set = models.ForeignKey(Set, on_delete=models.PROTECT)
+    global_id_number = models.CharField(max_length=30)
     name = models.CharField(max_length=100)
     name_j = models.CharField(max_length=100)
     id_in_expansion = models.CharField(max_length=10)
-    rarity = models.ForeignKey(Rarity, on_delete=models.PROTECT)
+    rarity = models.ForeignKey(Rarity, on_delete=models.PROTECT, null=True)
     series = models.ForeignKey(Series, on_delete=models.PROTECT)
     is_prism_star = models.BooleanField(default=False)
+    supertype = models.ForeignKey(SuperType, on_delete=models.PROTECT)
+    subtype = models.ForeignKey(SubType, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
@@ -207,7 +212,7 @@ class Deck(models.Model):
     pub_date = models.DateTimeField()
     mod_date = models.DateTimeField()
     description = models.CharField(max_length=100000)
-    owner = models.ForeignKey(User, on_delete=models.PROTECT)
+    owner = models.ForeignKey(PTCG2winUser, on_delete=models.PROTECT)
     regulation = models.ForeignKey(Regulation, on_delete=models.PROTECT)
     arch_type = models.ForeignKey(ArchType, on_delete=models.PROTECT)
 
@@ -215,16 +220,25 @@ class Deck(models.Model):
         return self.name
 
 
+class DeckList(models.Model):
+    parent_deck = models.ForeignKey(Deck, on_delete=models.CASCADE)
+    deck_code = models.CharField(max_length=20)
+    created_date = models.DateTimeField()
+
+    def __str__(self):
+        return self.deck_code
+
+
 class CardBundle(models.Model):
     card = models.ForeignKey(Card, on_delete=models.PROTECT)
     amount = models.IntegerField(default=1)
-    deck_list = models.ForeignKey(Deck, on_delete=models.CASCADE)
+    parent_deck_list = models.ForeignKey(DeckList, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.card.name
 
 
-class Comments(models.Model):
+class Topic(models.Model):
     name = models.CharField(max_length=150, default="Title is not set.")
     date = models.DateTimeField()
 
@@ -234,14 +248,14 @@ class Comments(models.Model):
 
 class Comment(models.Model):
     date = models.DateTimeField()
-    user = models.ForeignKey(User, on_delete=models.PROTECT)
+    user = models.ForeignKey(PTCG2winUser, on_delete=models.PROTECT)
     text = models.CharField(max_length=10000, default="Comment text is not set.")
 
     def __str__(self):
         return self.text
 
 
-class DeckComments(Comments):
+class DeckTopic(Topic):
     parent_deck = models.ForeignKey(Deck, on_delete=models.CASCADE)
 
 

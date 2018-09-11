@@ -4,7 +4,7 @@ from django.urls import resolve
 from accounts.views import signup
 from accounts.forms import SignUpForm
 
-from django.contrib.auth.models import User
+from accounts.models import PTCG2winUser
 # Create your tests here.
 
 
@@ -34,8 +34,8 @@ class SignUpTests(TestCase):
         The view must contain five inputs: csrf, username, email,
         password1, password2
         '''
-        self.assertContains(self.response, '<input', 5)
-        self.assertContains(self.response, 'type="text"', 1)
+        self.assertContains(self.response, '<input', 6)
+        self.assertContains(self.response, 'type="text"', 2)
         self.assertContains(self.response, 'type="email"', 1)
         self.assertContains(self.response, 'type="password"', 2)
 
@@ -45,6 +45,7 @@ class SuccessfulSignUpTests(TestCase):
         url = reverse('accounts:signup')
         data = {
             'username': 'john',
+            'nick_name': "じょん",
             'email': "test@example.com",
             'password1': 'abcdef123456',
             'password2': 'abcdef123456'
@@ -59,7 +60,7 @@ class SuccessfulSignUpTests(TestCase):
         self.assertRedirects(self.response, self.home_url)
 
     def test_user_creation(self):
-        self.assertTrue(User.objects.exists())
+        self.assertTrue(PTCG2winUser.objects.exists())
 
     def test_user_authentication(self):
         '''
@@ -88,13 +89,13 @@ class InvalidSignUpTests(TestCase):
         self.assertTrue(form.errors)
 
     def test_dont_create_user(self):
-        self.assertFalse(User.objects.exists())
+        self.assertFalse(PTCG2winUser.objects.exists())
 
 
 class SignUpFormTest(TestCase):
     def test_form_has_fields(self):
         form = SignUpForm()
-        expected = ['username', 'email', 'password1', 'password2',]
+        expected = ['username', 'nick_name', 'email', 'password1', 'password2']
         actual = list(form.fields)
         self.assertSequenceEqual(expected, actual)
 

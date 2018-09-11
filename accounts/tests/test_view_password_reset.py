@@ -1,6 +1,6 @@
 from django.contrib.auth import views as auth_views
 from django.contrib.auth.forms import PasswordResetForm
-from django.contrib.auth.models import User
+from accounts.models import PTCG2winUser
 from django.core import mail
 from django.urls import reverse
 from django.urls import resolve
@@ -37,7 +37,7 @@ class PasswordResetTests(TestCase):
 class SuccessfulPasswordResetTests(TestCase):
     def setUp(self):
         email = 'john@doe.com'
-        User.objects.create_user(username='john', email=email, password='123abcdef')
+        PTCG2winUser.objects.create_user(username='john', email=email, password='123abcdef')
         url = reverse('accounts:password_reset')
         self.response = self.client.post(url, {'email': email})
 

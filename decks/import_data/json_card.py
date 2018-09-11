@@ -24,7 +24,7 @@ for i in range(len(sets_list)):
                 if card["subtype"] == "Basic":
                     _, created = BasicPokemon.objects.get_or_create(
                         artist=card["artist"],
-                        expansion=Expansion.objects.get(code=set_code_i),  # setと対応
+                        expansion=Set.objects.get(code=set_code_i),  # setと対応
                         global_id=card["id"],
                         name=card["name"],
                         name_j="",
@@ -36,7 +36,7 @@ for i in range(len(sets_list)):
                 elif card["subtype"] == "Stage 1":
                     _, created = StageOnePokemon.objects.get_or_create(
                         artist=card["artist"],
-                        expansion=Expansion.objects.get(code=set_code_i),  # setと対応
+                        expansion=Set.objects.get(code=set_code_i),  # setと対応
                         global_id=card["id"],
                         name=card["name"],
                         name_j="",
