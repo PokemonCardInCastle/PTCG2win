@@ -15,6 +15,30 @@ type_tag_list = ["grass", "fire", "water", "electric", "fighting", "psychic", "n
                  "fairy", "void"]
 
 
+def rarity_icon(soup: BeautifulSoup):
+    _result = {}
+    try:
+        rarity_img_url = BeautifulSoup(str(soup.find("div", class_="subtext Text-fjalla")), "lxml").find_all("img")[-1].get("src")
+        if "ic_rare_u_c.gif" in rarity_img_url or "ic_rare_u.gif" in rarity_img_url:
+            _result.update(rarity="Uncommon")
+        elif "ic_rare_c_c.gif" in rarity_img_url or "ic_rare_c.gif" in rarity_img_url:
+            _result.update(rarity="Common")
+        elif "ic_prismstar.gif" in rarity_img_url:
+            _result.update(rarity="Prism Star")
+        elif "ic_rare_r_c.gif" in rarity_img_url or "ic_rare_r.gif" in rarity_img_url:
+            _result.update(rarity="Rare")
+        elif "ic_rare_rr.gif" in rarity_img_url:
+            _result.update(rarity="Rare Ultra")
+        elif "ic_rare_s.gif" in rarity_img_url:
+            _result.update(rarity="Rare Secret")
+        else:
+            if "/assets/images/card/rarity/" in rarity_img_url:
+                raise ValueError("知らないアイコン：" + rarity_img_url)
+        return _result
+    except:
+        print("No rarity icon.")
+
+
 class MetaHTMLDownloaderAndSplitter(metaclass=ABCMeta):
     @abstractmethod
     def __init__(self, card_id: int):
@@ -45,7 +69,10 @@ class DownloadAndSplitHTML(MetaHTMLDownloaderAndSplitter):
         return rightbox_str
 
     def return_card_name(self):
-        return self.soup.find("h1", class_="Heading1").text
+        if BeautifulSoup(str(self.soup.find("h1", class_="Heading1")), "lxml").find("span", class_="pcg-prismstar"):
+            return self.soup.find("h1", class_="Heading1").text + "\u25c7"
+        else:
+            return self.soup.find("h1", class_="Heading1").text
 
 
 class MetaSpanTagsHTMLStrToTypeStrList(HTMLParser, metaclass=ABCMeta):
@@ -143,7 +170,7 @@ class GetMoveAndAbilityAndRuleInfoFromTag:
                 self.attack.update(name=attack_name)
                 self.attack.update(damage="".join([elm1.text for elm1 in BeautifulSoup(str(h4_tag), "lxml").find_all("span")]))
 
-                self.attack.update(text=BeautifulSoup(copy(html_str).replace('<span class="icon-', "[[").replace(' icon"></span>', "]]"), "lxml").find_all("p")[1].text)
+                self.attack.update(text=BeautifulSoup(re.sub(r'<span class="icon-([a-z]+) icon"></span>', lambda m: "[[" + type_list[type_tag_list.index(m.group(1))] + "]]", copy(html_str)), "lxml").find_all("p")[1].text)
 
                 self.attack.update(convertedEnergyCost=len(self.move_cost_list) - Counter(self.move_cost_list)["Free"])
 
@@ -161,7 +188,7 @@ class GetMoveAndAbilityAndRuleInfoFromTag:
                                                .index(ability_tags_start_tag) + 1:]), "lxml").find("h2", class_="mt20")
             ability_tags = self.soup.find_all()[self.soup.find_all().index(
                 ability_tags_start_tag):self.soup.find_all().index(next_start_tag)]
-            ability_soup = BeautifulSoup(str(ability_tags).replace('<span class="icon-', "[[").replace(' icon"></span>', "]]"), "lxml")
+            ability_soup = BeautifulSoup(re.sub(r'<span class="icon-([a-z]+) icon"></span>', lambda m: "[[" + type_list[type_tag_list.index(m.group(1))] + "]]", str(ability_tags)), "lxml")
 
             self.ability.update(name=ability_soup.find("h4").text)
             self.ability.update(text=ability_soup.find_all("p")[1].text)
@@ -299,10 +326,10 @@ class GetEvolutionAndSubType:
 
 class GetPokemonAllInfo:
     def __init__(self, global_id_number):
-        self.html_downloader_and_splitter = DownloadAndSplitHTML(global_id)
+        self.html_downloader_and_splitter = DownloadAndSplitHTML(global_id_number)
         self.move_cost_list_getter = SpanTagsHTMLStrToTypeStrList()
 
-        self.card_id_and_image_url_and_artist_getter = GetCardIDAndImageURLAndArtist(
+        self.card_id_and_image_url_and_artist_getter = GetCardNameAndIDAndImageURLAndArtist(
             self.html_downloader_and_splitter, self.move_cost_list_getter)
         self.pokemon_basic_info_getter = GetPokemonBasicInfo(
             self.html_downloader_and_splitter, self.move_cost_list_getter)
@@ -370,7 +397,7 @@ class GetPokemonBasicInfo:
             return {"hp": self.hp, "types": self.types}
 
 
-class GetCardIDAndImageURLAndArtist:
+class GetCardNameAndIDAndImageURLAndArtist:
     def __init__(self, html_downloader_and_splitter: MetaHTMLDownloaderAndSplitter, move_cost_list_getter: MetaSpanTagsHTMLStrToTypeStrList, ):
         """MetaHTMLDownloaderAndSplitter and MetaSpanTagsHTMLStrToTypeStrList should be an instance."""
         self.move_cost_list_getter = move_cost_list_getter
@@ -381,23 +408,32 @@ class GetCardIDAndImageURLAndArtist:
         self.global_id_number = -1
         self.artist = ""
         self.setCode = ""
+        self.card_name = self.html_downloader_and_splitter.return_card_name()
         self.soup = None
 
     def process(self):
+        self._result.update(name=self.card_name)
         leftbox_html_str = self.html_downloader_and_splitter.return_leftbox()
         self.soup = BeautifulSoup(leftbox_html_str, "lxml")
 
-        self.setCode = self.soup.find("img", class_="img-regulation").get("alt")
-        self._result.update(setCode=self.setCode)
+        if self.soup.find("img", class_="img-regulation"):
+            self.setCode = self.soup.find("img", class_="img-regulation").get("alt")
+            self._result.update(setCode=self.setCode)
 
-        if self.soup.find("div", class_="subtext Text-fjalla").string:
+        set_text = self.soup.find("div", class_="subtext Text-fjalla").text
+        if set_text.replace(" ", "").replace("\xa0", "").replace("\n", ""):
             self.id = self.setCode + "-" + str(int(re.sub("/[0-9]+$", "", self.soup.find("div", class_="subtext Text-fjalla").text.replace(" ", "").replace("\xa0", "").replace("\n", ""))))
             self._result.update(id=self.id)
         else:
             pass
 
-        self.artist = BeautifulSoup(str(self.soup.find("div", class_="author")), "lxml").find("a").text
-        self._result.update(artist=self.artist)
+        rarity_icon_dict = rarity_icon(self.soup)
+        if rarity_icon_dict:
+            self._result.update(rarity_icon(self.soup))
+
+        if BeautifulSoup(str(self.soup.find("div", class_="author")), "lxml").find("a"):
+            self.artist = BeautifulSoup(str(self.soup.find("div", class_="author")), "lxml").find("a").text
+            self._result.update(artist=self.artist)
 
         self.image_url = "https://www.pokemon-card.com/" + self.soup.find("img", class_="fit").get("src")
         self._result.update(imageUrl=self.image_url, imageUrlHiRes=self.image_url)
@@ -418,9 +454,9 @@ class DetectCardType:
         self.html_downloader_and_splitter = html_downloader_and_splitter
         self.soup = BeautifulSoup(self.html_downloader_and_splitter.return_rightbox(), "lxml")
 
-    def get_super_type_str(self):
+    def get_type_dict(self):
         h2_mt20_text = self.soup.find("h2", class_="mt20").string
-        if h2_mt20_text == "ワザ" or "特性":
+        if h2_mt20_text == "ワザ" or h2_mt20_text == "特性" or h2_mt20_text == "ポケパワー" or h2_mt20_text == "ポケボディー":
             return {"supertype": "Pok\u00e9mon", }
         elif h2_mt20_text == "サポート":
             return {"supertype": "Trainer", "subtype": "Supporter", }
@@ -430,8 +466,239 @@ class DetectCardType:
             return  {"supertype": "Trainer", "subtype": "Pok\u00e9mon Tool", }
         elif h2_mt20_text == "スタジアム":
             return  {"supertype": "Trainer", "subtype": "Stadium", }
+        elif h2_mt20_text == "特殊エネルギー":
+            return  {"supertype": "Energy", "subtype": "Special", }
+        elif h2_mt20_text == "基本エネルギー":
+            return  {"supertype": "Energy", "subtype": "Basic", }
+        else:
+            raise(ValueError("知らないスーパータイプ: " + h2_mt20_text))
 
 
+class GetEnergyAllInfo:
+    def __init__(self, global_id_number: int, sub_type: str):
+        self.global_id_number = global_id_number
+        self.subtype = sub_type
+
+        self.html_downloader_and_splitter = DownloadAndSplitHTML(self.global_id_number)
+
+        self.card_name = self.html_downloader_and_splitter.return_card_name()
+        self.left_box_soup = None
+        self.right_box_soup = None
+        self._result = {}
+        self.rule_text = []
+
+    def get_info(self):
+        self._result.update(name=self.card_name)
+        leftbox_html_str = self.html_downloader_and_splitter.return_leftbox()
+        self.left_box_soup = BeautifulSoup(leftbox_html_str, "lxml")
+
+        if self.left_box_soup.find("img", class_="img-regulation"):
+            self.setCode = self.left_box_soup.find("img", class_="img-regulation").get("alt")
+            self._result.update(setCode=self.setCode)
+
+        set_text = self.left_box_soup.find("div", class_="subtext Text-fjalla").text
+        if set_text.replace(" ", "").replace("\xa0", "").replace("\n", ""):
+            self.id = self.setCode + "-" + str(int(re.sub("/[0-9]+$", "", self.left_box_soup.find("div",
+                                                                                                  class_="subtext Text-fjalla").text.replace(
+                " ", "").replace("\xa0", "").replace("\n", ""))))
+            self._result.update(id=self.id)
+        else:
+            pass
+
+        rarity_icon_dict = rarity_icon(self.left_box_soup)
+        if rarity_icon_dict:
+            self._result.update(rarity_icon(self.left_box_soup))
+
+        if BeautifulSoup(str(self.left_box_soup.find("div", class_="author")), "lxml").find("a"):
+            self.artist = BeautifulSoup(str(self.left_box_soup.find("div", class_="author")), "lxml").find("a").text
+            self._result.update(artist=self.artist)
+
+        self.image_url = "https://www.pokemon-card.com/" + self.left_box_soup.find("img", class_="fit").get("src")
+        self._result.update(imageUrl=self.image_url, imageUrlHiRes=self.image_url)
+
+        self.global_id_number = int(self.image_url.split("/")[-1].split("_")[0])
+        self._result.update(global_id_number=self.global_id_number)
+
+        # end_left_box part
+
+        # start right_box part
+
+        rightbox_html_str = self.html_downloader_and_splitter.return_rightbox()
+        self.right_box_soup = BeautifulSoup(rightbox_html_str, "lxml")
+        # start text part
+        text_tags_start_tag = self.right_box_soup.find("h2", class_="mt20", text="特殊エネルギー")
+        if not text_tags_start_tag:
+            pass
+        else:
+            next_start_tag = BeautifulSoup(str(self.right_box_soup.find_all()[self.right_box_soup.find_all()
+                                               .index(text_tags_start_tag) + 1:]), "lxml").find("h2", class_="mt20")
+            if next_start_tag:
+                text_tags = self.right_box_soup.find_all()[self.right_box_soup.find_all().index(
+                    text_tags_start_tag):self.right_box_soup.find_all().index(next_start_tag)]
+            else:
+                text_tags = self.right_box_soup.find_all()[self.right_box_soup.find_all().index(
+                    text_tags_start_tag):]
+
+            text_soup = BeautifulSoup(re.sub(r'<span class="icon-([a-z]+) icon"></span>',
+                                                lambda m: "[[" + type_list[type_tag_list.index(m.group(1))] + "]]",
+                                                str(text_tags)), "lxml")
+            try:
+                self.rule_text.append(text_soup.find_all("p")[1].text)
+            except IndexError:
+                pass
+
+
+            self._result.update(text=self.rule_text)
+        # end text part
+
+        # start rule(text) part
+        text_tags_start_tag = self.right_box_soup.find("h2", class_="mt20", text="特別なルール")
+        if not text_tags_start_tag:
+            pass
+        else:
+            next_start_tag = BeautifulSoup(str(self.right_box_soup.find_all()[self.right_box_soup.find_all()
+                                               .index(text_tags_start_tag) + 1:]), "lxml").find("h2", class_="mt20")
+            if next_start_tag:
+                text_tags = self.right_box_soup.find_all()[self.right_box_soup.find_all().index(
+                    text_tags_start_tag):self.right_box_soup.find_all().index(next_start_tag)]
+            else:
+                text_tags = self.right_box_soup.find_all()[self.right_box_soup.find_all().index(
+                    text_tags_start_tag):]
+
+            text_soup = BeautifulSoup(re.sub(r'<span class="icon-([a-z]+) icon"></span>',
+                                                lambda m: "[[" + type_list[type_tag_list.index(m.group(1))] + "]]",
+                                                str(text_tags)), "lxml")
+            try:
+                self.rule_text.append(text_soup.find_all("p")[1].text)
+            except IndexError:
+                pass
+
+            self._result.update(text=self.rule_text)
+        # end rule(text) part
+
+        return self._result
+
+
+class GetTrainersAllInfo:
+    def __init__(self, global_id_number: int, sub_type: str):
+        self.global_id_number = global_id_number
+        self.subtype = sub_type
+
+        self.html_downloader_and_splitter = DownloadAndSplitHTML(self.global_id_number)
+
+        self.card_name = self.html_downloader_and_splitter.return_card_name()
+        self.left_box_soup = None
+        self.right_box_soup = None
+        self._result = {}
+        self.rule_text = []
+
+    def get_info(self):
+        self._result.update(name=self.card_name)
+        leftbox_html_str = self.html_downloader_and_splitter.return_leftbox()
+        self.left_box_soup = BeautifulSoup(leftbox_html_str, "lxml")
+
+        if self.left_box_soup.find("img", class_="img-regulation"):
+            self.setCode = self.left_box_soup.find("img", class_="img-regulation").get("alt")
+            self._result.update(setCode=self.setCode)
+
+        set_text = self.left_box_soup.find("div", class_="subtext Text-fjalla").text
+        if set_text.replace(" ", "").replace("\xa0", "").replace("\n", ""):
+            self.id = self.setCode + "-" + str(int(re.sub("/[0-9]+$", "", self.left_box_soup.find("div",
+                                                                                                  class_="subtext Text-fjalla").text.replace(
+                " ", "").replace("\xa0", "").replace("\n", ""))))
+            self._result.update(id=self.id)
+        else:
+            pass
+
+        rarity_icon_dict = rarity_icon(self.left_box_soup)
+        if rarity_icon_dict:
+            self._result.update(rarity_icon(self.left_box_soup))
+
+        if BeautifulSoup(str(self.left_box_soup.find("div", class_="author")), "lxml").find("a"):
+            self.artist = BeautifulSoup(str(self.left_box_soup.find("div", class_="author")), "lxml").find("a").text
+            self._result.update(artist=self.artist)
+
+        self.image_url = "https://www.pokemon-card.com/" + self.left_box_soup.find("img", class_="fit").get("src")
+        self._result.update(imageUrl=self.image_url, imageUrlHiRes=self.image_url)
+
+        self.global_id_number = int(self.image_url.split("/")[-1].split("_")[0])
+        self._result.update(global_id_number=self.global_id_number)
+
+        # end_left_box part
+
+        # start right_box part
+
+        rightbox_html_str = self.html_downloader_and_splitter.return_rightbox()
+        self.right_box_soup = BeautifulSoup(rightbox_html_str, "lxml")
+        # start text part
+        text_tags_start_tag = self.right_box_soup.find("h2", class_="mt20", text="スタジアム") or self.right_box_soup.find("h2", class_="mt20", text="グッズ") or self.right_box_soup.find("h2", class_="mt20", text="ポケモンのどうぐ") or self.right_box_soup.find("h2", class_="mt20", text="サポート")
+        if not text_tags_start_tag:
+            pass
+        else:
+            next_start_tag = BeautifulSoup(str(self.right_box_soup.find_all()[self.right_box_soup.find_all()
+                                               .index(text_tags_start_tag) + 1:]), "lxml").find("h2", class_="mt20")
+            if next_start_tag:
+                text_tags = self.right_box_soup.find_all()[self.right_box_soup.find_all().index(
+                    text_tags_start_tag):self.right_box_soup.find_all().index(next_start_tag)]
+            else:
+                text_tags = self.right_box_soup.find_all()[self.right_box_soup.find_all().index(
+                    text_tags_start_tag):]
+
+            text_soup = BeautifulSoup(re.sub(r'<span class="icon-([a-z]+) icon"></span>',
+                                             lambda m: "[[" + type_list[type_tag_list.index(m.group(1))] + "]]",
+                                             str(text_tags)), "lxml")
+            try:
+                self.rule_text.append(text_soup.find_all("p")[1].text)
+            except IndexError:
+                pass
+
+            self._result.update(text=self.rule_text)
+        # end text part
+
+        # start rule(text) part
+        text_tags_start_tag = self.right_box_soup.find("h2", class_="mt20", text="特別なルール")
+        if not text_tags_start_tag:
+            pass
+        else:
+            next_start_tag = BeautifulSoup(str(self.right_box_soup.find_all()[self.right_box_soup.find_all()
+                                               .index(text_tags_start_tag) + 1:]), "lxml").find("h2", class_="mt20")
+            if next_start_tag:
+                text_tags = self.right_box_soup.find_all()[self.right_box_soup.find_all().index(
+                    text_tags_start_tag):self.right_box_soup.find_all().index(next_start_tag)]
+            else:
+                text_tags = self.right_box_soup.find_all()[self.right_box_soup.find_all().index(
+                    text_tags_start_tag):]
+
+            text_soup = BeautifulSoup(re.sub(r'<span class="icon-([a-z]+) icon"></span>',
+                                             lambda m: "[[" + type_list[type_tag_list.index(m.group(1))] + "]]",
+                                             str(text_tags)), "lxml")
+            try:
+                self.rule_text.append(text_soup.find_all("p")[1].text)
+            except IndexError:
+                pass
+
+            self._result.update(text=self.rule_text)
+        # end rule(text) part
+
+        return self._result
+
+
+class GetCardInfo:
+    def __init__(self, global_id_number: int):
+        self.global_id_number = global_id_number
+
+        self.html_downloader_and_splitter = DownloadAndSplitHTML(global_id_number)
+        self.move_cost_list_getter = SpanTagsHTMLStrToTypeStrList()
+
+        self.detect_card_type = DetectCardType(self.html_downloader_and_splitter)
+
+    def get_info(self):
+        if self.detect_card_type.get_type_dict()["supertype"] == "Pok\u00e9mon":
+            return GetPokemonAllInfo(self.global_id_number).get_dict_data()
+        elif self.detect_card_type.get_type_dict()["supertype"] == "Energy":
+            return GetEnergyAllInfo(self.global_id_number, self.detect_card_type.get_type_dict()["subtype"]).get_info()
+        elif self.detect_card_type.get_type_dict()["supertype"] == "Trainer":
+            return GetTrainersAllInfo(self.global_id_number, self.detect_card_type.get_type_dict()["subtype"]).get_info()
 
 
 
@@ -476,25 +743,25 @@ if __name__ == '__main__':
     #
     # # start DetectSuperType test
     #
-    # test_3 = DetectCardType(DownloadAndSplitHTML(3091))
+    # test_3 = DetectCardType(DownloadAndSplitHTML(33124))
     # print(test_3.get_super_type_str())
-    #
-    # test4 = GetMoveAndAbilityAndRuleInfoFromTag(DownloadAndSplitHTML(3091), SpanTagsHTMLStrToTypeStrList())
-    # print(test4.process())
-    #
-    # test5 = GetWeaknessAndResistanceAndRetreatCost(DownloadAndSplitHTML(3091), SpanTagsHTMLStrToTypeStrList())
-    # print(test5.process())
-    #
-    # test_6 = GetPokemonBasicInfo(DownloadAndSplitHTML(3091), SpanTagsHTMLStrToTypeStrList())
-    # print(test_6.process())
-    #
-    # test_7 = GetCardIDAndImageURLAndArtist(DownloadAndSplitHTML(3091), SpanTagsHTMLStrToTypeStrList())
+    # #
+    # # test4 = GetMoveAndAbilityAndRuleInfoFromTag(DownloadAndSplitHTML(3091), SpanTagsHTMLStrToTypeStrList())
+    # # print(test4.process())
+    # #
+    # # test5 = GetWeaknessAndResistanceAndRetreatCost(DownloadAndSplitHTML(3091), SpanTagsHTMLStrToTypeStrList())
+    # # print(test5.process())
+    # #
+    # # test_6 = GetPokemonBasicInfo(DownloadAndSplitHTML(3091), SpanTagsHTMLStrToTypeStrList())
+    # # print(test_6.process())
+    # #
+    # test_7 = GetCardNameAndIDAndImageURLAndArtist(DownloadAndSplitHTML(31997), SpanTagsHTMLStrToTypeStrList())
     # test_7.process()
     # print(test_7.get_result())
 
-    global_id = 22274
-    test_pokemon_all = GetPokemonAllInfo(global_id)
-    print(test_pokemon_all.get_dict_data())
+    global_id = 35384
+    test_pokemon_all = GetCardInfo(global_id)
+    print(test_pokemon_all.get_info())
 
 
 
