@@ -31,9 +31,7 @@ try:
 except FileExistsError:
     pass
 
-
-
-for i in range(total_page):
+for i in range(30, total_page):
     #     params = {
     #         "page": i + 1
     #     }
@@ -46,6 +44,7 @@ for i in range(total_page):
 
     f = codecs.open(r"out1_dir/data/page_" + str(i) + ".json", "w", "utf-8")
     json.dump(page_dict, f, sort_keys=True, indent=4)
+    f.close()
 
     for j in range(len(page_dict["cardList"])):
         global_id_number = int(page_dict["cardList"][j]["cardID"])
@@ -55,6 +54,7 @@ for i in range(total_page):
 
         f = codecs.open(r"out1_dir/" + page_dict["cardList"][j]["cardID"]+".json", "w", "utf-8")
         json.dump(info, f, sort_keys=True, indent=4)
+        f.close()
 
 
 

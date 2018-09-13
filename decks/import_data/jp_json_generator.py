@@ -352,8 +352,9 @@ class GetEvolutionAndSubType:
                 except ValueError:
                     try:
                         if "M[ムービー]" in self.pokemon_name or "G[ギンガ]" in self.pokemon_name:
-                            f = codecs.open(r"out_dir/data/error.log", "w", "utf-8")
+                            f = codecs.open(r"out1_dir/data/error.log", "a", "utf-8")
                             f.write(self.pokemon_name)
+                            f.close()
                             return {"evolution_list_list": [[self.pokemon_name]],
                                     "evolvesFrom": None,
                                     "SubType": "Basic"}
