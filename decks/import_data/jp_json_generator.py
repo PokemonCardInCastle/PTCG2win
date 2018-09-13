@@ -6,6 +6,7 @@ import requests
 import lxml
 import re
 from copy import copy
+import codecs
 
 from abc import ABCMeta, abstractmethod
 
@@ -27,16 +28,29 @@ def rarity_icon(soup: BeautifulSoup):
             _result.update(rarity="Prism Star")
         elif "ic_rare_r_c.gif" in rarity_img_url or "ic_rare_r.gif" in rarity_img_url:
             _result.update(rarity="Rare")
+        elif "ic_rare_c2.gif" in rarity_img_url:
+            _result.update(rarity="Common Holo")
+        elif "ic_rare_u2.gif" in rarity_img_url:
+            _result.update(rarity="Uncommon Holo")
         elif "ic_rare_rr.gif" in rarity_img_url:
+            _result.update(rarity="Rare Holo")
+        elif "ic_rare_ur_c.gif" in rarity_img_url:
             _result.update(rarity="Rare Ultra")
         elif "ic_rare_s.gif" in rarity_img_url:
             _result.update(rarity="Rare Secret")
+        elif "ic_rare_ss.gif" in rarity_img_url:
+            _result.update(rarity="LEGEND")
+        elif "ic_hikaru.gif" in rarity_img_url:
+            _result.update(rarity="Shining")
         else:
             if "/assets/images/card/rarity/" in rarity_img_url:
-                raise ValueError("知らないアイコン：" + rarity_img_url)
+                raise ValueError("Unknown rarity icon：" + rarity_img_url)
         return _result
     except:
-        print("No rarity icon.")
+        try:
+            print("No rarity icon.", rarity_img_url)
+        except UnboundLocalError:
+            pass
 
 
 class MetaHTMLDownloaderAndSplitter(metaclass=ABCMeta):
@@ -53,12 +67,16 @@ class MetaHTMLDownloaderAndSplitter(metaclass=ABCMeta):
     @abstractmethod
     def return_card_name(self):
         """This method should return the innerText of 'h1.Heading1'"""
+    @abstractmethod
+    def return_card_global_id_number(self):
+        """This method should return the global_id_number in int'"""
 
 
 class DownloadAndSplitHTML(MetaHTMLDownloaderAndSplitter):
     def __init__(self, card_id: int):
         self.url = "https://www.pokemon-card.com/card-search/details.php/card/" + str(card_id) + "/regu/all"
         self.soup = BeautifulSoup(requests.get(self.url).content, "lxml")
+        self.card_id = card_id
 
     def return_leftbox(self):
         leftbox_str = str(self.soup.find("div", class_="LeftBox"))
@@ -73,6 +91,9 @@ class DownloadAndSplitHTML(MetaHTMLDownloaderAndSplitter):
             return self.soup.find("h1", class_="Heading1").text + "\u25c7"
         else:
             return self.soup.find("h1", class_="Heading1").text
+
+    def return_card_global_id_number(self):
+        return self.card_id
 
 
 class MetaSpanTagsHTMLStrToTypeStrList(HTMLParser, metaclass=ABCMeta):
@@ -168,9 +189,12 @@ class GetMoveAndAbilityAndRuleInfoFromTag:
                 attack_name = re.sub("\s?(\xa0)?\n$", "", h4_tag_copy_soup.text)
 
                 self.attack.update(name=attack_name)
-                self.attack.update(damage="".join([elm1.text for elm1 in BeautifulSoup(str(h4_tag), "lxml").find_all("span")]))
+                self.attack.update(damage="".join([
+                    elm1.text for elm1 in BeautifulSoup(str(h4_tag), "lxml").find_all("span")]))
 
-                self.attack.update(text=BeautifulSoup(re.sub(r'<span class="icon-([a-z]+) icon"></span>', lambda m: "[[" + type_list[type_tag_list.index(m.group(1))] + "]]", copy(html_str)), "lxml").find_all("p")[1].text)
+                self.attack.update(text=BeautifulSoup(re.sub(
+                    r'<span class="icon-([a-z]+) icon"></span>', lambda m: "[[" + type_list[
+                        type_tag_list.index(m.group(1))] + "]]", copy(html_str)), "lxml").find_all("p")[1].text)
 
                 self.attack.update(convertedEnergyCost=len(self.move_cost_list) - Counter(self.move_cost_list)["Free"])
 
@@ -180,15 +204,25 @@ class GetMoveAndAbilityAndRuleInfoFromTag:
         # End move part
 
         # start ability part
-        ability_tags_start_tag = self.soup.find("h2", class_="mt20", text="特性") or self.soup.find("h2", class_="mt20", text="ポケパワー") or self.soup.find("h2", class_="mt20", text="ポケボディー")
+        ability_tags_start_tag = self.soup.find(
+            "h2", class_="mt20", text="特性") or self.soup.find(
+            "h2", class_="mt20", text="ポケパワー") or self.soup.find(
+            "h2", class_="mt20", text="ポケボディー") or self.soup.find(
+            "h2", class_="mt20", text="古代能力") or self.soup.find(
+            "h2", class_="mt20", text="きのみ") or self.soup.find(
+            "h2", class_="mt20", text="どうぐ")
         if not ability_tags_start_tag:
             self.ability = None
         else:
             next_start_tag = BeautifulSoup(str(self.soup.find_all()[self.soup.find_all()
                                                .index(ability_tags_start_tag) + 1:]), "lxml").find("h2", class_="mt20")
+            soup_reverse = copy(self.soup.find_all())
+            soup_reverse.reverse()
             ability_tags = self.soup.find_all()[self.soup.find_all().index(
-                ability_tags_start_tag):self.soup.find_all().index(next_start_tag)]
-            ability_soup = BeautifulSoup(re.sub(r'<span class="icon-([a-z]+) icon"></span>', lambda m: "[[" + type_list[type_tag_list.index(m.group(1))] + "]]", str(ability_tags)), "lxml")
+                ability_tags_start_tag):len(self.soup.find_all()) - soup_reverse.index(next_start_tag) - 1 if next_start_tag else None]
+            ability_soup = BeautifulSoup(
+                re.sub(r'<span class="icon-([a-z]+) icon"></span>',
+                       lambda m: "[[" + type_list[type_tag_list.index(m.group(1))] + "]]", str(ability_tags)), "lxml")
 
             self.ability.update(name=ability_soup.find("h4").text)
             self.ability.update(text=ability_soup.find_all("p")[1].text)
@@ -198,6 +232,12 @@ class GetMoveAndAbilityAndRuleInfoFromTag:
                 self.ability.update(type="Poké-Power")
             elif ability_tags_start_tag.text == "ポケボディー":
                 self.ability.update(type="Poké-Body")
+            elif ability_tags_start_tag.text == "古代能力":
+                self.ability.update(type="Ancient-Trait")
+            elif ability_tags_start_tag.text == "きのみ":
+                self.ability.update(type="Berry")
+            elif ability_tags_start_tag.text == "どうぐ":
+                self.ability.update(type="Pok\u00e9mon-Tool")
 
         self.info_dict.update(ability=self.ability)
         # end ability part
@@ -260,6 +300,7 @@ class GetWeaknessAndResistanceAndRetreatCost:
         return self._result
 
 
+# todo: 進化周りの整理、M進化への対応
 class GetEvolutionAndSubType:
     def __init__(self, html_downloader_and_splitter: MetaHTMLDownloaderAndSplitter, move_cost_list_getter: MetaSpanTagsHTMLStrToTypeStrList, ):
         """MetaHTMLDownloaderAndSplitter and MetaSpanTagsHTMLStrToTypeStrList should be an instance."""
@@ -272,6 +313,8 @@ class GetEvolutionAndSubType:
         self.grand_children_list = []
         self.great_grand_children_list = []
 
+        self.evolutiou_type_text = ""
+
         self.soup = None
         self.evolution_list_list = None
         self.pokemon_name = None
@@ -280,44 +323,83 @@ class GetEvolutionAndSubType:
         rightbox_html_str = self.html_downloader_and_splitter.return_rightbox()
         self.soup = BeautifulSoup(rightbox_html_str, "lxml")
 
+        if self.soup.find_all("span", class_="type"):
+            self.evolutiou_type_text = self.soup.find("span", class_="type").text
+
         if self.soup.find_all("div", class_="evolution"):
             evolution_tags_list = self.soup.find_all("div", class_="evolution")
             self.evolution_list_list = [[a_tag.text.replace("\n", "") for a_tag in BeautifulSoup(str(tag), "lxml")
-                .find_all("div", class_=re.compile("ev_.*"))] for tag in evolution_tags_list]
+                .find_all(class_=re.compile("ev_.*"))] for tag in evolution_tags_list]
             # reverse to make the list basic first
             self.evolution_list_list.reverse()
-            self.pokemon_name = self.soup.find("div", class_="ev_on").text.replace("\n", "")
-
+            self.pokemon_name = self.html_downloader_and_splitter.return_card_name()
+        # if the pokmon does not evolve
         if not self.pokemon_name:
             return {"evolution_list_list": None,
                     "Subtype": "Basic", }
+        # # if the pokemon is basic
+        # if not self.pokemon_name:
+        #     return {"evolution_list_list": self.evolution_list_list, "evolvesFrom": None}
 
-        if not self.pokemon_name:
-            return {"evolution_list_list": self.evolution_list_list, "evolvesFrom": None}
         for i in range(len(self.evolution_list_list)):
             try:
                 pos = (i, self.evolution_list_list[i].index(self.pokemon_name))
                 break
             except ValueError:
-                pass
-
-        if pos[0] == 0:
-            return {"evolution_list_list": self.evolution_list_list,
-                    "evolvesFrom": None,
-                    "SubType": "Basic"}
-
-        else:
-            for i in range(pos[1] + 1):
                 try:
-                    return {"evolution_list_list": self.evolution_list_list,
-                            "evolvesFrom": self.evolution_list_list[pos[0]-1][pos[1] - i],
-                            "SubType": ("Basic" if pos[0] == 0
-                                        else "BREAK" if re.match(".*BREAK$", self.pokemon_name)
-                                        else "Stage 1" if pos[0] == 1
-                                        else "Srage 2" if pos[0] == 2
-                                        else "Unknown")}
-                except IndexError:
-                        pass
+                    name_original = self.pokemon_name.replace("[Exeggutor]", "").replace("ex", "")
+                    pos = (i, self.evolution_list_list[i].index(name_original))
+                except ValueError:
+                    try:
+                        if "M[ムービー]" in self.pokemon_name or "G[ギンガ]" in self.pokemon_name:
+                            f = codecs.open(r"out_dir/data/error.log", "w", "utf-8")
+                            f.write(self.pokemon_name)
+                            return {"evolution_list_list": [[self.pokemon_name]],
+                                    "evolvesFrom": None,
+                                    "SubType": "Basic"}
+
+                    except ValueError:
+                        raise ValueError
+        try:
+            if self.evolutiou_type_text == "たね":
+                return {"evolution_list_list": self.evolution_list_list,
+                        "evolvesFrom": None,
+                        "SubType": "Basic"}
+
+            else:
+                for i in range(pos[1] + 1):
+                    try:
+                        def throw_error():
+                            raise ValueError("Global id =", self.html_downloader_and_splitter.return_card_global_id_number())
+
+                        return {"evolution_list_list": self.evolution_list_list,
+                                "evolvesFrom": self.evolution_list_list[pos[0]-1][pos[1] - i],
+                                "SubType": ("Basic" if self.evolutiou_type_text == "たね"
+                                            else "BREAK" if re.match(".*BREAK$", self.pokemon_name)
+                                            else "Stage 1" if re.match("1\s進化", self.evolutiou_type_text)
+                                            else "Srage 2" if re.match("2\s進化", self.evolutiou_type_text)
+                                            else "Level Up" if self.evolutiou_type_text == "レベルアップ"
+                                            else "MEGA" if self.evolutiou_type_text == "M進化"
+                                            else "Restored" if self.evolutiou_type_text == "復元"
+                                            else throw_error())}
+                    except IndexError:
+                            pass
+        except UnboundLocalError:
+            import traceback
+            if self.pokemon_name == "ずがいの化石":
+                return {"evolution_list_list": [["ずがいの化石"], ["ズガイドス"], ["ラムパルド"]],
+                        "evolvesFrom": None,
+                        "SubType": "Basic"}
+            elif self.pokemon_name == "ズガイドス":
+                return {"evolution_list_list": [["ずがいの化石"], ["ズガイドス"], ["ラムパルド"]],
+                        "evolvesFrom": "ずがいの化石",
+                        "SubType": "Stage 1"}
+            elif self.pokemon_name == "ラムパルド":
+                return {"evolution_list_list": [["ずがいの化石"], ["ズガイドス"], ["ラムパルド"]],
+                        "evolvesFrom": "ズガイドス",
+                        "SubType": "Stage 2"}
+            else:
+                traceback.print_exc()
 
     def get_evolution_info(self):
         return self.process()
@@ -421,9 +503,22 @@ class GetCardNameAndIDAndImageURLAndArtist:
             self._result.update(setCode=self.setCode)
 
         set_text = self.soup.find("div", class_="subtext Text-fjalla").text
-        if set_text.replace(" ", "").replace("\xa0", "").replace("\n", ""):
-            self.id = self.setCode + "-" + str(int(re.sub("/[0-9]+$", "", self.soup.find("div", class_="subtext Text-fjalla").text.replace(" ", "").replace("\xa0", "").replace("\n", ""))))
+        if re.search("^[a-zA-Z]+-P$", set_text.replace(" ", "").replace("\xa0", "").replace("\n", "").replace("\t", "")):
+            self._result.update(id=set_text.replace(" ", "").replace("\xa0", "").replace("\n", "").replace("\t", ""))
+
+        elif "(上)" in set_text and "(下)" in set_text:
+            set_text = set_text.replace(" ", "").replace("\xa0", "").replace("\n", "").replace("\t", "")
+            search_result = re.search("([0-9]+)/([0-9]+)\(上\)([0-9]+)/([0-9]+)", set_text)
+            self.id = self.setCode + "-" + search_result.group(1) + "," + self.setCode + "-" + search_result.group(3)
             self._result.update(id=self.id)
+        elif set_text.replace(" ", "").replace("\xa0", "").replace("\n", "").replace("\t", ""):
+            set_text = set_text.replace(" ", "").replace("\xa0", "").replace("\n", "").replace("\t", "")
+            if re.search("^DPBP#[0-9]+$", set_text):
+                self.id = self.setCode + "-" + set_text
+                self._result.update(id=self.id)
+            else:
+                self.id = self.setCode + "-" + str(int(re.sub("/([0-9]+)?([a-zA-Z]+(-P)?)?(DPBP#[0-9]+)?$", "", self.soup.find("div", class_="subtext Text-fjalla").text.replace(" ", "").replace("\xa0", "").replace("\n", "").replace("\t", "").replace("XY-P", ""))))
+                self._result.update(id=self.id)
         else:
             pass
 
@@ -438,7 +533,7 @@ class GetCardNameAndIDAndImageURLAndArtist:
         self.image_url = "https://www.pokemon-card.com/" + self.soup.find("img", class_="fit").get("src")
         self._result.update(imageUrl=self.image_url, imageUrlHiRes=self.image_url)
 
-        self.global_id_number = int(self.image_url.split("/")[-1].split("_")[0])
+        self.global_id_number = self.html_downloader_and_splitter.return_card_global_id_number()
         self._result.update(global_id_number=self.global_id_number)
 
         return self._result
@@ -456,12 +551,15 @@ class DetectCardType:
 
     def get_type_dict(self):
         h2_mt20_text = self.soup.find("h2", class_="mt20").string
-        if h2_mt20_text == "ワザ" or h2_mt20_text == "特性" or h2_mt20_text == "ポケパワー" or h2_mt20_text == "ポケボディー":
+        if h2_mt20_text == "ワザ" or h2_mt20_text == "古代能力" or h2_mt20_text == "特性" or h2_mt20_text ==\
+                "ポケパワー" or h2_mt20_text == "ポケボディー" or h2_mt20_text == "きのみ" or h2_mt20_text == "どうぐ":
             return {"supertype": "Pok\u00e9mon", }
         elif h2_mt20_text == "サポート":
             return {"supertype": "Trainer", "subtype": "Supporter", }
         elif h2_mt20_text == "グッズ":
             return {"supertype": "Trainer", "subtype": "Item", }
+        elif h2_mt20_text == "トレーナー":
+            return {"supertype": "Trainer", "subtype": "Item-fossil", }
         elif h2_mt20_text == "ポケモンのどうぐ":
             return  {"supertype": "Trainer", "subtype": "Pok\u00e9mon Tool", }
         elif h2_mt20_text == "スタジアム":
@@ -470,8 +568,11 @@ class DetectCardType:
             return  {"supertype": "Energy", "subtype": "Special", }
         elif h2_mt20_text == "基本エネルギー":
             return  {"supertype": "Energy", "subtype": "Basic", }
+        elif h2_mt20_text == "ワザマシン":
+            return {"supertype": "Trainer", "subtype": "Technical Machine", }
         else:
-            raise(ValueError("知らないスーパータイプ: " + h2_mt20_text))
+            raise(ValueError(
+                "Unknown super type: " + h2_mt20_text + self.html_downloader_and_splitter.return_card_name()))
 
 
 class GetEnergyAllInfo:
@@ -484,6 +585,7 @@ class GetEnergyAllInfo:
         self.card_name = self.html_downloader_and_splitter.return_card_name()
         self.left_box_soup = None
         self.right_box_soup = None
+        self.setCode = None
         self._result = {}
         self.rule_text = []
 
@@ -497,8 +599,10 @@ class GetEnergyAllInfo:
             self._result.update(setCode=self.setCode)
 
         set_text = self.left_box_soup.find("div", class_="subtext Text-fjalla").text
-        if set_text.replace(" ", "").replace("\xa0", "").replace("\n", ""):
-            self.id = self.setCode + "-" + str(int(re.sub("/[0-9]+$", "", self.left_box_soup.find("div",
+        if not ("/" in set_text):
+            self._result.update(id=self.setCode)
+        elif set_text.replace(" ", "").replace("\xa0", "").replace("\n", ""):
+            self.id = self.setCode + "-" + str(int(re.sub("/([0-9]+)?([a-zA-Z]+(-P)?)?(DPBP#[0-9]+)?$", "", self.left_box_soup.find("div",
                                                                                                   class_="subtext Text-fjalla").text.replace(
                 " ", "").replace("\xa0", "").replace("\n", ""))))
             self._result.update(id=self.id)
@@ -602,8 +706,14 @@ class GetTrainersAllInfo:
             self._result.update(setCode=self.setCode)
 
         set_text = self.left_box_soup.find("div", class_="subtext Text-fjalla").text
-        if set_text.replace(" ", "").replace("\xa0", "").replace("\n", ""):
-            self.id = self.setCode + "-" + str(int(re.sub("/[0-9]+$", "", self.left_box_soup.find("div",
+
+        if re.search("^[a-zA-Z]+-P$", set_text.replace(" ", "").replace("\xa0", "").replace("\n", "").replace("\t", "")):
+            self._result.update(id=set_text.replace(" ", "").replace("\xa0", "").replace("\n", "").replace("\t", ""))
+
+        elif set_text.replace(" ", "").replace("\xa0", "").replace("\n", "") and re.sub("/([0-9]+)?([a-zA-Z]+(-P」?)?)?(DPBP#[0-9]+)?$", "", self.left_box_soup.find("div",
+                                                                                                  class_="subtext Text-fjalla").text.replace(
+                " ", "").replace("\xa0", "").replace("\n", "")) != "－":
+            self.id = self.setCode + "-" + str(int(re.sub("/([0-9]+)?([a-zA-Z]+(-P」?)?)?(DPBP#[0-9]+)?$", "", self.left_box_soup.find("div",
                                                                                                   class_="subtext Text-fjalla").text.replace(
                 " ", "").replace("\xa0", "").replace("\n", ""))))
             self._result.update(id=self.id)
@@ -621,7 +731,7 @@ class GetTrainersAllInfo:
         self.image_url = "https://www.pokemon-card.com/" + self.left_box_soup.find("img", class_="fit").get("src")
         self._result.update(imageUrl=self.image_url, imageUrlHiRes=self.image_url)
 
-        self.global_id_number = int(self.image_url.split("/")[-1].split("_")[0])
+        self.global_id_number = self.html_downloader_and_splitter.return_card_global_id_number()
         self._result.update(global_id_number=self.global_id_number)
 
         # end_left_box part
