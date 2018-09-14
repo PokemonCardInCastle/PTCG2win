@@ -31,7 +31,7 @@ try:
 except FileExistsError:
     pass
 
-for i in range(30, total_page):
+for i in range(total_page):
     #     params = {
     #         "page": i + 1
     #     }

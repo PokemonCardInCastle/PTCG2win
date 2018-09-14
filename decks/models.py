@@ -21,12 +21,13 @@ class Country(models.Model):
 class Set(models.Model):
     name = models.CharField(max_length=100)
     region = models.ForeignKey(Region, on_delete=models.PROTECT)
-    pub_date = models.DateField()
+    pub_date = models.DateField(null=True)
     code = models.CharField(max_length=10)
-    logo_url = models.CharField(max_length=200)
-    symbol_url = models.CharField(max_length=200)
-    total_cards = models.IntegerField()
-    series = models.CharField(max_length=20)
+    logo_url = models.CharField(max_length=2000, null=True)
+    symbol_url = models.CharField(max_length=2000)
+    info_url = models.CharField(max_length=2000)
+    total_cards = models.IntegerField(null=True)
+    series = models.CharField(max_length=20, null=True)
 
     def __str__(self):
         return self.name

@@ -292,6 +292,7 @@ class GetWeaknessAndResistanceAndRetreatCost:
         for type_str in self.move_cost_list_getter.get_type_list():
             self.retreat_cost.append(type_str)
         self._result.update(retreatCost=self.retreat_cost)
+        self._result.update(convertedRetreatCost=len(self.retreat_cost))
 
         return self._result
 
@@ -300,7 +301,6 @@ class GetWeaknessAndResistanceAndRetreatCost:
         return self._result
 
 
-# todo: 進化周りの整理、M進化への対応
 class GetEvolutionAndSubType:
     def __init__(self, html_downloader_and_splitter: MetaHTMLDownloaderAndSplitter, move_cost_list_getter: MetaSpanTagsHTMLStrToTypeStrList, ):
         """MetaHTMLDownloaderAndSplitter and MetaSpanTagsHTMLStrToTypeStrList should be an instance."""
@@ -423,9 +423,9 @@ class GetPokemonAllInfo:
         self.evolution_and_sub_type_getter = GetEvolutionAndSubType(
             self.html_downloader_and_splitter, self.move_cost_list_getter)
 
-        self._result_dict = {}
+        self._result_dict = {"supertype": "Pok\u00e9mon"}
 
-    def get_dict_data(self):
+    def get_info(self):
 
         self._result_dict.update(self.card_id_and_image_url_and_artist_getter.process())
         self._result_dict.update(self.pokemon_basic_info_getter.process())
@@ -587,7 +587,7 @@ class GetEnergyAllInfo:
         self.left_box_soup = None
         self.right_box_soup = None
         self.setCode = None
-        self._result = {}
+        self._result = {"supertype": "Energy", "subtype": self.subtype}
         self.rule_text = []
 
     def get_info(self):
@@ -694,7 +694,7 @@ class GetTrainersAllInfo:
         self.card_name = self.html_downloader_and_splitter.return_card_name()
         self.left_box_soup = None
         self.right_box_soup = None
-        self._result = {}
+        self._result = {"supertype": "Trainer", "subtype": self.subtype}
         self.rule_text = []
 
     def get_info(self):
@@ -804,12 +804,13 @@ class GetCardInfo:
         self.detect_card_type = DetectCardType(self.html_downloader_and_splitter)
 
     def get_info(self):
-        if self.detect_card_type.get_type_dict()["supertype"] == "Pok\u00e9mon":
-            return GetPokemonAllInfo(self.global_id_number).get_dict_data()
-        elif self.detect_card_type.get_type_dict()["supertype"] == "Energy":
-            return GetEnergyAllInfo(self.global_id_number, self.detect_card_type.get_type_dict()["subtype"]).get_info()
-        elif self.detect_card_type.get_type_dict()["supertype"] == "Trainer":
-            return GetTrainersAllInfo(self.global_id_number, self.detect_card_type.get_type_dict()["subtype"]).get_info()
+        dict_data = self.detect_card_type.get_type_dict()
+        if dict_data["supertype"] == "Pok\u00e9mon":
+            return GetPokemonAllInfo(self.global_id_number).get_info()
+        elif dict_data["supertype"] == "Energy":
+            return GetEnergyAllInfo(self.global_id_number, dict_data["subtype"]).get_info()
+        elif dict_data["supertype"] == "Trainer":
+            return GetTrainersAllInfo(self.global_id_number, dict_data["subtype"]).get_info()
 
 
 
