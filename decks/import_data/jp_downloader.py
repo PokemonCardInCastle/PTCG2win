@@ -7,7 +7,6 @@ import codecs
 import os
 
 
-cards_list = []
 
 page = 1
 params = {
@@ -50,7 +49,6 @@ for i in range(total_page):
         global_id_number = int(page_dict["cardList"][j]["cardID"])
         info = GetCardInfo(global_id_number).get_info()
         # print(info)
-        cards_list.append(info)
 
         f = codecs.open(r"out1_dir/" + page_dict["cardList"][j]["cardID"]+".json", "w", "utf-8")
         json.dump(info, f, sort_keys=True, indent=4)

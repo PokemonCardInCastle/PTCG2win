@@ -143,7 +143,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
                 ('is_available', models.BooleanField(default=False)),
-                ('expansions', models.ManyToManyField(to='decks.Set')),
+                ('expansions', models.ManyToManyField(to='decks.Expansion')),
                 ('region', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='decks.Region')),
             ],
         ),
@@ -240,7 +240,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='card',
             name='expansion',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='decks.Set'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='decks.Expansion'),
         ),
         migrations.AddField(
             model_name='card',

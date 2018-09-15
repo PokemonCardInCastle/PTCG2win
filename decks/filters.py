@@ -1,6 +1,5 @@
 from django_filters import filters
 from django_filters import FilterSet
-from .models import Item
 
 
 class MyOrderingFilter(filters.OrderingFilter):
@@ -26,10 +25,6 @@ class DeckFilter(FilterSet):
         label='並び順'
     )
 
-    class Meta:
-
-        model = Item
-        fields = ('name', 'arch_type', 'description',)
 
 
 

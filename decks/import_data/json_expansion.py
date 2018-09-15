@@ -19,7 +19,7 @@ with open(r"sets\fromXY1.json", "r", encoding="utf-8") as f:
 
     for expansion in sets:
 
-        _, created = Set.objects.get_or_create(
+        _, created = Expansion.objects.get_or_create(
             name=expansion["name"],
             region=Region.objects.get(name="North America"),
             pub_date=dt.strptime(expansion["releaseDate"], "%m/%d/%Y"),

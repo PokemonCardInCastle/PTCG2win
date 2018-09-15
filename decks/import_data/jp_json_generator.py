@@ -3,7 +3,6 @@ from html.parser import HTMLParser
 from bs4 import BeautifulSoup
 from collections import Counter
 import requests
-import lxml
 import re
 from copy import copy
 import codecs
@@ -151,6 +150,7 @@ class GetMoveAndAbilityAndRuleInfoFromTag:
         self.move_html_h4_tag_list = []
         self.attack = {}
         self.attacks = []
+        self.abilities = []
         self.ability = {}
         self.rule_text = []
         self.info_dict = {}
@@ -211,9 +211,7 @@ class GetMoveAndAbilityAndRuleInfoFromTag:
             "h2", class_="mt20", text="古代能力") or self.soup.find(
             "h2", class_="mt20", text="きのみ") or self.soup.find(
             "h2", class_="mt20", text="どうぐ")
-        if not ability_tags_start_tag:
-            self.ability = None
-        else:
+        while ability_tags_start_tag:
             next_start_tag = BeautifulSoup(str(self.soup.find_all()[self.soup.find_all()
                                                .index(ability_tags_start_tag) + 1:]), "lxml").find("h2", class_="mt20")
             soup_reverse = copy(self.soup.find_all())
@@ -239,7 +237,21 @@ class GetMoveAndAbilityAndRuleInfoFromTag:
             elif ability_tags_start_tag.text == "どうぐ":
                 self.ability.update(type="Pok\u00e9mon-Tool")
 
-        self.info_dict.update(ability=self.ability)
+            self.abilities.append(copy(self.ability))
+
+            if next_start_tag:
+                self.soup = BeautifulSoup(str(self.soup.find_all()[len(self.soup.find_all()) - soup_reverse.index(next_start_tag) - 1:]), "lxml")
+                ability_tags_start_tag = self.soup.find(
+                    "h2", class_="mt20", text="特性") or self.soup.find(
+                    "h2", class_="mt20", text="ポケパワー") or self.soup.find(
+                    "h2", class_="mt20", text="ポケボディー") or self.soup.find(
+                    "h2", class_="mt20", text="古代能力") or self.soup.find(
+                    "h2", class_="mt20", text="きのみ") or self.soup.find(
+                    "h2", class_="mt20", text="どうぐ")
+            else:
+                break
+
+        self.info_dict.update(abilities=self.abilities)
         # end ability part
 
         # start rule(text) part
@@ -336,7 +348,8 @@ class GetEvolutionAndSubType:
         # if the pokmon does not evolve
         if not self.pokemon_name:
             return {"evolution_list_list": None,
-                    "Subtype": "Basic", }
+                    "evolvesFrom": None,
+                    "subtype": "Basic", }
         # # if the pokemon is basic
         # if not self.pokemon_name:
         #     return {"evolution_list_list": self.evolution_list_list, "evolvesFrom": None}
@@ -357,7 +370,7 @@ class GetEvolutionAndSubType:
                             f.close()
                             return {"evolution_list_list": [[self.pokemon_name]],
                                     "evolvesFrom": None,
-                                    "SubType": "Basic"}
+                                    "subtype": "Basic"}
 
                     except ValueError:
                         raise ValueError
@@ -365,7 +378,7 @@ class GetEvolutionAndSubType:
             if self.evolutiou_type_text == "たね":
                 return {"evolution_list_list": self.evolution_list_list,
                         "evolvesFrom": None,
-                        "SubType": "Basic"}
+                        "subtype": "Basic"}
 
             else:
                 for i in range(pos[1] + 1):
@@ -375,7 +388,7 @@ class GetEvolutionAndSubType:
 
                         return {"evolution_list_list": self.evolution_list_list,
                                 "evolvesFrom": self.evolution_list_list[pos[0]-1][pos[1] - i],
-                                "SubType": ("Basic" if self.evolutiou_type_text == "たね"
+                                "subtype": ("Basic" if self.evolutiou_type_text == "たね"
                                             else "BREAK" if re.match(".*BREAK$", self.pokemon_name)
                                             else "Stage 1" if re.match("1\s進化", self.evolutiou_type_text)
                                             else "Srage 2" if re.match("2\s進化", self.evolutiou_type_text)
@@ -390,15 +403,15 @@ class GetEvolutionAndSubType:
             if self.pokemon_name == "ずがいの化石":
                 return {"evolution_list_list": [["ずがいの化石"], ["ズガイドス"], ["ラムパルド"]],
                         "evolvesFrom": None,
-                        "SubType": "Basic"}
+                        "subtype": "Basic"}
             elif self.pokemon_name == "ズガイドス":
                 return {"evolution_list_list": [["ずがいの化石"], ["ズガイドス"], ["ラムパルド"]],
                         "evolvesFrom": "ずがいの化石",
-                        "SubType": "Stage 1"}
+                        "subtype": "Stage 1"}
             elif self.pokemon_name == "ラムパルド":
                 return {"evolution_list_list": [["ずがいの化石"], ["ズガイドス"], ["ラムパルド"]],
                         "evolvesFrom": "ズガイドス",
-                        "SubType": "Stage 2"}
+                        "subtype": "Stage 2"}
             else:
                 traceback.print_exc()
 
@@ -871,7 +884,7 @@ if __name__ == '__main__':
     # test_7.process()
     # print(test_7.get_result())
 
-    global_id = 35384
+    global_id = 15042
     test_pokemon_all = GetCardInfo(global_id)
     print(test_pokemon_all.get_info())
 

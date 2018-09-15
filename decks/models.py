@@ -18,7 +18,7 @@ class Country(models.Model):
         return self.name
 
 
-class Set(models.Model):
+class Expansion(models.Model):
     name = models.CharField(max_length=100)
     region = models.ForeignKey(Region, on_delete=models.PROTECT)
     pub_date = models.DateField(null=True)
@@ -37,14 +37,14 @@ class Regulation(models.Model):
     name = models.CharField(max_length=100)
     region = models.ForeignKey(Region, on_delete=models.CASCADE)
     is_available = models.BooleanField(default=False)
-    expansions = models.ManyToManyField(Set)
+    expansions = models.ManyToManyField(Expansion)
 
     def __str__(self):
         return self.name
 
 
 class Rarity(models.Model):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=30)
 
     def __str__(self):
         return self.name
@@ -79,30 +79,56 @@ class PokemonSpecies(models.Model):
 
 class SuperType(models.Model):
     name = models.CharField(max_length=20)
-    name_j = models.CharField(max_length=20)
+    name_j = models.CharField(max_length=20, default="みてい")
+
+    def __str__(self):
+        return self.name
 
 
 class SubType(models.Model):
     name = models.CharField(max_length=20)
-    name_j = models.CharField(max_length=20)
+    name_j = models.CharField(max_length=20, default="みてい")
     supertype = models.ForeignKey(SuperType, on_delete=models.CASCADE)
-
-
-class Card(models.Model):
-    artist = models.CharField(max_length=50)
-    set = models.ForeignKey(Set, on_delete=models.PROTECT)
-    global_id_number = models.CharField(max_length=30)
-    name = models.CharField(max_length=100)
-    name_j = models.CharField(max_length=100)
-    id_in_expansion = models.CharField(max_length=10)
-    rarity = models.ForeignKey(Rarity, on_delete=models.PROTECT, null=True)
-    series = models.ForeignKey(Series, on_delete=models.PROTECT)
-    is_prism_star = models.BooleanField(default=False)
-    supertype = models.ForeignKey(SuperType, on_delete=models.PROTECT)
-    subtype = models.ForeignKey(SubType, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
+
+
+class Artist(models.Model):
+    name = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.name
+
+
+class CardName(models.Model):
+    name = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.name
+
+
+class CardText(models.Model):
+    name = models.CharField(max_length=300)
+
+    def __str__(self):
+        return self.name
+
+
+class Card(models.Model):
+    artist = models.ForeignKey(Artist, on_delete=models.PROTECT)
+    set = models.ForeignKey(Expansion, on_delete=models.PROTECT)
+    global_id_number = models.CharField(max_length=30)
+    name = models.ForeignKey(CardName, on_delete=models.PROTECT)
+    id_in_expansion = models.CharField(max_length=10, null=True)
+    rarity = models.ForeignKey(Rarity, on_delete=models.PROTECT, null=True, default=None)
+    is_prism_star = models.BooleanField(default=False)
+    supertype = models.ForeignKey(SuperType, on_delete=models.PROTECT)
+    subtype = models.ForeignKey(SubType, on_delete=models.PROTECT)
+    text = models.ManyToManyField(CardText)
+
+    def __str__(self):
+        return self.name.name
 
 
 class Type(models.Model):
@@ -115,7 +141,18 @@ class Type(models.Model):
 class Weakness(models.Model):
     name = models.CharField(max_length=50)
     type = models.ForeignKey(Type, on_delete=models.CASCADE)
-    effect = models.CharField(max_length=10)  # e.g. "*2" "+30"
+    value = models.CharField(max_length=10)
+    # e.g. "*2" "+30"
+
+    def __str__(self):
+        return self.name
+
+
+class Resistance(models.Model):
+    name = models.CharField(max_length=50)
+    type = models.ForeignKey(Type, on_delete=models.CASCADE)
+    value = models.CharField(max_length=10)
+    # e.g. "*2" "+30"
 
     def __str__(self):
         return self.name
@@ -124,76 +161,113 @@ class Weakness(models.Model):
 class Pokemon(Card):
     hp = models.IntegerField()
     retreat_cost = models.IntegerField()
-    weakness = models.ForeignKey(Weakness, on_delete=models.PROTECT)
-    species = models.ForeignKey(PokemonSpecies, on_delete=models.PROTECT)
+    weakness = models.ForeignKey(Weakness, on_delete=models.PROTECT, null=True)
+    resistance = models.ForeignKey(Resistance, on_delete=models.PROTECT, null=True)
+    # species = models.ForeignKey(PokemonSpecies, on_delete=models.PROTECT)
+    evolves_from = models.CharField(max_length=20, null=True, default=None)
+    evolution_list_str = models.CharField(max_length=200)
+    types = models.ManyToManyField(Type)
 
 
-class BasicPokemon(Pokemon):
-    pass
+#
+# class BasicPokemon(Pokemon):
+#     pass
+#
+#
+# class StageOnePokemon(Pokemon):
+#     evolves_from = models.CharField(max_length=20)
+#
+#
+# class StageTwoPokemon(Pokemon):
+#     evolves_from = models.CharField(max_length=20)
+#
+#
+# class BreakPokemon(Pokemon):
+#     evolves_from = models.CharField(max_length=20)
+#
+#
+# class EXPokemon(Pokemon):
+#     text = models.CharField(max_length=50)
+#
+#
+# class MegaEXPokemon(EXPokemon):
+#     evolves_from = models.CharField(max_length=20)
+#
+#
+# class GXBasicPokemon(BasicPokemon):
+#     text = models.CharField(max_length=50)
+#
+#
+# class GXStageOnePokemon(StageOnePokemon):
+#     text = models.CharField(max_length=50)
+#
+#
+# class GXStageTwoPokemon(StageTwoPokemon):
+#     text = models.CharField(max_length=50)
 
 
-class StageOnePokemon(Pokemon):
-    evolves_from = models.CharField(max_length=20)
 
 
-class StageTwoPokemon(Pokemon):
-    evolves_from = models.CharField(max_length=20)
+# class Stadium(Trainers):
+#     pass
+#
+#
+# class Item(Trainers):
+#     pass
+#
+#
+# class Supporter(Trainers):
+#     pass
 
 
-class BreakPokemon(Pokemon):
-    evolves_from = models.CharField(max_length=20)
-
-
-class EXPokemon(Pokemon):
-    text = models.CharField(max_length=50)
-
-
-class MegaEXPokemon(EXPokemon):
-    evolves_from = models.CharField(max_length=20)
-
-
-class GXBasicPokemon(BasicPokemon):
-    text = models.CharField(max_length=50)
-
-
-class GXStageOnePokemon(StageOnePokemon):
-    text = models.CharField(max_length=50)
-
-
-class GXStageTwoPokemon(StageTwoPokemon):
-    text = models.CharField(max_length=50)
-
-
-class Trainers(Card):
-    text = models.CharField(max_length=500)
-
-
-class Stadium(Trainers):
-    pass
-
-
-class Item(Trainers):
-    pass
-
-
-class Supporter(Trainers):
-    pass
-
-
-class Ability(models.Model):
+class AbilityType(models.Model):
     name = models.CharField(max_length=50)
-    text = models.CharField(max_length=500)
-    pokemon = models.ForeignKey(Pokemon, on_delete=models.CASCADE)
+    name_j = models.CharField(max_length=50, default="みてい")
 
     def __str__(self):
         return self.name
 
 
+class Ability(models.Model):
+    name = models.CharField(max_length=50)
+    text = models.CharField(max_length=500)
+    type = models.ForeignKey(AbilityType, on_delete=models.PROTECT)
+    card = models.ForeignKey(Card, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+
+class AttackCost(models.Model):
+    # nameは、','.join(cost_list)とすること。
+    name = models.CharField(max_length=300)
+    convertedEnergyCost = models.IntegerField(default=0)
+
+    grass = models.IntegerField(default=0)
+    fire = models.IntegerField(default=0)
+    water = models.IntegerField(default=0)
+    lightning = models.IntegerField(default=0)
+    fighting = models.IntegerField(default=0)
+    colorless = models.IntegerField(default=0)
+    darkness = models.IntegerField(default=0)
+    metal = models.IntegerField(default=0)
+    fairly = models.IntegerField(default=0)
+    free = models.IntegerField(default=0)
+
+    dragon = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.name
+
+    def get_list(self):
+        return self.name.split(",")
+
+
 class Attack(models.Model):
     name = models.CharField(max_length=30)
-    damage = models.IntegerField(default=0)
+    damage = models.CharField(max_length=20)
     text = models.CharField(max_length=200)
-    text_j = models.CharField(max_length=200)
+    cost = models.ForeignKey(AttackCost, on_delete=models.PROTECT)
     card = models.ForeignKey(Card, on_delete=models.CASCADE)
 
     def __str__(self):
