@@ -38,7 +38,7 @@ total_page = page_1_dict["maxPage"]
 # except FileExistsError:
 #     pass
 
-for i in range(102yyyyyyyyyyyyyyyyyyyyyyyyy, total_page):
+for i in range(total_page):
     #     params = {
     #         "page": i + 1
     #     }
