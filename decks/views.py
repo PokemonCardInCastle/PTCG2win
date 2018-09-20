@@ -8,6 +8,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django_filters.views import FilterView
 from django.utils import timezone
 
+
 from pure_pagination.mixins import PaginationMixin
 from .models import Deck, DeckCode
 from .filters import DeckFilter
