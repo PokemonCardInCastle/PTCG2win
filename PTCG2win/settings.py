@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["52.192.15.67", "ec2-52-192-15-67.ap-northeast-1.compute.amazonaws.com", "127.0.0.1",
                  "ptcg2win.com", "www.ptcg2win.com", "www1.ptcg2win.com", ]
 
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 51200  # higher than the count of fields
 
 # Application definition
 

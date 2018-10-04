@@ -38,7 +38,7 @@ total_page = page_1_dict["maxPage"]
 # except FileExistsError:
 #     pass
 
-for i in range(total_page):
+for i in range(221, total_page):
     #     params = {
     #         "page": i + 1
     #     }
@@ -70,6 +70,8 @@ for i in range(total_page):
                     subtype=SubType.objects.get_or_create(name=info["subtype"],
                                                           name_j=info["subtype"],
                                                           supertype=SuperType.objects.get(name=info["supertype"]))[0],
+                    image_url=info["imageUrl"],
+
 
                     # ここまで共通パート
 
@@ -143,7 +145,17 @@ for i in range(total_page):
                 defaults=dict(
                     # 共通パート
                     artist=Artist.objects.get_or_create(name=info["artist"])[0],
-                    set=Expansion.objects.get(code=info["setCode"]),
+                    set=Expansion.objects.get(code=info["setCode"]) if "setCode" in info.keys() else
+                    Expansion.objects.get_or_create(name="その他のカード",
+                                                    region=Region.objects.get(name="Japan"),
+                                                    pub_date=None,
+                                                    logo_url=None,
+                                                    symbol_url="",
+                                                    info_url="",
+                                                    total_cards=None,
+                                                    series=None,
+                                                    code="Basic"
+                                                    )[0],
                     name=CardName.objects.get_or_create(name=info["name"])[0],
                     id_in_expansion=info["id"] if "id" in info else None,
                     rarity=Rarity.objects.get_or_create(name=info["rarity"])[0] if "rarity" in info else None,
@@ -151,6 +163,7 @@ for i in range(total_page):
                     subtype=SubType.objects.get_or_create(
                         name=info["subtype"], name_j=info["subtype"],
                         supertype=SuperType.objects.get(name=info["supertype"]))[0],
+                    image_url=info["imageUrl"],
 
                     # ここまで共通パート
                 )
@@ -164,7 +177,8 @@ for i in range(total_page):
                 if "rarity" in info and info["rarity"] == "Prism Star":
                         card.is_prism_star = True
 
-
+        else:
+            print(info["global_id_number"], info["name"])
 
 
 

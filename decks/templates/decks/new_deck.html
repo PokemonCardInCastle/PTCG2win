@@ -1,0 +1,32 @@
+{% extends "decks/_base.html" %}
+{% load static %}
+
+{% block title %}デッキを登録{% endblock %}
+{% block breadcrumb %}
+    <li class="breadcrumb-item">Decks</li>
+    <li class="breadcrumb-item active">Board</li>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <form id="form" role="form" action="{% url 'decks:search-submit' %}" method="post">
+            {% csrf_token %}
+            <input name="search"
+                   id="search"
+                   type="search"
+                   placeholder="Start typing here"
+                   ic-post-to="{% url 'decks:search-ajax-submit' %}"
+                   ic-trigger-on="keyup changed"
+                   ic-trigger-delay="300ms"
+                   ic-target="#search-result-container"/>
+            <button type="submit">Search</button>
+        </form>
+        <span id="search-result-container"></span>
+
+        <button ic-post-to="" ic-indicator="#demo-spinner">Click Me!</button>
+          <i id="demo-spinner" class="fa fa-spinner fa-spin" style="display:none"></i>
+        <div id="deck-table-container"></div>
+    </div>
+
+{% endblock %}

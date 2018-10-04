@@ -24,7 +24,7 @@ class Expansion(models.Model):
     pub_date = models.DateField(null=True)
     code = models.CharField(max_length=10)
     logo_url = models.CharField(max_length=2000, null=True)
-    symbol_url = models.CharField(max_length=2000)
+    symbol_url = models.CharField(max_length=2000, null=True)
     info_url = models.CharField(max_length=2000)
     total_cards = models.IntegerField(null=True)
     series = models.CharField(max_length=20, null=True)
@@ -126,6 +126,7 @@ class Card(models.Model):
     supertype = models.ForeignKey(SuperType, on_delete=models.PROTECT)
     subtype = models.ForeignKey(SubType, on_delete=models.PROTECT)
     text = models.ManyToManyField(CardText)
+    image_url = models.CharField(max_length=200, null=True, default="")
 
     def __str__(self):
         return self.name.name
@@ -297,7 +298,7 @@ class Deck(models.Model):
 
 class DeckList(models.Model):
     parent_deck = models.ForeignKey(Deck, on_delete=models.CASCADE)
-    deck_code = models.CharField(max_length=20)
+    deck_code = models.CharField(max_length=20, null=True)
     created_date = models.DateTimeField()
 
     def __str__(self):
@@ -310,7 +311,7 @@ class CardBundle(models.Model):
     parent_deck_list = models.ForeignKey(DeckList, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.card.name
+        return self.card.name.name
 
 
 class Topic(models.Model):

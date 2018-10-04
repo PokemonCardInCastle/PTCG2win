@@ -1,0 +1,18 @@
+{% extends "decks/_base.html" %}
+
+{% block title %}{{ card.name.name }}{% endblock %}
+{% block breadcrumb %}
+  <li class="breadcrumb-item">Cards</li>
+  <li class="breadcrumb-item active">{{ card }}</li>
+{% endblock %}
+{% block content %}
+
+    <div>{{ card.name }} - {{ card.id_in_expansion }}</div>
+    <img src="{{ card.image_url }}">
+    <br clear="">
+    <code class="prettyprint linenums">{{ card.fields }}</code>
+
+
+
+
+{% endblock %}

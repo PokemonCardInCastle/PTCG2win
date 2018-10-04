@@ -1,5 +1,5 @@
 {% extends "decks/_base.html" %}
-{% load static random_color %}
+{% load static %}
 
 {% block title %}Deck Board{% endblock %}
 {% block breadcrumb %}
@@ -10,7 +10,7 @@
     <div class="container">
         <ul class="list-group">
             {% for deck in decks_to_show %}
-                <li style='background-color: {% random_color %}'>
+                <li style='border-style: solid;list-style: none;'>
                     <a href="{% url 'decks:detail' deck.id %}">
                         <div class="deck-tile row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">

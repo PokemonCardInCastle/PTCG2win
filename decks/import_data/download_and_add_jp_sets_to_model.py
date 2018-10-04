@@ -107,7 +107,8 @@ for i in range(total_page):
             if item.info_url == "":
                 info_a_tag = soup.find("a", class_="Link Link-arrow")
                 if info_a_tag:
-                    item.info_url = info_a_tag.get("href")
+                    item.info_url = info_a_tag.get("href") if "://www.pokemon-card.com" in info_a_tag.get("href") \
+                        else "https://www.pokemon-card.com" + info_a_tag.get("href")
                     if item.name == "新規":
                         item.name = info_a_tag.text.replace("\n", "").replace("\t", "")
                     item.save()
@@ -118,7 +119,8 @@ for i in range(total_page):
             if item.info_url == "":
                 info_a_tag = soup.find("a", class_="Link Link-arrow")
                 if info_a_tag:
-                    created.info_url = info_a_tag.get("href")
+                    created.info_url = info_a_tag.get("href") if "://www.pokemon-card.com" in info_a_tag.get("href") \
+                        else "https://www.pokemon-card.com" + info_a_tag.get("href")
                     if item.name == "新規":
                         created.name = info_a_tag.text.replace("\n", "").replace("\t", "")
 

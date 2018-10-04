@@ -544,7 +544,7 @@ class GetCardNameAndIDAndImageURLAndArtist:
             self.artist = BeautifulSoup(str(self.soup.find("div", class_="author")), "lxml").find("a").text
             self._result.update(artist=self.artist)
 
-        self.image_url = "https://www.pokemon-card.com/" + self.soup.find("img", class_="fit").get("src")
+        self.image_url = "https://www.pokemon-card.com" + self.soup.find("img", class_="fit").get("src")
         self._result.update(imageUrl=self.image_url, imageUrlHiRes=self.image_url)
 
         self.global_id_number = self.html_downloader_and_splitter.return_card_global_id_number()
@@ -631,7 +631,7 @@ class GetEnergyAllInfo:
             self.artist = BeautifulSoup(str(self.left_box_soup.find("div", class_="author")), "lxml").find("a").text
             self._result.update(artist=self.artist)
 
-        self.image_url = "https://www.pokemon-card.com/" + self.left_box_soup.find("img", class_="fit").get("src")
+        self.image_url = "https://www.pokemon-card.com" + self.left_box_soup.find("img", class_="fit").get("src")
         self._result.update(imageUrl=self.image_url, imageUrlHiRes=self.image_url)
 
         self.global_id_number = int(self.image_url.split("/")[-1].split("_")[0])
@@ -742,7 +742,7 @@ class GetTrainersAllInfo:
             self.artist = BeautifulSoup(str(self.left_box_soup.find("div", class_="author")), "lxml").find("a").text
             self._result.update(artist=self.artist)
 
-        self.image_url = "https://www.pokemon-card.com/" + self.left_box_soup.find("img", class_="fit").get("src")
+        self.image_url = "https://www.pokemon-card.com" + self.left_box_soup.find("img", class_="fit").get("src")
         self._result.update(imageUrl=self.image_url, imageUrlHiRes=self.image_url)
 
         self.global_id_number = self.html_downloader_and_splitter.return_card_global_id_number()

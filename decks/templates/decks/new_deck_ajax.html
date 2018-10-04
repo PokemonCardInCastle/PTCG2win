@@ -1,0 +1,11 @@
+<!-- This is the search_results.html sub-template -->
+{% if deck %}
+	<h3>Your deck is: <i>{{ deck.name }}</i></h3>
+	{% if related_card_bundles %}
+		<ul>
+		{% for card_bundle in related_card_bundles %}
+            <li><a href="{% url 'decks:card_view' card_id=card_bundle.card.global_id_number %}">{{ card_bundle.card.name }} </a>, {{ card_bundle.amount }}</li>
+		{% endfor %}
+		</ul>
+	{% endif %}
+{% endif %}

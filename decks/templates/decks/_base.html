@@ -38,10 +38,13 @@
         <div class="collapse navbar-collapse" id="Navber">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href={% url 'decks:index' %}>トップ <span class="sr-only">(現位置)</span></a>
+                    <a class="nav-link" href={% url 'decks:index' %}>トップ </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href={% url 'decks:proxy_maker' %}>プロキシ印刷</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url "decks:post_view" %}">カード検索</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">デッキ投稿・検索(未実装)</a>
@@ -85,15 +88,15 @@
 
 
     <div class="container">
-    {% if disable_breadcrumb %}
+        {% if disable_breadcrumb %}
 
-    {% else %}
+        {% else %}
 
-        <ol class="breadcrumb">
-            {% block breadcrumb %}
-            {% endblock %}
-        </ol>
-    {% endif %}
+            <ol class="breadcrumb">
+                {% block breadcrumb %}
+                {% endblock %}
+            </ol>
+        {% endif %}
         {# Start content #}
         {% block content %}
         {% endblock %}
@@ -101,8 +104,8 @@
     </div>
 {% endblock %}
 {# jQuery first, then Tether, then Bootstrap JS. #}
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -110,5 +113,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intercooler-js/1.2.1/intercooler.min.js" defer></script>
 </body>
 </html>
