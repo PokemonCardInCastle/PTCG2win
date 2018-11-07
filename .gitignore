@@ -2,3 +2,7 @@
 *.pyo
 __pycache__
 db.sqlite3
+settings.py
+app.yaml
+venv/
+.idea/
