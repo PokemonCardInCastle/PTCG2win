@@ -1,4 +1,5 @@
 # [START runtime]
+runtime: python37
 entrypoint: gunicorn -b :$PORT PTCG2win.wsgi
 handlers:
 
