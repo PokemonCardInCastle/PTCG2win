@@ -287,7 +287,7 @@ class Deck(models.Model):
     name = models.CharField(max_length=100)
     pub_date = models.DateTimeField()
     mod_date = models.DateTimeField()
-    description = models.CharField(max_length=100000)
+    description = models.CharField(max_length=21500)
     owner = models.ForeignKey(PTCG2winUser, on_delete=models.PROTECT)
     regulation = models.ForeignKey(Regulation, on_delete=models.PROTECT)
     arch_type = models.ForeignKey(ArchType, on_delete=models.PROTECT)
