@@ -167,7 +167,7 @@ USE_TZ = True
 
 STATIC_ROOT = 'static/'
 
-STATIC_URL = '/static/'
+STATIC_URL = 'https://storage.googleapis.com/ptcg2win/static/'
 
 STATICFILES_DIRS = (os.path.join('static'),)
 
