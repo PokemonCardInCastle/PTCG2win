@@ -32,20 +32,28 @@ def rarity_icon(soup: BeautifulSoup):
         elif "ic_rare_u2.gif" in rarity_img_url:
             _result.update(rarity="Uncommon Holo")
         elif "ic_rare_rr.gif" in rarity_img_url:
-            _result.update(rarity="Rare Holo")
+            _result.update(rarity="RR")
         elif "ic_rare_ur_c.gif" in rarity_img_url:
-            _result.update(rarity="Rare Ultra")
+            _result.update(rarity="UR")
+        elif "ic_rare_sr_c.gif" in rarity_img_url:
+            _result.update(rarity="SR")
         elif "ic_rare_s.gif" in rarity_img_url:
             _result.update(rarity="Rare Secret")
         elif "ic_rare_ss.gif" in rarity_img_url:
             _result.update(rarity="LEGEND")
         elif "ic_hikaru.gif" in rarity_img_url:
             _result.update(rarity="Shining")
+        elif "regulation_logo_1/XYP.gif" in rarity_img_url:
+            _result.update(rarity="XY Promo")
+        elif "regulation_logo_1/BWP.gif" in rarity_img_url:
+            _result.update(rarity="BW Promo")
+        elif "regulation_logo_1/DPP.gif" in rarity_img_url:
+            _result.update(rarity="DP Promo")
         else:
             if "/assets/images/card/rarity/" in rarity_img_url:
                 raise ValueError("Unknown rarity icon：" + rarity_img_url)
         return _result
-    except:
+    except ValueError:
         try:
             print("No rarity icon.", rarity_img_url)
         except UnboundLocalError:

@@ -169,7 +169,7 @@ STATIC_ROOT = 'static/'
 
 STATIC_URL = 'https://storage.googleapis.com/ptcg2win/static/'
 
-STATICFILES_DIRS = (os.path.join('static'),)
+# STATICFILES_DIRS = (os.path.join('static'),)
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 

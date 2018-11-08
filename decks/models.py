@@ -95,7 +95,7 @@ class SubType(models.Model):
 
 
 class Artist(models.Model):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=50)
 
     def __str__(self):
         return self.name
@@ -120,7 +120,7 @@ class Card(models.Model):
     set = models.ForeignKey(Expansion, on_delete=models.PROTECT)
     global_id_number = models.CharField(max_length=30)
     name = models.ForeignKey(CardName, on_delete=models.PROTECT)
-    id_in_expansion = models.CharField(max_length=10, null=True)
+    id_in_expansion = models.CharField(max_length=30, null=True)
     rarity = models.ForeignKey(Rarity, on_delete=models.PROTECT, null=True, default=None)
     is_prism_star = models.BooleanField(default=False)
     supertype = models.ForeignKey(SuperType, on_delete=models.PROTECT)
@@ -165,7 +165,7 @@ class Pokemon(Card):
     weakness = models.ForeignKey(Weakness, on_delete=models.PROTECT, null=True)
     resistance = models.ForeignKey(Resistance, on_delete=models.PROTECT, null=True)
     # species = models.ForeignKey(PokemonSpecies, on_delete=models.PROTECT)
-    evolves_from = models.CharField(max_length=20, null=True, default=None)
+    evolves_from = models.CharField(max_length=40, null=True, default=None)
     evolution_list_str = models.CharField(max_length=200)
     types = models.ManyToManyField(Type)
 
