@@ -13,6 +13,8 @@ from io import BytesIO
 import zipfile
 import csv
 from reportlab.lib.pagesizes import A4
+import io
+from PIL import Image
 
 
 class CodeInputForm(forms.Form):
@@ -60,21 +62,20 @@ def dl_img_and_return_http_response(deck_code: str):
     deck_list = deck_pke_list + deck_gds_list + deck_sup_list + deck_sta_list + deck_ene_list  #+ deck_ajs_list
     cards_to_print_count = 0
 
-    individual_print_card_list = []
+    card_url_list = []
+    card_img_object_dict = {}
 
-    temp_dir_name = "_ProxyTempFiles_"
-    try:
-        os.mkdir(temp_dir_name)
-    except FileExistsError:
-        pass
-
-    def download_image(img_url, out_path_and_name):
-        data = requests.get(img_url).content
-        with open(out_path_and_name, mode="wb") as f:
-            f.write(data)
+    def download_image_and_return_pil_object(img_url):
+        if img_url in card_img_object_dict:
+            return card_img_object_dict[img_url]
+        else:
+            rsp = requests.get(img_url, stream=True)
+            rsp.raw.decode_content = True
+            img_object = Image.open(rsp.raw)
+            card_img_object_dict[img_url] = img_object
+            return img_object
 
     dl_counter = 0
-    total_dls = len(deck_list)
 
     for elm in deck_list:
         dl_counter += 1
@@ -85,31 +86,15 @@ def dl_img_and_return_http_response(deck_code: str):
         if match:
             url = "http://www.pokemon-card.com" + match.group(1)
             elm.append(url)
-            img_file_name = url.split("/")[-1]
-            elm.append(img_file_name)
-
-            if os.path.exists("./" + temp_dir_name + "/" + img_file_name):
-                pass
-            else:
-                # print("画像の保存中:", dl_counter, "/", total_dls)
-                download_image(url, "./" + temp_dir_name + "/" + img_file_name)
     #    print(elm)
         else:
             # たまに画像がなくて裏面の画像なことがあるので、その対応
             url = "http://www.pokemon-card.com/assets/images/noimage/poke_ura.jpg"
             elm.append(url)
-            img_file_name = url.split("/")[-1]
-            elm.append(img_file_name)
-
-            if os.path.exists("./" + temp_dir_name + "/" + img_file_name):
-                pass
-
-            print("画像なし: 代替画像の保存中:", dl_counter, "/", total_dls)
-            download_image(url, "./" + temp_dir_name + "/" + img_file_name)
 
         for i in range(int(elm[1])):
             cards_to_print_count += 1
-            individual_print_card_list.append("./" + temp_dir_name + "/" + elm[3])
+            card_url_list.append(elm[2])
 
     # httpレスポンスの作成
     response = HttpResponse(content_type='application/pdf')
@@ -135,7 +120,7 @@ def dl_img_and_return_http_response(deck_code: str):
         x_pos = (11 + 63 * (i % 3)) * mm
         y_pos = (15 + 88 * ((i % 9) // 3)) * mm
         pdf_made.drawInlineImage(
-                                  individual_print_card_list[i],
+                                  download_image_and_return_pil_object(card_url_list[i]),
                                   x_pos,
                                   y_pos,
                                   width=63 * mm,
@@ -194,11 +179,11 @@ def generate_csv_and_return_response(deck_code: str):
             categories = ["ポケモン", "グッズ", "サポート", "スタジアム", "エネルギー"]
             csv_content_rows.append([categories[i], card_info["cardName"],  deck_content_lists_list[i][j][1], card_info["blockCode"], card_info["collectionCode"], "https://www.pokemon-card.com/card-search/details.php/card/" + card_info["cardID"] + "/"])
 
-    csv_output_dir_name = "_csv_out"
-    try:
-        os.mkdir(csv_output_dir_name)
-    except FileExistsError:
-        pass
+    # csv_output_dir_name = "_csv_out"
+    # try:
+    #     os.mkdir(csv_output_dir_name)
+    # except FileExistsError:
+    #     pass
 
     # httpレスポンスの作成
     response = HttpResponse(content_type='application/csv', charset="utf-8")
@@ -210,10 +195,10 @@ def generate_csv_and_return_response(deck_code: str):
     writer.writerow(csv_header_row)
     writer.writerows(csv_content_rows)
 
-    with open("./" + csv_output_dir_name + "/" + code + ".csv", 'w') as f:
-        writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
-        writer.writerow(csv_header_row)
-        writer.writerows(csv_content_rows)
+    # with open("./" + csv_output_dir_name + "/" + code + ".csv", 'w') as f:
+    #     writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
+    #     writer.writerow(csv_header_row)
+    #     writer.writerows(csv_content_rows)
 
     # レスポンスを返す
     return response
@@ -254,21 +239,20 @@ def dl_img_and_return_zip_http_response(deck_code: str):
     deck_list = deck_pke_list + deck_gds_list + deck_sup_list + deck_sta_list + deck_ene_list  # + deck_ajs_list
     cards_to_print_count = 0
 
-    individual_print_card_list = []
+    card_url_list = []
+    card_img_object_dict = {}
 
-    temp_dir_name = "_ProxyTempFiles_"
-    try:
-        os.mkdir(temp_dir_name)
-    except FileExistsError:
-        pass
-
-    def download_image(img_url, out_path_and_name):
-        data = requests.get(img_url).content
-        with open(out_path_and_name, mode="wb") as f:
-            f.write(data)
+    def download_image_and_return_pil_object(img_url):
+        if img_url in card_img_object_dict:
+            return card_img_object_dict[img_url]
+        else:
+            rsp = requests.get(img_url, stream=True)
+            rsp.raw.decode_content = True
+            img_object = Image.open(rsp.raw)
+            card_img_object_dict[img_url] = img_object
+            return img_object
 
     dl_counter = 0
-    total_dls = len(deck_list)
 
     for elm in deck_list:
         dl_counter += 1
@@ -279,31 +263,15 @@ def dl_img_and_return_zip_http_response(deck_code: str):
         if match:
             url = "http://www.pokemon-card.com" + match.group(1)
             elm.append(url)
-            img_file_name = url.split("/")[-1]
-            elm.append(img_file_name)
-
-            if os.path.exists("./" + temp_dir_name + "/" + img_file_name):
-                pass
-            else:
-                # print("画像の保存中:", dl_counter, "/", total_dls)
-                download_image(url, "./" + temp_dir_name + "/" + img_file_name)
-    #    print(elm)
+        #    print(elm)
         else:
             # たまに画像がなくて裏面の画像なことがあるので、その対応
             url = "http://www.pokemon-card.com/assets/images/noimage/poke_ura.jpg"
             elm.append(url)
-            img_file_name = url.split("/")[-1]
-            elm.append(img_file_name)
-
-            if os.path.exists("./" + temp_dir_name + "/" + img_file_name):
-                pass
-
-            print("画像なし: 代替画像の保存中:", dl_counter, "/", total_dls)
-            download_image(url, "./" + temp_dir_name + "/" + img_file_name)
 
         for i in range(int(elm[1])):
             cards_to_print_count += 1
-            individual_print_card_list.append("./" + temp_dir_name + "/" + elm[3])
+            card_url_list.append(elm[2])
 
     # httpレスポンスの作成
     response = HttpResponse(content_type='application/zip')
@@ -356,7 +324,7 @@ def dl_img_and_return_zip_http_response(deck_code: str):
         x_pos = (11 + 63 * (i % 3)) * mm
         y_pos = (15 + 88 * ((i % 9) // 3)) * mm
         pdf_in_memory.drawInlineImage(
-                                  individual_print_card_list[i],
+                                  download_image_and_return_pil_object(card_url_list[i]),
                                   x_pos,
                                   y_pos,
                                   width=63 * mm,
