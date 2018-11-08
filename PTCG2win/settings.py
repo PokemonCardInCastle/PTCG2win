@@ -97,7 +97,7 @@ WSGI_APPLICATION = 'PTCG2win.wsgi.application'
 # }
 
 # [START dbconfig]
-if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
+if os.getenv('GAE_INSTANCE'):
     # Running on production App Engine, so connect to Google Cloud SQL using
     # the unix socket at /cloudsql/<your-cloudsql-connection string>
     DATABASES = {
