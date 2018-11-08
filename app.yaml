@@ -1,0 +1,13 @@
+# [START runtime]
+entrypoint: gunicorn -b :$PORT PTCG2win.wsgi
+handlers:
+
+- url: /static
+  static_dir: static/
+- url: /.*
+  script: auto
+
+beta_settings:
+    cloud_sql_instances: ptcg2win:asia-northeast1:ptcg2win
+
+# [END runtime]
