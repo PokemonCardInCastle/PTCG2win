@@ -1,8 +1,0 @@
-#!C:\Users\lagyu\OneDrive\development\PTCG2win\venv\Scripts\python.exe
-
-__unittest = True
-
-from nose2 import discover
-
-if __name__ == '__main__':
-  discover()
