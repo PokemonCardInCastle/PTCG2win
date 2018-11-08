@@ -71,7 +71,7 @@ for i in range(total_page):
     page_str = requests.get(url).text
     page_dict = json.loads(page_str)
 
-    f = codecs.open(r"out1_dir/data/page_" + str(i) + ".json", "w", "utf-8")
+    f = codecs.open(r"sets_out_dir/data/page_" + str(i) + ".json", "w", "utf-8")
     json.dump(page_dict, f, sort_keys=True, indent=4)
     f.close()
 
