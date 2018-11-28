@@ -72,6 +72,8 @@ def dl_img_and_return_http_response(deck_code: str):
             rsp = requests.get(img_url, stream=True)
             rsp.raw.decode_content = True
             img_object = Image.open(rsp.raw)
+            if "/legend/" in img_url:
+                img_object.rotate(90, expand=True)
             card_img_object_dict[img_url] = img_object
             return img_object
 
@@ -79,7 +81,7 @@ def dl_img_and_return_http_response(deck_code: str):
 
     for elm in deck_list:
         dl_counter += 1
-        pattern = re.compile(r"]='(/assets/images/card_images/large/[^\n]+/0+%s_[^\n]+\.jpg)'" % elm[0],
+        pattern = re.compile(r"]='(/assets/images/card_images/(large|legend)/[^\n]+/0+%s_[^\n]+\.jpg)'" % elm[0],
                              re.MULTILINE | re.DOTALL)
         match = pattern.search(card_data_script_text)
 
@@ -249,6 +251,8 @@ def dl_img_and_return_zip_http_response(deck_code: str):
             rsp = requests.get(img_url, stream=True)
             rsp.raw.decode_content = True
             img_object = Image.open(rsp.raw)
+            if "/legend/" in img_url:
+                img_object.rotate(90, expand=True)
             card_img_object_dict[img_url] = img_object
             return img_object
 
@@ -256,7 +260,7 @@ def dl_img_and_return_zip_http_response(deck_code: str):
 
     for elm in deck_list:
         dl_counter += 1
-        pattern = re.compile(r"]='(/assets/images/card_images/large/[^\n]+/0+%s_[^\n]+\.jpg)'" % elm[0],
+        pattern = re.compile(r"]='(/assets/images/card_images/(large|legend)/[^\n]+/0+%s_[^\n]+\.jpg)'" % elm[0],
                              re.MULTILINE | re.DOTALL)
         match = pattern.search(card_data_script_text)
 
