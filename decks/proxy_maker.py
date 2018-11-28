@@ -73,15 +73,12 @@ def dl_img_and_return_http_response(deck_code: str):
         else:
             rsp = requests.get(img_url, stream=True)
             rsp.raw.decode_content = True
-            if "/legend/" in img_url:
+            img_object = Image.open(rsp.raw)
 
-                img_object = Image.open(BytesIO(rsp.content))
+            if "/legend/" in img_url:
                 img_object = img_object.rotate(90, expand=True)
 
-            else:
-                img_object = Image.open(rsp.raw)
             card_img_object_dict[img_url] = img_object
-
             return img_object
 
     dl_counter = 0
@@ -258,9 +255,10 @@ def dl_img_and_return_zip_http_response(deck_code: str):
             rsp = requests.get(img_url, stream=True)
             rsp.raw.decode_content = True
             img_object = Image.open(rsp.raw)
+
             if "/legend/" in img_url:
-                img_object.load()
-                img_object.transpose(Image.ROTATE_90)
+                img_object = img_object.rotate(90, expand=True)
+                
             card_img_object_dict[img_url] = img_object
             return img_object
 
