@@ -16,6 +16,8 @@ from reportlab.lib.pagesizes import A4
 import io
 from PIL import Image
 
+from io     import BytesIO
+
 
 class CodeInputForm(forms.Form):
     deck_code = forms.CharField(max_length=20,
@@ -71,11 +73,18 @@ def dl_img_and_return_http_response(deck_code: str):
         else:
             rsp = requests.get(img_url, stream=True)
             rsp.raw.decode_content = True
-            img_object = Image.open(rsp.raw)
             if "/legend/" in img_url:
-                img_object.load()
+
+                img_object = Image.open(BytesIO(rsp.content))
                 img_object.transpose(Image.ROTATE_90)
-            card_img_object_dict[img_url] = img_object
+                output = BytesIO()
+                img_object.save(output, format='JPEG', quality=100, optimize=True)
+                img_object = Image.open(output)
+
+            else:
+                img_object = Image.open(rsp.raw)
+                card_img_object_dict[img_url] = img_object
+
             return img_object
 
     dl_counter = 0
