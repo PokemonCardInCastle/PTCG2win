@@ -251,8 +251,6 @@ def dl_img_and_return_zip_http_response(deck_code: str):
             rsp = requests.get(img_url, stream=True)
             rsp.raw.decode_content = True
             img_object = Image.open(rsp.raw)
-            if "/legend/" in img_url:
-                img_object.transpose(Image.ROTATE_90)
             card_img_object_dict[img_url] = img_object
             return img_object
 
