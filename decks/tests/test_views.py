@@ -24,6 +24,13 @@ class ProxyMakerTests(TestCase):
         DeckCode.objects.create(text="b15FFb-UGLykW-wFV1VF", date=timezone.now(), ip="127.0.0.1")
 
 
+class CardViewTest(TestCase):
+    def test_card_view_status_code(self):
+        url = reverse("decks:card_detail_view")
+        response = self.client.get(url)
+        self.assertEquals(response.status_code, 200)
+
+    def
 
 
 

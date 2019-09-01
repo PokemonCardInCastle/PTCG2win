@@ -258,7 +258,7 @@ def dl_img_and_return_zip_http_response(deck_code: str):
 
             if "/legend/" in img_url:
                 img_object = img_object.rotate(90, expand=True)
-                
+
             card_img_object_dict[img_url] = img_object
             return img_object
 
