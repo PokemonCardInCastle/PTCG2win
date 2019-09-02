@@ -38,7 +38,7 @@ total_page = page_1_dict["maxPage"]
 # except FileExistsError:
 #     pass
 
-for i in range(98, total_page):
+for i in range(total_page):
     #     params = {
     #         "page": i + 1
     #     }
@@ -52,6 +52,9 @@ for i in range(98, total_page):
     for j in range(len(page_dict["cardList"])):
         global_id_number = int(page_dict["cardList"][j]["cardID"])
         info = GetCardInfo(global_id_number).get_info()
+
+        print(info["name"])
+
         # print(info)
         if "artist" not in info:
             info.update(artist="Unknown Artist.")

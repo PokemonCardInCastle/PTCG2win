@@ -389,6 +389,7 @@ class GetEvolutionAndSubType:
                         "subtype": "Basic"}
 
             else:
+                print("evo_list_list: ", self.evolution_list_list)
                 for i in range(pos[1] + 1):
                     try:
                         def throw_error():

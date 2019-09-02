@@ -8,7 +8,8 @@ import urllib.request
 import json
 import codecs
 
-import os, sys
+import os
+import sys
 import django
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "../../")
