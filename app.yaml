@@ -1,6 +1,7 @@
 # [START runtime]
 runtime: python37
 entrypoint: gunicorn -b :$PORT PTCG2win.wsgi
+instance_class: F4
 handlers:
 
 - url: /static
