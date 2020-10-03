@@ -39,7 +39,7 @@ def dl_img_and_return_http_response(deck_code: str):
 
     soup = BeautifulSoup(html, "html.parser")
 
-    card_data_script_text = soup.find_all("script")[-1].text
+    card_data_script_text = soup.find_all("script")[-1].contents[0]
 
     # deck_pke_list の例: [["33525", "3"], ["33525", "3"]]
     deck_pke_list = [elem.split("_")[:2] for elem in soup.find(id="deck_pke")["value"].split("-")]
@@ -142,7 +142,7 @@ def generate_csv_and_return_response(deck_code: str):
 
     soup = BeautifulSoup(html, "html.parser")
 
-    card_data_script_text = soup.find_all("script")[-1].text
+    card_data_script_text = soup.find_all("script")[-1].contents[0]
 
     # deck_pke_list の例: [["33525", "3"], ["33525", "3"]]
     deck_pke_list = [elem.split("_")[:2] for elem in soup.find(id="deck_pke")["value"].split("-")]
@@ -201,7 +201,7 @@ def dl_img_and_return_zip_http_response(deck_code: str):
 
     soup = BeautifulSoup(html, "html.parser")
 
-    card_data_script_text = soup.find_all("script")[-1].text
+    card_data_script_text = soup.find_all("script")[-1].contents[0]
 
     # deck_pke_list の例: [["33525", "3"], ["33525", "3"]]
     deck_pke_list = [elem.split("_")[:2] for elem in soup.find(id="deck_pke")["value"].split("-")]
