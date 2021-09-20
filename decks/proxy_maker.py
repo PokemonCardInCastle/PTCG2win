@@ -1,5 +1,7 @@
 import io
+from typing import List
 
+from PIL import Image, ImageChops
 from reportlab.lib.utils import ImageReader
 import requests
 from bs4 import BeautifulSoup
@@ -10,6 +12,7 @@ import zipfile
 import csv
 from io import BytesIO
 from fpdf import FPDF
+
 
 class CodeInputForm(forms.Form):
     deck_code = forms.CharField(max_length=20,
@@ -85,8 +88,6 @@ def fetch_images_and_return_response(deck_code: str):
                 content_type="text/plain; charset=utf-8"
             )
 
-    print(card_url_list)
-
     # キャンバスと出力ファイルの初期化
     pdf = FPDF(orientation='P', unit='mm', format="A4")
 
@@ -94,10 +95,57 @@ def fetch_images_and_return_response(deck_code: str):
     pdf.set_title(deck_code)
     pdf.set_subject("PDF to print")
 
+    card_url_or_image_list = []
+
+    def split_images_and_append_to_list(input_image: Image.Image, x_pieces, y_pieces, output_list):
+        imgwidth, imgheight = input_image.size
+        height = imgheight // y_pieces
+        width = imgwidth // x_pieces
+        for j in range(y_pieces):
+            for k in range(x_pieces):
+                box = (k * width, j * height, (k + 1) * width, (j + 1) * height)
+                part = input_image.crop(box)
+                output_list.append(part)
+
+    def trim(input_image: Image.Image) -> Image.Image:
+        bg = Image.new(input_image.mode, input_image.size, input_image.getpixel((0, 0)))
+        diff = ImageChops.difference(input_image, bg)
+        diff = ImageChops.add(diff, diff, 2.0, -100)
+        bbox = diff.getbbox()
+        if bbox:
+            return input_image.crop(bbox)
+
+    v_union_filename_pattern: re.Pattern = re.compile(r"[A-Z]VUNION\.jpg$")
+    reduced_card_url_list = []
+    cards_count = len(card_url_list)
+    for i in range(cards_count):
+        card_url = card_url_list[i]
+        if re.search(v_union_filename_pattern, card_url):
+            for j in range(card_url_list.count(card_url) // 4):
+                reduced_card_url_list.append(card_url)
+            card_url_list = ["" if url == card_url else url for url in card_url_list]
+        else:
+            reduced_card_url_list.append(card_url)
+    filtered_card_url_list = [card_url for card_url in reduced_card_url_list if card_url != ""]
+
+    for card_url in filtered_card_url_list:
+        if "/card_images/legend/" in card_url:
+            rsp = requests.get(card_url, stream=True)
+            rsp.raw.decode_content = True
+            img_object = Image.open(rsp.raw)
+            img_object = img_object.rotate(90, expand=True)
+            card_url_or_image_list.append(img_object)
+        elif re.search(v_union_filename_pattern, card_url):
+            rsp = requests.get(card_url, stream=True)
+            rsp.raw.decode_content = True
+            img_object = trim(Image.open(rsp.raw))
+            split_images_and_append_to_list(img_object, 2, 2, card_url_or_image_list)
+        else:
+            card_url_or_image_list.append(card_url)
+
     # ポケモンカードのサイズは63x88なので、紙を縦置きにした場合、3枚x3枚(189x264)入る。
-    num_card = cards_to_print_count
-    # print("Page 1")
-    for i in range(num_card):
+    for i in range(len(card_url_or_image_list)):
+        card_url_or_image = card_url_or_image_list[i]
         # 9枚ごとに改ページ
         if i % 9 == 0:
             pdf.add_page("P")
@@ -105,8 +153,9 @@ def fetch_images_and_return_response(deck_code: str):
         # 3枚ごとに改行
         x_pos = (11 + 63 * (i % 3))
         y_pos = (15 + 88 * ((i % 9) // 3))
+
         pdf.image(
-            card_url_list[i],
+            card_url_or_image,
             x_pos,
             y_pos,
             w=63,
@@ -178,4 +227,3 @@ def generate_csv_and_return_response(deck_code: str):
 
     # レスポンスを返す
     return response
-

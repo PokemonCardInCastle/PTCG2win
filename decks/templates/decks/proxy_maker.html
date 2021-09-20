@@ -2,7 +2,7 @@
 
 {% block title %}デッキコード -> 印刷用PDF{% endblock %}
 {% block breadcrumb %}
-  <li class="breadcrumb-item active">Proxy Maker</li>
+    <li class="breadcrumb-item active">Proxy Maker</li>
 {% endblock %}
 
 {% block content %}
@@ -24,7 +24,7 @@
                     {# Todo: ハードコード部分要修正。 #}
                     {% if field.label == "ファイルタイプ" %}
 
-                        <div class="btn-group m-3 mt-4" data-toggle="buttons">
+                        <div class="btn-group m-2 mx-3" data-toggle="buttons">
                             <label class="btn btn-outline-primary active">
                                 <input name="type" value="pdf" id="pdf" checked="" type="radio">PDF（印刷用）
                             </label>
@@ -35,7 +35,7 @@
 
                     {% else %}
 
-                        <div class="input-group mt-3 mx-3 mb-0">
+                        <div class="input-group mt-4 mx-3 mb-0">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="{{ field.name }}">{{ field.label }}</label>
                             </div>
@@ -45,18 +45,33 @@
                     {% endif %}
                 {% endfor %}
                 <br>
-                <div class="btn-group ml-3 mb-4">
+                <div class="btn-group mx-3 mb-4">
                     <button type='submit' class="btn btn-primary">ダウンロード</button>
                 </div>
             </form>
         </div>
     </div>
-    <div class="mx-3">
-        <h4>- お願い</h4>
+    <div class="mx-3 my-2">
+        <h4>お願い</h4>
         <p>
             サーバー使用料が1回あたり3円ほどかかるので、ほどほどに使ってください。<br/>
             サービス継続のために、そのうち広告を表示するかもしれません。
         </p>
+    </div>
+    <div class="mx-3 my-2">
+        <h4>更新履歴</h4>
+        <ul>
+            2021-09-20&nbsp;
+            <ul>
+                V-UNIONの印刷に対応
+            </ul>
+            <ul>
+                出力ファイルのファイルサイズを縮小
+            </ul>
+            <ul>
+                その他エラーになっていたケースを修正
+            </ul>
+        </ul>
     </div>
 
 {% endblock %}
