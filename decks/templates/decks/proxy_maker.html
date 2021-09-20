@@ -9,11 +9,10 @@
     <h4>- 使い方</h4>
     <p>
         <a href="https://www.pokemon-card.com/deck/index.html" target="_blank">デッキ構築 | ポケモンカードゲーム公式ホームページ</a><br/>
-        ↑でデッキに入れるカードを選んで、プロキシを印刷できます。<br/>
+        ↑の「デッキ作成ツール」でカードを選んで、作成したデッキコードから印刷用のPDFをダウンロードできます。<br/>
     <p>
         A4の紙に等倍で印刷してください。<br/>
-        セブンイレブン等のネットプリントサービスと組み合わせることで、外出先での印刷も可能です。<br/>
-        ファイルサイズに制約がある場合は、ZIP版(ページ毎に分割)を利用してください。
+        セブンイレブン等のネットプリントサービスと組み合わせることで、外出先での印刷も可能です。
     </p>
 
     <div class="card mt-3 mb-3">
@@ -25,15 +24,12 @@
                     {# Todo: ハードコード部分要修正。 #}
                     {% if field.label == "ファイルタイプ" %}
 
-                        <div class="btn-group m-2 ml-3" data-toggle="buttons">
+                        <div class="btn-group m-3 mt-4" data-toggle="buttons">
                             <label class="btn btn-outline-primary active">
-                                <input name="type" value="pdf" id="pdf" checked="" type="radio">PDF(単一ファイル、おすすめ)
+                                <input name="type" value="pdf" id="pdf" checked="" type="radio">PDF（印刷用）
                             </label>
                             <label class="btn btn-outline-info">
-                                <input name="type" value="zip" id="zip" type="radio">ZIP(ページ毎に分割)
-                            </label>
-                            <label class="btn btn-outline-info">
-                                <input name="type" value="csv" id="csv" type="radio">CSV(デッキリスト)
+                                <input name="type" value="csv" id="csv" type="radio">CSV（デッキリスト用）
                             </label>
                         </div>
 
@@ -49,21 +45,17 @@
                     {% endif %}
                 {% endfor %}
                 <br>
-                <div class="btn-group ml-3">
+                <div class="btn-group ml-3 mb-4">
                     <button type='submit' class="btn btn-primary">ダウンロード</button>
                 </div>
             </form>
-            <br/>
-            <div class="mb-3 mx-3">
-                PCでの使用を推奨します。(iOS端末では、生成されたPDFの表示が乱れる場合があります。)
-            </div>
         </div>
     </div>
     <div class="mx-3">
         <h4>- お願い</h4>
         <p>
-            サーバー使用料が1回あたり3円弱かかるので、ほどほどに使ってください。<br/>
-            新機能開発とサービスの継続のために、そのうち広告を表示するかもしれません。
+            サーバー使用料が1回あたり3円ほどかかるので、ほどほどに使ってください。<br/>
+            サービス継続のために、そのうち広告を表示するかもしれません。
         </p>
     </div>
 

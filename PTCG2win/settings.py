@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -25,8 +24,11 @@ SECRET_KEY = 'amyl#lr2s&a5fof=pph^u(x3^#77*6jqpg7wcw7fss)t=vxuh@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["52.192.15.67", "ec2-52-192-15-67.ap-northeast-1.compute.amazonaws.com", "127.0.0.1",
-                 "ptcg2win.com", "www.ptcg2win.com", "www1.ptcg2win.com", "ptcg2win.appspot.com", ]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    ".ptcg2win.com",
+    ".an.r.appspot.com",
+]
 ALLOWED_HOSTS += ['192.168.1.%s' % i for i in range(256)]
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 51200  # higher than the count of fields
@@ -35,7 +37,6 @@ DATA_UPLOAD_MAX_NUMBER_FIELDS = 51200  # higher than the count of fields
 
 INSTALLED_APPS = [
     'decks.apps.DecksConfig',
-    # 'accounts_old.apps.AccountsConfig',  # 旧アカウント管理
     'gunicorn',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,7 +49,7 @@ INSTALLED_APPS = [
     'crispy_forms',  # 追加
     'pure_pagination',  # 追加
     'widget_tweaks',
-    ]
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -65,8 +66,7 @@ ROOT_URLCONF = 'PTCG2win.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -147,7 +147,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -161,7 +160,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
@@ -172,7 +170,3 @@ STATIC_URL = 'https://storage.googleapis.com/ptcg2win/static/'
 # STATICFILES_DIRS = (os.path.join('static'),)
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-
-
-

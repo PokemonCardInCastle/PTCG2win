@@ -6,3 +6,4 @@ settings.py
 app.yaml
 venv/
 .idea/
+static/

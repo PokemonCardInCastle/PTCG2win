@@ -1,4 +1,8 @@
-from django.shortcuts import render, get_object_or_404, get_list_or_404
+import traceback
+
+import MySQLdb
+import django.db
+from django.shortcuts import render, get_object_or_404, get_list_or_404, redirect
 from django.http import HttpResponse, Http404, JsonResponse
 from django.template import loader
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -17,7 +21,8 @@ from pure_pagination.mixins import PaginationMixin
 from .models import Deck, DeckCode, Card, CardName, PTCG2winUser, Regulation, ArchType, DeckList, CardBundle
 from .filters import DeckFilter
 from .forms import DeckRegisterForm
-from .proxy_maker import dl_img_and_return_http_response, dl_img_and_return_zip_http_response, CodeInputForm, generate_csv_and_return_response
+from .proxy_maker import fetch_images_and_return_response, CodeInputForm, \
+    generate_csv_and_return_response
 import urllib.parse
 from datetime import datetime, timedelta
 from django.contrib.auth.decorators import login_required
@@ -28,15 +33,14 @@ from random import random
 from copy import copy
 
 
-
-
 def index(request):
-    latest_deck_list = Deck.objects.order_by('-pub_date')[:5]
-    context = {
-        'latest_deck_list': latest_deck_list,
-        "disable_breadcrumb": True,
-    }
-    return render(request, 'decks/index.html', context)
+    # latest_deck_list = Deck.objects.order_by('-pub_date')[:5]
+    # context = {
+    #     'latest_deck_list': latest_deck_list,
+    #     "disable_breadcrumb": True,
+    # }
+    # return render(request, 'decks/index.html', context)
+    return redirect("decks:proxy_maker")
 
 
 def deck_board(request):
@@ -75,15 +79,6 @@ def proxy_maker_login(request):
 
 
 def proxy_result(request):
-    if request.GET.get("type") == "pdf":
-        response = dl_img_and_return_http_response(request.GET.get("deck_code"))
-    elif request.GET.get("type") == "zip":
-        response = dl_img_and_return_zip_http_response(request.GET.get("deck_code"))
-    elif request.GET.get("type") == "csv":
-        response = generate_csv_and_return_response(request.GET.get("deck_code"))
-    else:
-        response = Http404
-
     def get_client_ip(req):
         x_forwarded_for = req.META.get('HTTP_X_FORWARDED_FOR')
         if x_forwarded_for:
@@ -92,8 +87,19 @@ def proxy_result(request):
             ip = req.META.get('REMOTE_ADDR')
         return ip
 
-    deck_code = DeckCode(text=request.GET.get("deck_code"), date=timezone.now(), ip=get_client_ip(request))
-    deck_code.save()
+    try:
+        deck_code = DeckCode(text=request.GET.get("deck_code"), date=timezone.now(), ip=get_client_ip(request))
+        deck_code.save()
+    except django.db.DatabaseError or MySQLdb.OperationalError or MySQLdb.IntegrityError:
+        print("データベースのエラーです。")
+        print(traceback.format_exc())
+
+    if request.GET.get("type") == "pdf":
+        response = fetch_images_and_return_response(request.GET.get("deck_code"))
+    elif request.GET.get("type") == "csv":
+        response = generate_csv_and_return_response(request.GET.get("deck_code"))
+    else:
+        response = Http404
 
     return response
 
@@ -109,15 +115,16 @@ class SearchSubmitView(View):
         query = request.POST.get('search', '')
 
         def a_tag_generator(element: Card):
-            return "<a href='" + reverse("decks:card_view", args=[element.global_id_number]) + "'>" + element.name.name + "</a>"
+            return "<a href='" + reverse("decks:card_view",
+                                         args=[element.global_id_number]) + "'>" + element.name.name + "</a>"
 
         # A simple query for Item objects whose title contain 'query'
         items = [a_tag_generator(elm) + ", " + elm.set.code for elm in Card.objects.filter(name__name__icontains=query)]
         if not items:
-            items = [a_tag_generator(elm) + ", "  + elm.set.code for elm in Card.objects.filter(
+            items = [a_tag_generator(elm) + ", " + elm.set.code for elm in Card.objects.filter(
                 name__name__icontains=romaji2katakana(query))]
         if not items:
-            items = [a_tag_generator(elm) + ", "  + elm.set.code for elm in Card.objects.filter(
+            items = [a_tag_generator(elm) + ", " + elm.set.code for elm in Card.objects.filter(
                 name__name__icontains=hiragana2katakana(romaji2katakana(query)))]
 
         context = {'title': self.response_message, 'query': query, 'items': items}
@@ -151,7 +158,8 @@ class NewDeckAjaxView(View):
 
         if not deck_id:
             # A simple query for Item objects whose title contain 'query'
-            new_deck = Deck(name="新しいデッキ" + str(int(random() * 100)), pub_date=timezone.now(), mod_date=timezone.now(), description="(説明なし)",
+            new_deck = Deck(name="新しいデッキ" + str(int(random() * 100)), pub_date=timezone.now(), mod_date=timezone.now(),
+                            description="(説明なし)",
                             owner=PTCG2winUser.objects.get(id=request.user.id),
                             regulation=Regulation.objects.get(name="SM以降"),
                             arch_type=ArchType.objects.get_or_create(name="aa",
@@ -163,7 +171,8 @@ class NewDeckAjaxView(View):
 
             related_card_bundles = []
 
-            new_card_bundle_1 = CardBundle(card=Card.objects.get(global_id_number=35140), amount=3, parent_deck_list=new_deck_list)
+            new_card_bundle_1 = CardBundle(card=Card.objects.get(global_id_number=35140), amount=3,
+                                           parent_deck_list=new_deck_list)
             new_card_bundle_1.save()
 
             related_card_bundles = CardBundle.objects.filter(parent_deck_list=new_deck_list)
@@ -182,7 +191,7 @@ class NewDeckAjaxView(View):
 
         response = HttpResponse(rendered_template, content_type='text/html')
 
-        set_cookie(response, "deck_id", new_deck.id, 365*24*60*60)
+        set_cookie(response, "deck_id", new_deck.id, 365 * 24 * 60 * 60)
         set_cookie(response, "card_bundles", urllib.parse.quote(card_bundle_list_str), 365 * 24 * 60 * 60)
 
         return response
@@ -198,6 +207,3 @@ def card_search_view(request):
 
 # def search(request, deck_id_from, deck_id_to):
 #     return HttpResponse("You are looking from %s to " % deck_id_from + "%s" % deck_id_to)
-
-
-
