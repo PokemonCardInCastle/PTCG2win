@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     ".ptcg2win.com",
     ".an.r.appspot.com",
 ]
-ALLOWED_HOSTS += ['192.168.1.%s' % i for i in range(256)]
+# ALLOWED_HOSTS += ['192.168.1.%s' % i for i in range(256)]
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 51200  # higher than the count of fields
 
