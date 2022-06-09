@@ -67,16 +67,24 @@ def fetch_images_and_return_response(deck_code: str):
         dl_counter += 1
         pattern = re.compile(r"(/assets/images/card_images/([a-zA-Z]+)/[^\n]*/0+%s_[^\n]+\.jpg)" % elm[0],
                              re.MULTILINE | re.DOTALL)
-        match = pattern.search(card_data_script_text)
+        match = pattern.search(card_data_script_text) 
 
         if match:
             url = "https://www.pokemon-card.com" + match.group(1)
             elm.append(url)
         #    print(elm)
         else:
-            # たまに画像がなくて裏面の画像なことがあるので、その対応
-            url = "https://www.pokemon-card.com/assets/images/noimage/poke_ura.jpg"
-            elm.append(url)
+            # 画像URL上でのidとカードのidが合致していない場合
+            img_url_pattern = r"PCGDECK.searchItemCardPict\["+elm[0]+r"\]='(.*jpg)'"
+            img_match = re.search(img_url_pattern, html.decode())    
+
+            if img_match:
+                url = "https://www.pokemon-card.com" + img_match.group(1)
+                elm.append(url)
+            else:
+                # たまに画像がなくて裏面の画像なことがあるので、その対応
+                url = "https://www.pokemon-card.com/assets/images/noimage/poke_ura.jpg"
+                elm.append(url)
 
         try:
             for i in range(int(elm[1])):
