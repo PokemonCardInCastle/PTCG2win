@@ -67,7 +67,7 @@ def fetch_images_and_return_response(deck_code: str):
         dl_counter += 1
         pattern = re.compile(r"(/assets/images/card_images/([a-zA-Z]+)/[^\n]*/0+%s_[^\n]+\.jpg)" % elm[0],
                              re.MULTILINE | re.DOTALL)
-        match = pattern.search(card_data_script_text) 
+        match = pattern.search(card_data_script_text)
 
         if match:
             url = "https://www.pokemon-card.com" + match.group(1)
